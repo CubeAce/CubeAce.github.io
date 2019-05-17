@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<panorama appversion="6.1 beta2" apprev="17561" id="node1" hideabout="1">
+  <input levelbiashidpi="1.000" levelingpitch="0" width="1344" height="1344" levelingroll="-2" overlap="1" leveltileurl="hoodtiles/V1/cf_%c/l_%l/c_%x/tile_%y.jpg" levelbias="0.400" leveltilesize="510">
+    <level predecode="0" preload="0" width="1344" height="1344"/>
+    <level predecode="0" preload="0" width="672" height="672"/>
+    <level predecode="1" preload="1" width="336" height="336"/>
+    <preview strip="1" color="0x808080"/>
+  </input>
+  <view fovmode="0" pannorth="0">
+    <start pan="177.625" tilt="-17.5534" fov="71.0115" projection="4"/>
+    <flyin pan="0" tilt="-90" fov="170" projection="9"/>
+    <min fovpixel="2" pan="0" tilt="-90"/>
+    <max pan="360" tilt="90" fovfisheye="360" fov="120" fovstereographic="270" scaletofit="1"/>
+  </view>
+  <userdata copyright="" description="" comment="" longitude="" latitude="" datetime="4/14/2019 11:05 AM" source="" info="" title="" customnodeid="" author="" tags="vehicle"/>
+  <hotspots wordwrap="1" width="180" height="20">
+    <label borderalpha="1" wordwrap="1" border="1" width="180" height="20" backgroundalpha="1" textcolor="0x000000" background="1" enabled="1" textalpha="1" borderradius="1" bordercolor="0x000000" backgroundcolor="0xffffff"/>
+    <polystyle mode="0" borderalpha="1" backgroundalpha="0.25098" handcursor="1" bordercolor="0x0000ff" backgroundcolor="0x0000ff"/>
+  </hotspots>
+  <media/>
+  <transition zoomfov="20" zoomoutpause="1" type="crossdissolve" blendtime="1" zoomspeed="2" zoomout="0" enabled="1" blendcolor="0x000000" softedge="0" zoomin="0"/>
+  <animation useinautorotation="0" animsequence="Animation01" syncanimationwithvideo="0"/>
+  <control invertcontrol="1" contextfullscreen="1" contextprojections="0" lockedwheel="0" invertwheel="0" simulatemass="1" lockedmouse="0" lockedkeyboard="0" lockedkeyboardzoom="0" sensitivity="8" speedwheel="1" hideabout="1" dblclickfullscreen="0" rubberband="0"/>
+</panorama>

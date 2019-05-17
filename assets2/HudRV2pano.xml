@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tour appversion="6.1 beta2" start="node5" apprev="17561">
+  <panorama hideabout="1" id="node5">
+    <input overlap="1" height="1344" width="1344" leveltileurl="hoodtiles/RV2/cf_%c/l_%l/c_%x/tile_%y.jpg" leveltilesize="510" levelingroll="1.1" levelbias="0.400" levelbiashidpi="1.000" levelingpitch="2.7">
+      <level height="1344" width="1344" preload="0" predecode="0"/>
+      <level height="672" width="672" preload="0" predecode="0"/>
+      <level height="336" width="336" preload="1" predecode="1"/>
+      <preview color="0x808080" strip="1"/>
+    </input>
+    <view pannorth="0" fovmode="0">
+      <start pan="-177.037" fov="58.9996" tilt="-31.1979" projection="4"/>
+      <flyin pan="0" fov="170" tilt="-90" projection="9"/>
+      <min pan="0" tilt="-90" fovpixel="2"/>
+      <max fovfisheye="360" fovstereographic="270" pan="360" fov="120" tilt="90" scaletofit="1"/>
+    </view>
+    <userdata datetime="4/14/2019 10:33 AM" author="" info="" copyright="" tags="vehicle" longitude="" title="" latitude="" comment="" customnodeid="" description="" source=""/>
+    <hotspots height="20" width="180" wordwrap="1">
+      <label textcolor="0x000000" border="1" background="1" height="20" backgroundcolor="0xffffff" width="180" backgroundalpha="1" enabled="1" textalpha="1" borderalpha="1" wordwrap="1" bordercolor="0x000000" borderradius="1"/>
+      <polystyle handcursor="1" backgroundcolor="0x0000ff" backgroundalpha="0.25098" borderalpha="1" mode="0" bordercolor="0x0000ff"/>
+    </hotspots>
+    <media/>
+    <transition blendtime="1" zoomout="0" zoomoutpause="1" zoomspeed="2" zoomin="0" enabled="1" zoomfov="20" blendcolor="0x000000" type="crossdissolve" softedge="0"/>
+    <animation animsequence="Animation01" useinautorotation="0" syncanimationwithvideo="0"/>
+    <control sensitivity="8" rubberband="0" invertcontrol="1" speedwheel="1" lockedmouse="0" hideabout="1" invertwheel="0" simulatemass="1" lockedwheel="0" contextfullscreen="1" lockedkeyboardzoom="0" contextprojections="0" dblclickfullscreen="0" lockedkeyboard="0"/>
+  </panorama>
+  <masternode>
+    <userdata datetime="" author="" info="" copyright="" tags="" longitude="" title="" latitude="" comment="" customnodeid="" description="" source=""/>
+  </masternode>
+</tour>
