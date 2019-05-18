@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tour start="node1" appversion="6.1 beta2" apprev="17561">
+  <panorama id="node1" hideabout="1">
+    <input overlap="1" leveltileurl="interiortiles/V1/node1/cf_%c/l_%l/c_%x/tile_%y.jpg" leveltilesize="510" levelingroll="0" levelbiashidpi="1.000" levelingpitch="0" height="1344" width="1344" levelbias="0.400">
+      <level preload="0" height="1344" predecode="0" width="1344"/>
+      <level preload="0" height="672" predecode="0" width="672"/>
+      <level preload="1" height="336" predecode="1" width="336"/>
+      <preview color="0x808080" strip="1"/>
+    </input>
+    <view pannorth="0" fovmode="0">
+      <start projection="4" fov="84.8632" pan="174.636" tilt="-27.5535"/>
+      <flyin projection="9" fov="170" pan="0" tilt="-90"/>
+      <min fovpixel="2" pan="0" tilt="-90"/>
+      <max scaletofit="1" fov="120" pan="360" fovstereographic="270" fovfisheye="360" tilt="90"/>
+    </view>
+    <userdata author="" source="" description="" datetime="4/14/2019 11:06 AM" info="" comment="" customnodeid="" copyright="" tags="vehicle" title="" longitude="" latitude=""/>
+    <hotspots wordwrap="1" height="20" width="180">
+      <label bordercolor="0x000000" borderradius="1" wordwrap="1" border="1" enabled="1" background="1" backgroundalpha="1" textcolor="0x000000" textalpha="1" height="20" width="180" backgroundcolor="0xffffff" borderalpha="1"/>
+      <polystyle bordercolor="0x0000ff" mode="0" handcursor="1" backgroundalpha="0.25098" backgroundcolor="0x0000ff" borderalpha="1"/>
+      <hotspot url="{node3}" target="" description="" id="Interior back" pan="-8.19" skinid="ht_node" title="Interior back" tilt="-21.4"/>
+    </hotspots>
+    <media/>
+    <transition zoomout="0" zoomoutpause="1" zoomfov="20" blendcolor="0x000000" enabled="1" zoomin="0" softedge="0" blendtime="1" type="crossdissolve" zoomspeed="2"/>
+    <autorotate delay="5.00" enabled="1" speed="0.040" noderandom="1" nodedelay="0.00" returntohorizon="0.000" startloaded="0" useanimation="0"/>
+    <animation syncanimationwithvideo="0" animsequence="Animation01" useinautorotation="0"/>
+    <control lockedmouse="0" lockedkeyboard="0" sensitivity="8" invertwheel="0" contextprojections="0" contextfullscreen="0" hideabout="1" simulatemass="1" lockedwheel="0" speedwheel="1" dblclickfullscreen="0" rubberband="0" invertcontrol="1" lockedkeyboardzoom="0"/>
+  </panorama>
+  <panorama id="node3" hideabout="1">
+    <input overlap="1" leveltileurl="interiortiles/V1/node3/cf_%c/l_%l/c_%x/tile_%y.jpg" leveltilesize="510" levelingroll="2" levelbiashidpi="1.000" levelingpitch="1.3" height="1344" width="1344" levelbias="0.400">
+      <level preload="0" height="1344" predecode="0" width="1344"/>
+      <level preload="0" height="672" predecode="0" width="672"/>
+      <level preload="1" height="336" predecode="1" width="336"/>
+      <preview color="0x808080" strip="1"/>
+    </input>
+    <view pannorth="0" fovmode="0">
+      <start projection="4" fov="100.044" pan="-8.89887" tilt="-19.7385"/>
+      <flyin projection="9" fov="170" pan="0" tilt="-90"/>
+      <min fovpixel="2" pan="0" tilt="-90"/>
+      <max scaletofit="1" fov="120" pan="360" fovstereographic="270" fovfisheye="360" tilt="90"/>
+    </view>
+    <userdata author="" source="" description="" datetime="4/14/2019 11:06 AM" info="" comment="" customnodeid="" copyright="" tags="vehicle" title="" longitude="" latitude=""/>
+    <hotspots wordwrap="1" height="20" width="180">
+      <label bordercolor="0x000000" borderradius="1" wordwrap="1" border="1" enabled="1" background="1" backgroundalpha="1" textcolor="0x000000" textalpha="1" height="20" width="180" backgroundcolor="0xffffff" borderalpha="1"/>
+      <polystyle bordercolor="0x0000ff" mode="0" handcursor="1" backgroundalpha="0.25098" backgroundcolor="0x0000ff" borderalpha="1"/>
+      <hotspot url="{node2}" target="" description="" id="Point01" pan="-350.26" skinid="ht_node" title="" tilt="-14.43"/>
+      <hotspot url="{node1}" target="175.1/-27.7/78.5" description="" id="Point02" pan="-182.63" skinid="ht_node" title="Interior View" tilt="-13.98"/>
+    </hotspots>
+    <media/>
+    <transition zoomout="0" zoomoutpause="1" zoomfov="20" blendcolor="0x000000" enabled="1" zoomin="0" softedge="0" blendtime="1" type="crossdissolve" zoomspeed="2"/>
+    <autorotate delay="5.00" enabled="1" speed="0.040" noderandom="1" nodedelay="0.00" returntohorizon="0.000" startloaded="0" useanimation="0"/>
+    <animation syncanimationwithvideo="0" animsequence="Animation01" useinautorotation="0"/>
+    <control lockedmouse="0" lockedkeyboard="0" sensitivity="8" invertwheel="0" contextprojections="0" contextfullscreen="0" hideabout="1" simulatemass="1" lockedwheel="0" speedwheel="1" dblclickfullscreen="0" rubberband="0" invertcontrol="1" lockedkeyboardzoom="0"/>
+  </panorama>
+  <panorama id="node2" hideabout="1">
+    <input overlap="1" leveltileurl="interiortiles/V1/node2/cf_%c/l_%l/c_%x/tile_%y.jpg" leveltilesize="510" levelingroll="0" levelbiashidpi="1.000" levelingpitch="0" height="1344" width="1344" levelbias="0.400">
+      <level preload="0" height="1344" predecode="0" width="1344"/>
+      <level preload="0" height="672" predecode="0" width="672"/>
+      <level preload="1" height="336" predecode="1" width="336"/>
+      <preview color="0x808080" strip="1"/>
+    </input>
+    <view pannorth="0" fovmode="0">
+      <start projection="4" fov="65.4447" pan="178.684" tilt="-7.02475"/>
+      <flyin projection="9" fov="170" pan="0" tilt="-90"/>
+      <min fovpixel="2" pan="0" tilt="-90"/>
+      <max scaletofit="1" fov="120" pan="360" fovstereographic="270" fovfisheye="360" tilt="90"/>
+    </view>
+    <userdata author="" source="" description="" datetime="4/14/2019 11:07 AM" info="" comment="" customnodeid="" copyright="" tags="vehicle" title="" longitude="" latitude=""/>
+    <hotspots wordwrap="1" height="20" width="180">
+      <label bordercolor="0x000000" borderradius="1" wordwrap="1" border="1" enabled="1" background="1" backgroundalpha="1" textcolor="0x000000" textalpha="1" height="20" width="180" backgroundcolor="0xffffff" borderalpha="1"/>
+      <polystyle bordercolor="0x0000ff" mode="0" handcursor="1" backgroundalpha="0.25098" backgroundcolor="0x0000ff" borderalpha="1"/>
+      <hotspot url="{node3}" target="-178.6/-11.1/78.8" description="" id="Interior front" pan="-175.46" skinid="ht_node" title="Interior front" tilt="-22.61"/>
+    </hotspots>
+    <media/>
+    <transition zoomout="0" zoomoutpause="1" zoomfov="20" blendcolor="0x000000" enabled="1" zoomin="0" softedge="0" blendtime="1" type="crossdissolve" zoomspeed="2"/>
+    <autorotate delay="5.00" enabled="1" speed="0.040" noderandom="1" nodedelay="0.00" returntohorizon="0.000" startloaded="0" useanimation="0"/>
+    <animation syncanimationwithvideo="0" animsequence="Animation01" useinautorotation="0"/>
+    <control lockedmouse="0" lockedkeyboard="0" sensitivity="8" invertwheel="0" contextprojections="0" contextfullscreen="0" hideabout="1" simulatemass="1" lockedwheel="0" speedwheel="1" dblclickfullscreen="0" rubberband="0" invertcontrol="1" lockedkeyboardzoom="0"/>
+  </panorama>
+  <masternode>
+    <userdata author="" source="" description="" datetime="" info="" comment="" customnodeid="" copyright="" tags="" title="" longitude="" latitude=""/>
+  </masternode>
+</tour>
