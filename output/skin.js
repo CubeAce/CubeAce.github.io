@@ -1,7 +1,7 @@
 // Garden Gnome Software - Skin
 // Pano2VR 6.1 beta2/17561
 // Filename: Toyota_HS_TemplateV4.ggsk
-// Generated 2019-05-18T09:29:11
+// Generated 2019-05-18T13:55:36
 
 function pano2vrSkin(player,base) {
 	player.addVariable('VehicleIntURL', 0, "");
@@ -2416,6 +2416,7 @@ function pano2vrSkin(player,base) {
 			me._contact_info.style[domTransition]='none';
 			me._contact_info.style.visibility=(Number(me._contact_info.style.opacity)>0||!me._contact_info.style.opacity)?'inherit':'hidden';
 			me._contact_info.ggVisible=true;
+			player.setVariableValue('VehicleHudURL', "");
 		}
 		me._hud_close.onmouseover=function (e) {
 			me._hud_close__img.style.visibility='hidden';
