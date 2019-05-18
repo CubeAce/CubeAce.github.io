@@ -1,7 +1,7 @@
 // Garden Gnome Software - Skin
 // Pano2VR 6.1 beta2/17561
 // Filename: Toyota_HS_TemplateV3a.ggsk
-// Generated 2019-05-18T18:51:00
+// Generated 2019-05-18T19:58:30
 
 function pano2vrSkin(player,base) {
 	player.addVariable('VehicleIntURL', 0, "");
@@ -4101,6 +4101,72 @@ function pano2vrSkin(player,base) {
 		me._vehicler1interior.ggUpdatePosition=function (useTransition) {
 		}
 		me._vehicleinterior.appendChild(me._vehicler1interior);
+		el=me._vehicle2interiorside=document.createElement('div');
+		el.ggId="Vehicle2InteriorSide";
+		el.ggParameter={ rx:0,ry:0,a:0,sx:1,sy:1 };
+		el.ggVisible=true;
+		el.className="ggskin ggskin_container ";
+		el.ggType='container';
+		hs ='';
+		hs+='height : 20px;';
+		hs+='left : 0px;';
+		hs+='position : absolute;';
+		hs+='top : 0px;';
+		hs+='visibility : inherit;';
+		hs+='width : 100px;';
+		hs+='pointer-events:none;';
+		el.setAttribute('style',hs);
+		el.style[domTransform + 'Origin']='50% 50%';
+		me._vehicle2interiorside.ggIsActive=function() {
+			if ((this.parentNode) && (this.parentNode.ggIsActive)) {
+				return this.parentNode.ggIsActive();
+			}
+			return false;
+		}
+		el.ggElementNodeId=function() {
+			if ((this.parentNode) && (this.parentNode.ggElementNodeId)) {
+				return this.parentNode.ggElementNodeId();
+			}
+			return player.getCurrentNode();
+		}
+		me._vehicle2interiorside.onclick=function (e) {
+			player.setVariableValue('VehicleIntURL', "index.html#node17,-97.64,-12.63,102.45,-97.64,-12.63,102.45");
+			player.setVariableValue('VehiclePopTitle', "Rush Interior View");
+			var flag=me._vehicleintinfo.ggOpacitiyActive;
+			if (player.transitionsDisabled) {
+				me._vehicleintinfo.style[domTransition]='none';
+			} else {
+				me._vehicleintinfo.style[domTransition]='all 500ms ease-out 0ms';
+			}
+			if (flag) {
+				me._vehicleintinfo.style.opacity='0';
+				me._vehicleintinfo.style.visibility='hidden';
+			} else {
+				me._vehicleintinfo.style.opacity='1';
+				me._vehicleintinfo.style.visibility=me._vehicleintinfo.ggVisible?'inherit':'hidden';
+			}
+			me._vehicleintinfo.ggOpacitiyActive=!flag;
+			var list=me.findElements("ht_info",true);
+			while(list.length>0) {
+				var e=list.pop();
+				e.style[domTransition]='none';
+				e.style.visibility='hidden';
+				e.ggVisible=false;
+			}
+			if (
+				(
+					(player.getIsMobile() == true)
+				)
+			) {
+				me._contact_info.style[domTransition]='none';
+				me._contact_info.style.visibility='hidden';
+				me._contact_info.ggVisible=false;
+			}
+			player.setVariableValue('vis_intr_popup', true);
+		}
+		me._vehicle2interiorside.ggUpdatePosition=function (useTransition) {
+		}
+		me._vehicleinterior.appendChild(me._vehicle2interiorside);
 		el=me._vehicle2interior=document.createElement('div');
 		el.ggId="Vehicle2Interior";
 		el.ggParameter={ rx:0,ry:0,a:0,sx:1,sy:1 };
@@ -6532,6 +6598,9 @@ function pano2vrSkin(player,base) {
 		}
 		if (id=='PolyVehicleR1') {
 			me._vehicler1interior.onclick();
+		}
+		if (id=='PolyVehicle2a') {
+			me._vehicle2interiorside.onclick();
 		}
 		if (id=='PolyVehicle2') {
 			me._vehicle2interior.onclick();
