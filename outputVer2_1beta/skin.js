@@ -1,17 +1,19 @@
 // Garden Gnome Software - Skin
 // Pano2VR 6.1 beta2/17561
 // Filename: Toyota_HS_TemplateV3a.ggsk
-// Generated 2019-05-18T19:58:30
+// Generated 2019-05-20T16:37:35
 
 function pano2vrSkin(player,base) {
 	player.addVariable('VehicleIntURL', 0, "");
 	player.addVariable('VehicleHudURL', 0, "");
 	player.addVariable('VehiclePopTitle', 0, "");
-	player.addVariable('vis_map', 2, false);
 	player.addVariable('vis_intr_popup', 2, false);
 	player.addVariable('vis_hud_popup', 2, false);
-	player.addVariable('vis_info_popup_2', 2, false);
+	player.addVariable('vis_info_popup', 2, false);
+	player.addVariable('vis_TT_interior', 2, true);
+	player.addVariable('vis_TT_hood', 2, true);
 	player.addVariable('vis_userdata', 2, false);
+	player.addVariable('vis_map', 2, false);
 	player.addVariable('vis_image_popup', 2, false);
 	player.addVariable('vis_timer', 2, false);
 	player.addVariable('vis_image_popup_1', 2, false);
@@ -132,6 +134,59 @@ function pano2vrSkin(player,base) {
 	this.addSkin=function() {
 		var hs='';
 		this.ggCurrentTime=new Date().getTime();
+		el=me._screentint_info=document.createElement('div');
+		el.ggId="screentint_info";
+		el.ggParameter={ rx:0,ry:0,a:0,sx:1,sy:1 };
+		el.ggVisible=false;
+		el.className="ggskin ggskin_rectangle ";
+		el.ggType='rectangle';
+		hs ='';
+		hs+='background : rgba(0,0,0,0.392157);';
+		hs+='border : 1px solid #000000;';
+		hs+='cursor : pointer;';
+		hs+='height : 100%;';
+		hs+='left : 0%;';
+		hs+='position : absolute;';
+		hs+='top : -0.17%;';
+		hs+='visibility : hidden;';
+		hs+='width : 100%;';
+		hs+='pointer-events:auto;';
+		el.setAttribute('style',hs);
+		el.style[domTransform + 'Origin']='50% 50%';
+		me._screentint_info.ggIsActive=function() {
+			return false;
+		}
+		el.ggElementNodeId=function() {
+			return player.getCurrentNode();
+		}
+		me._screentint_info.logicBlock_visible = function() {
+			var newLogicStateVisible;
+			if (
+				(player.getVariableValue('vis_intr_popup') == true) || 
+				(player.getVariableValue('vis_hud_popup') == true)
+			)
+			{
+				newLogicStateVisible = 0;
+			}
+			else {
+				newLogicStateVisible = -1;
+			}
+			if (me._screentint_info.ggCurrentLogicStateVisible != newLogicStateVisible) {
+				me._screentint_info.ggCurrentLogicStateVisible = newLogicStateVisible;
+				me._screentint_info.style[domTransition]='';
+				if (me._screentint_info.ggCurrentLogicStateVisible == 0) {
+					me._screentint_info.style.visibility=(Number(me._screentint_info.style.opacity)>0||!me._screentint_info.style.opacity)?'inherit':'hidden';
+					me._screentint_info.ggVisible=true;
+				}
+				else {
+					me._screentint_info.style.visibility="hidden";
+					me._screentint_info.ggVisible=false;
+				}
+			}
+		}
+		me._screentint_info.ggUpdatePosition=function (useTransition) {
+		}
+		me.divSkin.appendChild(me._screentint_info);
 		el=me._button_toggle_map=document.createElement('div');
 		el.ggId="button_toggle_map";
 		el.ggParameter={ rx:0,ry:0,a:0,sx:1,sy:1 };
@@ -1674,58 +1729,6 @@ function pano2vrSkin(player,base) {
 		me._button_g.appendChild(me._svg_google);
 		me._buttons_social.appendChild(me._button_g);
 		me.divSkin.appendChild(me._buttons_social);
-		el=me._screentint_info=document.createElement('div');
-		el.ggId="screentint_info";
-		el.ggParameter={ rx:0,ry:0,a:0,sx:1,sy:1 };
-		el.ggVisible=false;
-		el.className="ggskin ggskin_rectangle ";
-		el.ggType='rectangle';
-		hs ='';
-		hs+='background : rgba(0,0,0,0.392157);';
-		hs+='border : 1px solid #000000;';
-		hs+='cursor : pointer;';
-		hs+='height : 100%;';
-		hs+='left : 0%;';
-		hs+='position : absolute;';
-		hs+='top : -0.17%;';
-		hs+='visibility : hidden;';
-		hs+='width : 100%;';
-		hs+='pointer-events:auto;';
-		el.setAttribute('style',hs);
-		el.style[domTransform + 'Origin']='50% 50%';
-		me._screentint_info.ggIsActive=function() {
-			return false;
-		}
-		el.ggElementNodeId=function() {
-			return player.getCurrentNode();
-		}
-		me._screentint_info.logicBlock_visible = function() {
-			var newLogicStateVisible;
-			if (
-				(player.getVariableValue('ScrnTnt') == false)
-			)
-			{
-				newLogicStateVisible = 0;
-			}
-			else {
-				newLogicStateVisible = -1;
-			}
-			if (me._screentint_info.ggCurrentLogicStateVisible != newLogicStateVisible) {
-				me._screentint_info.ggCurrentLogicStateVisible = newLogicStateVisible;
-				me._screentint_info.style[domTransition]='';
-				if (me._screentint_info.ggCurrentLogicStateVisible == 0) {
-					me._screentint_info.style.visibility="hidden";
-					me._screentint_info.ggVisible=false;
-				}
-				else {
-					me._screentint_info.style.visibility="hidden";
-					me._screentint_info.ggVisible=false;
-				}
-			}
-		}
-		me._screentint_info.ggUpdatePosition=function (useTransition) {
-		}
-		me.divSkin.appendChild(me._screentint_info);
 		el=me._information=document.createElement('div');
 		el.ggId="information";
 		el.ggDx=0;
@@ -1750,6 +1753,30 @@ function pano2vrSkin(player,base) {
 		}
 		el.ggElementNodeId=function() {
 			return player.getCurrentNode();
+		}
+		me._information.logicBlock_alpha = function() {
+			var newLogicStateAlpha;
+			if (
+				(player.getVariableValue('vis_info_popup') == true)
+			)
+			{
+				newLogicStateAlpha = 0;
+			}
+			else {
+				newLogicStateAlpha = -1;
+			}
+			if (me._information.ggCurrentLogicStateAlpha != newLogicStateAlpha) {
+				me._information.ggCurrentLogicStateAlpha = newLogicStateAlpha;
+				me._information.style[domTransition]='opacity 1000ms ease 0ms';
+				if (me._information.ggCurrentLogicStateAlpha == 0) {
+					me._information.style.visibility=me._information.ggVisible?'inherit':'hidden';
+					me._information.style.opacity=1;
+				}
+				else {
+					setTimeout(function() { if (me._information.style.opacity == 0.0) { me._information.style.visibility="hidden"; } }, 1005);
+					me._information.style.opacity=0;
+				}
+			}
 		}
 		me._information.ggUpdatePosition=function (useTransition) {
 			if (useTransition==='undefined') {
@@ -1978,30 +2005,7 @@ function pano2vrSkin(player,base) {
 			return player.getCurrentNode();
 		}
 		me._info_close.onclick=function (e) {
-			var flag=me._information.ggOpacitiyActive;
-			if (player.transitionsDisabled) {
-				me._information.style[domTransition]='none';
-			} else {
-				me._information.style[domTransition]='all 500ms ease-out 0ms';
-			}
-			if (flag) {
-				me._information.style.opacity='0';
-				me._information.style.visibility='hidden';
-			} else {
-				me._information.style.opacity='0';
-				me._information.style.visibility='hidden';
-			}
-			me._information.ggOpacitiyActive=!flag;
-			var list=me.findElements("ht_info",true);
-			while(list.length>0) {
-				var e=list.pop();
-				e.style[domTransition]='none';
-				e.style.visibility=(Number(e.style.opacity)>0||!e.style.opacity)?'inherit':'hidden';
-				e.ggVisible=true;
-			}
-			me._contact_info.style[domTransition]='none';
-			me._contact_info.style.visibility=(Number(me._contact_info.style.opacity)>0||!me._contact_info.style.opacity)?'inherit':'hidden';
-			me._contact_info.ggVisible=true;
+			player.setVariableValue('vis_info_popup', false);
 		}
 		me._info_close.onmouseover=function (e) {
 			me._info_close__img.style.visibility='hidden';
@@ -2086,7 +2090,7 @@ function pano2vrSkin(player,base) {
 			}
 			if (me._vehiclehudinfo.ggCurrentLogicStateScaling != newLogicStateScaling) {
 				me._vehiclehudinfo.ggCurrentLogicStateScaling = newLogicStateScaling;
-				me._vehiclehudinfo.style[domTransition]='' + cssPrefix + 'transform 0s';
+				me._vehiclehudinfo.style[domTransition]='' + cssPrefix + 'transform 0s, opacity 1000ms ease 0ms';
 				if (me._vehiclehudinfo.ggCurrentLogicStateScaling == 0) {
 					me._vehiclehudinfo.ggParameter.sx = 0.6;
 					me._vehiclehudinfo.ggParameter.sy = 0.6;
@@ -2116,6 +2120,30 @@ function pano2vrSkin(player,base) {
 					me._vehiclehudinfo.ggParameter.sx = 1;
 					me._vehiclehudinfo.ggParameter.sy = 1;
 					me._vehiclehudinfo.style[domTransform]=parameterToTransform(me._vehiclehudinfo.ggParameter);
+				}
+			}
+		}
+		me._vehiclehudinfo.logicBlock_alpha = function() {
+			var newLogicStateAlpha;
+			if (
+				(player.getVariableValue('vis_hud_popup') == true)
+			)
+			{
+				newLogicStateAlpha = 0;
+			}
+			else {
+				newLogicStateAlpha = -1;
+			}
+			if (me._vehiclehudinfo.ggCurrentLogicStateAlpha != newLogicStateAlpha) {
+				me._vehiclehudinfo.ggCurrentLogicStateAlpha = newLogicStateAlpha;
+				me._vehiclehudinfo.style[domTransition]='' + cssPrefix + 'transform 0s, opacity 1000ms ease 0ms';
+				if (me._vehiclehudinfo.ggCurrentLogicStateAlpha == 0) {
+					me._vehiclehudinfo.style.visibility=me._vehiclehudinfo.ggVisible?'inherit':'hidden';
+					me._vehiclehudinfo.style.opacity=1;
+				}
+				else {
+					setTimeout(function() { if (me._vehiclehudinfo.style.opacity == 0.0) { me._vehiclehudinfo.style.visibility="hidden"; } }, 1005);
+					me._vehiclehudinfo.style.opacity=0;
 				}
 			}
 		}
@@ -2317,65 +2345,6 @@ function pano2vrSkin(player,base) {
 			}
 		}
 		me._vehiclehudinfo.appendChild(me._hood_title);
-		el=me._filter2=document.createElement('div');
-		el.ggId="filter2";
-		el.ggDx=0;
-		el.ggDy=-10;
-		el.ggParameter={ rx:0,ry:0,a:0,sx:1,sy:1 };
-		el.ggVisible=true;
-		el.className="ggskin ggskin_rectangle ";
-		el.ggType='rectangle';
-		hs ='';
-		hs+='background : rgba(255,255,255,0);';
-		hs+='border : 0px solid #000000;';
-		hs+='cursor : default;';
-		hs+='height : 26px;';
-		hs+='left : -10000px;';
-		hs+='position : absolute;';
-		hs+='top : -10000px;';
-		hs+='visibility : inherit;';
-		hs+='width : 136px;';
-		hs+='pointer-events:auto;';
-		el.setAttribute('style',hs);
-		el.style[domTransform + 'Origin']='50% 50%';
-		me._filter2.ggIsActive=function() {
-			if ((this.parentNode) && (this.parentNode.ggIsActive)) {
-				return this.parentNode.ggIsActive();
-			}
-			return false;
-		}
-		el.ggElementNodeId=function() {
-			if ((this.parentNode) && (this.parentNode.ggElementNodeId)) {
-				return this.parentNode.ggElementNodeId();
-			}
-			return player.getCurrentNode();
-		}
-		me._filter2.onmouseover=function (e) {
-			me.elementMouseOver['filter2']=true;
-		}
-		me._filter2.onmouseout=function (e) {
-			me.elementMouseOver['filter2']=false;
-		}
-		me._filter2.ontouchend=function (e) {
-			me.elementMouseOver['filter2']=false;
-		}
-		me._filter2.ggUpdatePosition=function (useTransition) {
-			if (useTransition==='undefined') {
-				useTransition = false;
-			}
-			if (!useTransition) {
-				this.style[domTransition]='none';
-			}
-			if (this.parentNode) {
-				var pw=this.parentNode.clientWidth;
-				var w=this.offsetWidth;
-					this.style.left=(this.ggDx + pw/2 - w/2) + 'px';
-				var ph=this.parentNode.clientHeight;
-				var h=this.offsetHeight;
-					this.style.top=(this.ggDy + ph/2 - h/2) + 'px';
-			}
-		}
-		me._vehiclehudinfo.appendChild(me._filter2);
 		el=me._hud_close=document.createElement('div');
 		els=me._hud_close__img=document.createElement('img');
 		els.className='ggskin ggskin_svg';
@@ -2429,30 +2398,6 @@ function pano2vrSkin(player,base) {
 			return player.getCurrentNode();
 		}
 		me._hud_close.onclick=function (e) {
-			var flag=me._vehiclehudinfo.ggOpacitiyActive;
-			if (player.transitionsDisabled) {
-				me._vehiclehudinfo.style[domTransition]='none';
-			} else {
-				me._vehiclehudinfo.style[domTransition]='all 500ms ease-out 0ms';
-			}
-			if (flag) {
-				me._vehiclehudinfo.style.opacity='0';
-				me._vehiclehudinfo.style.visibility='hidden';
-			} else {
-				me._vehiclehudinfo.style.opacity='0';
-				me._vehiclehudinfo.style.visibility='hidden';
-			}
-			me._vehiclehudinfo.ggOpacitiyActive=!flag;
-			var list=me.findElements("ht_info",true);
-			while(list.length>0) {
-				var e=list.pop();
-				e.style[domTransition]='none';
-				e.style.visibility=(Number(e.style.opacity)>0||!e.style.opacity)?'inherit':'hidden';
-				e.ggVisible=true;
-			}
-			me._contact_info.style[domTransition]='none';
-			me._contact_info.style.visibility=(Number(me._contact_info.style.opacity)>0||!me._contact_info.style.opacity)?'inherit':'hidden';
-			me._contact_info.ggVisible=true;
 			player.setVariableValue('vis_hud_popup', false);
 		}
 		me._hud_close.onmouseover=function (e) {
@@ -2522,37 +2467,19 @@ function pano2vrSkin(player,base) {
 		me._vehiclel5hood.onclick=function (e) {
 			player.setVariableValue('VehicleHudURL', "index.html#node13");
 			player.setVariableValue('VehiclePopTitle', "Fortuner Engine View");
-			var flag=me._vehiclehudinfo.ggOpacitiyActive;
-			if (player.transitionsDisabled) {
-				me._vehiclehudinfo.style[domTransition]='none';
-			} else {
-				me._vehiclehudinfo.style[domTransition]='all 500ms ease-out 0ms';
-			}
-			if (flag) {
-				me._vehiclehudinfo.style.opacity='0';
-				me._vehiclehudinfo.style.visibility='hidden';
-			} else {
-				me._vehiclehudinfo.style.opacity='1';
-				me._vehiclehudinfo.style.visibility=me._vehiclehudinfo.ggVisible?'inherit':'hidden';
-			}
-			me._vehiclehudinfo.ggOpacitiyActive=!flag;
-			var list=me.findElements("ht_info",true);
-			while(list.length>0) {
-				var e=list.pop();
-				e.style[domTransition]='none';
-				e.style.visibility='hidden';
-				e.ggVisible=false;
-			}
-			if (
-				(
-					(player.getIsMobile() == true)
-				)
-			) {
-				me._contact_info.style[domTransition]='none';
-				me._contact_info.style.visibility='hidden';
-				me._contact_info.ggVisible=false;
-			}
 			player.setVariableValue('vis_hud_popup', true);
+		}
+		me._vehiclel5hood.onmouseover=function (e) {
+			me.elementMouseOver['vehiclel5hood']=true;
+		}
+		me._vehiclel5hood.onmouseout=function (e) {
+			me._hoodtt.style[domTransition]='none';
+			me._hoodtt.style.opacity='0';
+			me._hoodtt.style.visibility='hidden';
+			me.elementMouseOver['vehiclel5hood']=false;
+		}
+		me._vehiclel5hood.ontouchend=function (e) {
+			me.elementMouseOver['vehiclel5hood']=false;
 		}
 		me._vehiclel5hood.ggUpdatePosition=function (useTransition) {
 		}
@@ -2588,37 +2515,19 @@ function pano2vrSkin(player,base) {
 		me._vehiclel4hood.onclick=function (e) {
 			player.setVariableValue('VehicleHudURL', "index.html#node11");
 			player.setVariableValue('VehiclePopTitle', "HiLux Engine View");
-			var flag=me._vehiclehudinfo.ggOpacitiyActive;
-			if (player.transitionsDisabled) {
-				me._vehiclehudinfo.style[domTransition]='none';
-			} else {
-				me._vehiclehudinfo.style[domTransition]='all 500ms ease-out 0ms';
-			}
-			if (flag) {
-				me._vehiclehudinfo.style.opacity='0';
-				me._vehiclehudinfo.style.visibility='hidden';
-			} else {
-				me._vehiclehudinfo.style.opacity='1';
-				me._vehiclehudinfo.style.visibility=me._vehiclehudinfo.ggVisible?'inherit':'hidden';
-			}
-			me._vehiclehudinfo.ggOpacitiyActive=!flag;
-			var list=me.findElements("ht_info",true);
-			while(list.length>0) {
-				var e=list.pop();
-				e.style[domTransition]='none';
-				e.style.visibility='hidden';
-				e.ggVisible=false;
-			}
-			if (
-				(
-					(player.getIsMobile() == true)
-				)
-			) {
-				me._contact_info.style[domTransition]='none';
-				me._contact_info.style.visibility='hidden';
-				me._contact_info.ggVisible=false;
-			}
 			player.setVariableValue('vis_hud_popup', true);
+		}
+		me._vehiclel4hood.onmouseover=function (e) {
+			me.elementMouseOver['vehiclel4hood']=true;
+		}
+		me._vehiclel4hood.onmouseout=function (e) {
+			me._hoodtt.style[domTransition]='none';
+			me._hoodtt.style.opacity='0';
+			me._hoodtt.style.visibility='hidden';
+			me.elementMouseOver['vehiclel4hood']=false;
+		}
+		me._vehiclel4hood.ontouchend=function (e) {
+			me.elementMouseOver['vehiclel4hood']=false;
 		}
 		me._vehiclel4hood.ggUpdatePosition=function (useTransition) {
 		}
@@ -2654,37 +2563,19 @@ function pano2vrSkin(player,base) {
 		me._vehiclel2hood.onclick=function (e) {
 			player.setVariableValue('VehicleHudURL', "index.html#node9");
 			player.setVariableValue('VehiclePopTitle', "HiLux Engine View");
-			var flag=me._vehiclehudinfo.ggOpacitiyActive;
-			if (player.transitionsDisabled) {
-				me._vehiclehudinfo.style[domTransition]='none';
-			} else {
-				me._vehiclehudinfo.style[domTransition]='all 500ms ease-out 0ms';
-			}
-			if (flag) {
-				me._vehiclehudinfo.style.opacity='0';
-				me._vehiclehudinfo.style.visibility='hidden';
-			} else {
-				me._vehiclehudinfo.style.opacity='1';
-				me._vehiclehudinfo.style.visibility=me._vehiclehudinfo.ggVisible?'inherit':'hidden';
-			}
-			me._vehiclehudinfo.ggOpacitiyActive=!flag;
-			var list=me.findElements("ht_info",true);
-			while(list.length>0) {
-				var e=list.pop();
-				e.style[domTransition]='none';
-				e.style.visibility='hidden';
-				e.ggVisible=false;
-			}
-			if (
-				(
-					(player.getIsMobile() == true)
-				)
-			) {
-				me._contact_info.style[domTransition]='none';
-				me._contact_info.style.visibility='hidden';
-				me._contact_info.ggVisible=false;
-			}
 			player.setVariableValue('vis_hud_popup', true);
+		}
+		me._vehiclel2hood.onmouseover=function (e) {
+			me.elementMouseOver['vehiclel2hood']=true;
+		}
+		me._vehiclel2hood.onmouseout=function (e) {
+			me._hoodtt.style[domTransition]='none';
+			me._hoodtt.style.opacity='0';
+			me._hoodtt.style.visibility='hidden';
+			me.elementMouseOver['vehiclel2hood']=false;
+		}
+		me._vehiclel2hood.ontouchend=function (e) {
+			me.elementMouseOver['vehiclel2hood']=false;
 		}
 		me._vehiclel2hood.ggUpdatePosition=function (useTransition) {
 		}
@@ -2720,37 +2611,19 @@ function pano2vrSkin(player,base) {
 		me._vehiclel1hood.onclick=function (e) {
 			player.setVariableValue('VehicleHudURL', "index.html#node5");
 			player.setVariableValue('VehiclePopTitle', "Grandia Engine View");
-			var flag=me._vehiclehudinfo.ggOpacitiyActive;
-			if (player.transitionsDisabled) {
-				me._vehiclehudinfo.style[domTransition]='none';
-			} else {
-				me._vehiclehudinfo.style[domTransition]='all 500ms ease-out 0ms';
-			}
-			if (flag) {
-				me._vehiclehudinfo.style.opacity='0';
-				me._vehiclehudinfo.style.visibility='hidden';
-			} else {
-				me._vehiclehudinfo.style.opacity='1';
-				me._vehiclehudinfo.style.visibility=me._vehiclehudinfo.ggVisible?'inherit':'hidden';
-			}
-			me._vehiclehudinfo.ggOpacitiyActive=!flag;
-			var list=me.findElements("ht_info",true);
-			while(list.length>0) {
-				var e=list.pop();
-				e.style[domTransition]='none';
-				e.style.visibility='hidden';
-				e.ggVisible=false;
-			}
-			if (
-				(
-					(player.getIsMobile() == true)
-				)
-			) {
-				me._contact_info.style[domTransition]='none';
-				me._contact_info.style.visibility='hidden';
-				me._contact_info.ggVisible=false;
-			}
 			player.setVariableValue('vis_hud_popup', true);
+		}
+		me._vehiclel1hood.onmouseover=function (e) {
+			me.elementMouseOver['vehiclel1hood']=true;
+		}
+		me._vehiclel1hood.onmouseout=function (e) {
+			me._hoodtt.style[domTransition]='none';
+			me._hoodtt.style.opacity='0';
+			me._hoodtt.style.visibility='hidden';
+			me.elementMouseOver['vehiclel1hood']=false;
+		}
+		me._vehiclel1hood.ontouchend=function (e) {
+			me.elementMouseOver['vehiclel1hood']=false;
 		}
 		me._vehiclel1hood.ggUpdatePosition=function (useTransition) {
 		}
@@ -2786,37 +2659,19 @@ function pano2vrSkin(player,base) {
 		me._vehicler5hood.onclick=function (e) {
 			player.setVariableValue('VehicleHudURL', "index.html#node27");
 			player.setVariableValue('VehiclePopTitle', "Vios Engine View");
-			var flag=me._vehiclehudinfo.ggOpacitiyActive;
-			if (player.transitionsDisabled) {
-				me._vehiclehudinfo.style[domTransition]='none';
-			} else {
-				me._vehiclehudinfo.style[domTransition]='all 500ms ease-out 0ms';
-			}
-			if (flag) {
-				me._vehiclehudinfo.style.opacity='0';
-				me._vehiclehudinfo.style.visibility='hidden';
-			} else {
-				me._vehiclehudinfo.style.opacity='1';
-				me._vehiclehudinfo.style.visibility=me._vehiclehudinfo.ggVisible?'inherit':'hidden';
-			}
-			me._vehiclehudinfo.ggOpacitiyActive=!flag;
-			var list=me.findElements("ht_info",true);
-			while(list.length>0) {
-				var e=list.pop();
-				e.style[domTransition]='none';
-				e.style.visibility='hidden';
-				e.ggVisible=false;
-			}
-			if (
-				(
-					(player.getIsMobile() == true)
-				)
-			) {
-				me._contact_info.style[domTransition]='none';
-				me._contact_info.style.visibility='hidden';
-				me._contact_info.ggVisible=false;
-			}
 			player.setVariableValue('vis_hud_popup', true);
+		}
+		me._vehicler5hood.onmouseover=function (e) {
+			me.elementMouseOver['vehicler5hood']=true;
+		}
+		me._vehicler5hood.onmouseout=function (e) {
+			me._hoodtt.style[domTransition]='none';
+			me._hoodtt.style.opacity='0';
+			me._hoodtt.style.visibility='hidden';
+			me.elementMouseOver['vehicler5hood']=false;
+		}
+		me._vehicler5hood.ontouchend=function (e) {
+			me.elementMouseOver['vehicler5hood']=false;
 		}
 		me._vehicler5hood.ggUpdatePosition=function (useTransition) {
 		}
@@ -2852,37 +2707,19 @@ function pano2vrSkin(player,base) {
 		me._vehicler3hood.onclick=function (e) {
 			player.setVariableValue('VehicleHudURL', "index.html#node25");
 			player.setVariableValue('VehiclePopTitle', "Innova Engine View");
-			var flag=me._vehiclehudinfo.ggOpacitiyActive;
-			if (player.transitionsDisabled) {
-				me._vehiclehudinfo.style[domTransition]='none';
-			} else {
-				me._vehiclehudinfo.style[domTransition]='all 500ms ease-out 0ms';
-			}
-			if (flag) {
-				me._vehiclehudinfo.style.opacity='0';
-				me._vehiclehudinfo.style.visibility='hidden';
-			} else {
-				me._vehiclehudinfo.style.opacity='1';
-				me._vehiclehudinfo.style.visibility=me._vehiclehudinfo.ggVisible?'inherit':'hidden';
-			}
-			me._vehiclehudinfo.ggOpacitiyActive=!flag;
-			var list=me.findElements("ht_info",true);
-			while(list.length>0) {
-				var e=list.pop();
-				e.style[domTransition]='none';
-				e.style.visibility='hidden';
-				e.ggVisible=false;
-			}
-			if (
-				(
-					(player.getIsMobile() == true)
-				)
-			) {
-				me._contact_info.style[domTransition]='none';
-				me._contact_info.style.visibility='hidden';
-				me._contact_info.ggVisible=false;
-			}
 			player.setVariableValue('vis_hud_popup', true);
+		}
+		me._vehicler3hood.onmouseover=function (e) {
+			me.elementMouseOver['vehicler3hood']=true;
+		}
+		me._vehicler3hood.onmouseout=function (e) {
+			me._hoodtt.style[domTransition]='none';
+			me._hoodtt.style.opacity='0';
+			me._hoodtt.style.visibility='hidden';
+			me.elementMouseOver['vehicler3hood']=false;
+		}
+		me._vehicler3hood.ontouchend=function (e) {
+			me.elementMouseOver['vehicler3hood']=false;
 		}
 		me._vehicler3hood.ggUpdatePosition=function (useTransition) {
 		}
@@ -2918,37 +2755,19 @@ function pano2vrSkin(player,base) {
 		me._vehicler2hood.onclick=function (e) {
 			player.setVariableValue('VehicleHudURL', "index.html#node22");
 			player.setVariableValue('VehiclePopTitle', "Yaris Engine View");
-			var flag=me._vehiclehudinfo.ggOpacitiyActive;
-			if (player.transitionsDisabled) {
-				me._vehiclehudinfo.style[domTransition]='none';
-			} else {
-				me._vehiclehudinfo.style[domTransition]='all 500ms ease-out 0ms';
-			}
-			if (flag) {
-				me._vehiclehudinfo.style.opacity='0';
-				me._vehiclehudinfo.style.visibility='hidden';
-			} else {
-				me._vehiclehudinfo.style.opacity='1';
-				me._vehiclehudinfo.style.visibility=me._vehiclehudinfo.ggVisible?'inherit':'hidden';
-			}
-			me._vehiclehudinfo.ggOpacitiyActive=!flag;
-			var list=me.findElements("ht_info",true);
-			while(list.length>0) {
-				var e=list.pop();
-				e.style[domTransition]='none';
-				e.style.visibility='hidden';
-				e.ggVisible=false;
-			}
-			if (
-				(
-					(player.getIsMobile() == true)
-				)
-			) {
-				me._contact_info.style[domTransition]='none';
-				me._contact_info.style.visibility='hidden';
-				me._contact_info.ggVisible=false;
-			}
 			player.setVariableValue('vis_hud_popup', true);
+		}
+		me._vehicler2hood.onmouseover=function (e) {
+			me.elementMouseOver['vehicler2hood']=true;
+		}
+		me._vehicler2hood.onmouseout=function (e) {
+			me._hoodtt.style[domTransition]='none';
+			me._hoodtt.style.opacity='0';
+			me._hoodtt.style.visibility='hidden';
+			me.elementMouseOver['vehicler2hood']=false;
+		}
+		me._vehicler2hood.ontouchend=function (e) {
+			me.elementMouseOver['vehicler2hood']=false;
 		}
 		me._vehicler2hood.ggUpdatePosition=function (useTransition) {
 		}
@@ -2984,37 +2803,19 @@ function pano2vrSkin(player,base) {
 		me._vehicler1hood.onclick=function (e) {
 			player.setVariableValue('VehicleHudURL', "index.html#node19");
 			player.setVariableValue('VehiclePopTitle', "Vios Engine View");
-			var flag=me._vehiclehudinfo.ggOpacitiyActive;
-			if (player.transitionsDisabled) {
-				me._vehiclehudinfo.style[domTransition]='none';
-			} else {
-				me._vehiclehudinfo.style[domTransition]='all 500ms ease-out 0ms';
-			}
-			if (flag) {
-				me._vehiclehudinfo.style.opacity='0';
-				me._vehiclehudinfo.style.visibility='hidden';
-			} else {
-				me._vehiclehudinfo.style.opacity='1';
-				me._vehiclehudinfo.style.visibility=me._vehiclehudinfo.ggVisible?'inherit':'hidden';
-			}
-			me._vehiclehudinfo.ggOpacitiyActive=!flag;
-			var list=me.findElements("ht_info",true);
-			while(list.length>0) {
-				var e=list.pop();
-				e.style[domTransition]='none';
-				e.style.visibility='hidden';
-				e.ggVisible=false;
-			}
-			if (
-				(
-					(player.getIsMobile() == true)
-				)
-			) {
-				me._contact_info.style[domTransition]='none';
-				me._contact_info.style.visibility='hidden';
-				me._contact_info.ggVisible=false;
-			}
 			player.setVariableValue('vis_hud_popup', true);
+		}
+		me._vehicler1hood.onmouseover=function (e) {
+			me.elementMouseOver['vehicler1hood']=true;
+		}
+		me._vehicler1hood.onmouseout=function (e) {
+			me._hoodtt.style[domTransition]='none';
+			me._hoodtt.style.opacity='0';
+			me._hoodtt.style.visibility='hidden';
+			me.elementMouseOver['vehicler1hood']=false;
+		}
+		me._vehicler1hood.ontouchend=function (e) {
+			me.elementMouseOver['vehicler1hood']=false;
 		}
 		me._vehicler1hood.ggUpdatePosition=function (useTransition) {
 		}
@@ -3050,37 +2851,19 @@ function pano2vrSkin(player,base) {
 		me._vehicle2hood.onclick=function (e) {
 			player.setVariableValue('VehicleHudURL', "index.html#node18");
 			player.setVariableValue('VehiclePopTitle', "Rush Engine View");
-			var flag=me._vehiclehudinfo.ggOpacitiyActive;
-			if (player.transitionsDisabled) {
-				me._vehiclehudinfo.style[domTransition]='none';
-			} else {
-				me._vehiclehudinfo.style[domTransition]='all 500ms ease-out 0ms';
-			}
-			if (flag) {
-				me._vehiclehudinfo.style.opacity='0';
-				me._vehiclehudinfo.style.visibility='hidden';
-			} else {
-				me._vehiclehudinfo.style.opacity='1';
-				me._vehiclehudinfo.style.visibility=me._vehiclehudinfo.ggVisible?'inherit':'hidden';
-			}
-			me._vehiclehudinfo.ggOpacitiyActive=!flag;
-			var list=me.findElements("ht_info",true);
-			while(list.length>0) {
-				var e=list.pop();
-				e.style[domTransition]='none';
-				e.style.visibility='hidden';
-				e.ggVisible=false;
-			}
-			if (
-				(
-					(player.getIsMobile() == true)
-				)
-			) {
-				me._contact_info.style[domTransition]='none';
-				me._contact_info.style.visibility='hidden';
-				me._contact_info.ggVisible=false;
-			}
 			player.setVariableValue('vis_hud_popup', true);
+		}
+		me._vehicle2hood.onmouseover=function (e) {
+			me.elementMouseOver['vehicle2hood']=true;
+		}
+		me._vehicle2hood.onmouseout=function (e) {
+			me._hoodtt.style[domTransition]='none';
+			me._hoodtt.style.opacity='0';
+			me._hoodtt.style.visibility='hidden';
+			me.elementMouseOver['vehicle2hood']=false;
+		}
+		me._vehicle2hood.ontouchend=function (e) {
+			me.elementMouseOver['vehicle2hood']=false;
 		}
 		me._vehicle2hood.ggUpdatePosition=function (useTransition) {
 		}
@@ -3116,37 +2899,19 @@ function pano2vrSkin(player,base) {
 		me._vehicle1hood.onclick=function (e) {
 			player.setVariableValue('VehicleHudURL', "index.html#node1");
 			player.setVariableValue('VehiclePopTitle', "Grandia Engine view");
-			var flag=me._vehiclehudinfo.ggOpacitiyActive;
-			if (player.transitionsDisabled) {
-				me._vehiclehudinfo.style[domTransition]='none';
-			} else {
-				me._vehiclehudinfo.style[domTransition]='all 500ms ease-out 0ms';
-			}
-			if (flag) {
-				me._vehiclehudinfo.style.opacity='0';
-				me._vehiclehudinfo.style.visibility='hidden';
-			} else {
-				me._vehiclehudinfo.style.opacity='1';
-				me._vehiclehudinfo.style.visibility=me._vehiclehudinfo.ggVisible?'inherit':'hidden';
-			}
-			me._vehiclehudinfo.ggOpacitiyActive=!flag;
-			var list=me.findElements("ht_info",true);
-			while(list.length>0) {
-				var e=list.pop();
-				e.style[domTransition]='none';
-				e.style.visibility='hidden';
-				e.ggVisible=false;
-			}
-			if (
-				(
-					(player.getIsMobile() == true)
-				)
-			) {
-				me._contact_info.style[domTransition]='none';
-				me._contact_info.style.visibility='hidden';
-				me._contact_info.ggVisible=false;
-			}
 			player.setVariableValue('vis_hud_popup', true);
+		}
+		me._vehicle1hood.onmouseover=function (e) {
+			me.elementMouseOver['vehicle1hood']=true;
+		}
+		me._vehicle1hood.onmouseout=function (e) {
+			me._hoodtt.style[domTransition]='none';
+			me._hoodtt.style.opacity='0';
+			me._hoodtt.style.visibility='hidden';
+			me.elementMouseOver['vehicle1hood']=false;
+		}
+		me._vehicle1hood.ontouchend=function (e) {
+			me.elementMouseOver['vehicle1hood']=false;
 		}
 		me._vehicle1hood.ggUpdatePosition=function (useTransition) {
 		}
@@ -3223,7 +2988,7 @@ function pano2vrSkin(player,base) {
 			}
 			if (me._vehicleintinfo.ggCurrentLogicStateScaling != newLogicStateScaling) {
 				me._vehicleintinfo.ggCurrentLogicStateScaling = newLogicStateScaling;
-				me._vehicleintinfo.style[domTransition]='' + cssPrefix + 'transform 0s';
+				me._vehicleintinfo.style[domTransition]='' + cssPrefix + 'transform 0s, opacity 1000ms ease 0ms';
 				if (me._vehicleintinfo.ggCurrentLogicStateScaling == 0) {
 					me._vehicleintinfo.ggParameter.sx = 0.6;
 					me._vehicleintinfo.ggParameter.sy = 0.6;
@@ -3253,6 +3018,30 @@ function pano2vrSkin(player,base) {
 					me._vehicleintinfo.ggParameter.sx = 1;
 					me._vehicleintinfo.ggParameter.sy = 1;
 					me._vehicleintinfo.style[domTransform]=parameterToTransform(me._vehicleintinfo.ggParameter);
+				}
+			}
+		}
+		me._vehicleintinfo.logicBlock_alpha = function() {
+			var newLogicStateAlpha;
+			if (
+				(player.getVariableValue('vis_intr_popup') == true)
+			)
+			{
+				newLogicStateAlpha = 0;
+			}
+			else {
+				newLogicStateAlpha = -1;
+			}
+			if (me._vehicleintinfo.ggCurrentLogicStateAlpha != newLogicStateAlpha) {
+				me._vehicleintinfo.ggCurrentLogicStateAlpha = newLogicStateAlpha;
+				me._vehicleintinfo.style[domTransition]='' + cssPrefix + 'transform 0s, opacity 1000ms ease 0ms';
+				if (me._vehicleintinfo.ggCurrentLogicStateAlpha == 0) {
+					me._vehicleintinfo.style.visibility=me._vehicleintinfo.ggVisible?'inherit':'hidden';
+					me._vehicleintinfo.style.opacity=1;
+				}
+				else {
+					setTimeout(function() { if (me._vehicleintinfo.style.opacity == 0.0) { me._vehicleintinfo.style.visibility="hidden"; } }, 1005);
+					me._vehicleintinfo.style.opacity=0;
 				}
 			}
 		}
@@ -3465,65 +3254,6 @@ function pano2vrSkin(player,base) {
 			}
 		}
 		me._vehicleintinfo.appendChild(me._interior_title);
-		el=me._filter1=document.createElement('div');
-		el.ggId="filter1";
-		el.ggDx=0;
-		el.ggDy=-48;
-		el.ggParameter={ rx:0,ry:0,a:0,sx:1,sy:1 };
-		el.ggVisible=true;
-		el.className="ggskin ggskin_rectangle ";
-		el.ggType='rectangle';
-		hs ='';
-		hs+='background : rgba(255,255,255,0);';
-		hs+='border : 0px solid #000000;';
-		hs+='cursor : default;';
-		hs+='height : 39px;';
-		hs+='left : -10000px;';
-		hs+='position : absolute;';
-		hs+='top : -10000px;';
-		hs+='visibility : inherit;';
-		hs+='width : 143px;';
-		hs+='pointer-events:auto;';
-		el.setAttribute('style',hs);
-		el.style[domTransform + 'Origin']='50% 50%';
-		me._filter1.ggIsActive=function() {
-			if ((this.parentNode) && (this.parentNode.ggIsActive)) {
-				return this.parentNode.ggIsActive();
-			}
-			return false;
-		}
-		el.ggElementNodeId=function() {
-			if ((this.parentNode) && (this.parentNode.ggElementNodeId)) {
-				return this.parentNode.ggElementNodeId();
-			}
-			return player.getCurrentNode();
-		}
-		me._filter1.onmouseover=function (e) {
-			me.elementMouseOver['filter1']=true;
-		}
-		me._filter1.onmouseout=function (e) {
-			me.elementMouseOver['filter1']=false;
-		}
-		me._filter1.ontouchend=function (e) {
-			me.elementMouseOver['filter1']=false;
-		}
-		me._filter1.ggUpdatePosition=function (useTransition) {
-			if (useTransition==='undefined') {
-				useTransition = false;
-			}
-			if (!useTransition) {
-				this.style[domTransition]='none';
-			}
-			if (this.parentNode) {
-				var pw=this.parentNode.clientWidth;
-				var w=this.offsetWidth;
-					this.style.left=(this.ggDx + pw/2 - w/2) + 'px';
-				var ph=this.parentNode.clientHeight;
-				var h=this.offsetHeight;
-					this.style.top=(this.ggDy + ph/2 - h/2) + 'px';
-			}
-		}
-		me._vehicleintinfo.appendChild(me._filter1);
 		el=me._intr_close=document.createElement('div');
 		els=me._intr_close__img=document.createElement('img');
 		els.className='ggskin ggskin_svg';
@@ -3577,30 +3307,6 @@ function pano2vrSkin(player,base) {
 			return player.getCurrentNode();
 		}
 		me._intr_close.onclick=function (e) {
-			var flag=me._vehicleintinfo.ggOpacitiyActive;
-			if (player.transitionsDisabled) {
-				me._vehicleintinfo.style[domTransition]='none';
-			} else {
-				me._vehicleintinfo.style[domTransition]='all 500ms ease-out 0ms';
-			}
-			if (flag) {
-				me._vehicleintinfo.style.opacity='0';
-				me._vehicleintinfo.style.visibility='hidden';
-			} else {
-				me._vehicleintinfo.style.opacity='0';
-				me._vehicleintinfo.style.visibility='hidden';
-			}
-			me._vehicleintinfo.ggOpacitiyActive=!flag;
-			var list=me.findElements("ht_info",true);
-			while(list.length>0) {
-				var e=list.pop();
-				e.style[domTransition]='none';
-				e.style.visibility=(Number(e.style.opacity)>0||!e.style.opacity)?'inherit':'hidden';
-				e.ggVisible=true;
-			}
-			me._contact_info.style[domTransition]='none';
-			me._contact_info.style.visibility=(Number(me._contact_info.style.opacity)>0||!me._contact_info.style.opacity)?'inherit':'hidden';
-			me._contact_info.ggVisible=true;
 			player.setVariableValue('vis_intr_popup', false);
 		}
 		me._intr_close.onmouseover=function (e) {
@@ -3670,37 +3376,19 @@ function pano2vrSkin(player,base) {
 		me._vehiclel5interior.onclick=function (e) {
 			player.setVariableValue('VehicleIntURL', "index.html#node14");
 			player.setVariableValue('VehiclePopTitle', "Fortuner Interior View");
-			var flag=me._vehicleintinfo.ggOpacitiyActive;
-			if (player.transitionsDisabled) {
-				me._vehicleintinfo.style[domTransition]='none';
-			} else {
-				me._vehicleintinfo.style[domTransition]='all 500ms ease-out 0ms';
-			}
-			if (flag) {
-				me._vehicleintinfo.style.opacity='0';
-				me._vehicleintinfo.style.visibility='hidden';
-			} else {
-				me._vehicleintinfo.style.opacity='1';
-				me._vehicleintinfo.style.visibility=me._vehicleintinfo.ggVisible?'inherit':'hidden';
-			}
-			me._vehicleintinfo.ggOpacitiyActive=!flag;
-			var list=me.findElements("ht_info",true);
-			while(list.length>0) {
-				var e=list.pop();
-				e.style[domTransition]='none';
-				e.style.visibility='hidden';
-				e.ggVisible=false;
-			}
-			if (
-				(
-					(player.getIsMobile() == true)
-				)
-			) {
-				me._contact_info.style[domTransition]='none';
-				me._contact_info.style.visibility='hidden';
-				me._contact_info.ggVisible=false;
-			}
 			player.setVariableValue('vis_intr_popup', true);
+		}
+		me._vehiclel5interior.onmouseover=function (e) {
+			me.elementMouseOver['vehiclel5interior']=true;
+		}
+		me._vehiclel5interior.onmouseout=function (e) {
+			me._interiortt.style[domTransition]='none';
+			me._interiortt.style.opacity='0';
+			me._interiortt.style.visibility='hidden';
+			me.elementMouseOver['vehiclel5interior']=false;
+		}
+		me._vehiclel5interior.ontouchend=function (e) {
+			me.elementMouseOver['vehiclel5interior']=false;
 		}
 		me._vehiclel5interior.ggUpdatePosition=function (useTransition) {
 		}
@@ -3736,37 +3424,19 @@ function pano2vrSkin(player,base) {
 		me._vehiclel4interior.onclick=function (e) {
 			player.setVariableValue('VehicleIntURL', "index.html#node12");
 			player.setVariableValue('VehiclePopTitle', "HiLux Interior View");
-			var flag=me._vehicleintinfo.ggOpacitiyActive;
-			if (player.transitionsDisabled) {
-				me._vehicleintinfo.style[domTransition]='none';
-			} else {
-				me._vehicleintinfo.style[domTransition]='all 500ms ease-out 0ms';
-			}
-			if (flag) {
-				me._vehicleintinfo.style.opacity='0';
-				me._vehicleintinfo.style.visibility='hidden';
-			} else {
-				me._vehicleintinfo.style.opacity='1';
-				me._vehicleintinfo.style.visibility=me._vehicleintinfo.ggVisible?'inherit':'hidden';
-			}
-			me._vehicleintinfo.ggOpacitiyActive=!flag;
-			var list=me.findElements("ht_info",true);
-			while(list.length>0) {
-				var e=list.pop();
-				e.style[domTransition]='none';
-				e.style.visibility='hidden';
-				e.ggVisible=false;
-			}
-			if (
-				(
-					(player.getIsMobile() == true)
-				)
-			) {
-				me._contact_info.style[domTransition]='none';
-				me._contact_info.style.visibility='hidden';
-				me._contact_info.ggVisible=false;
-			}
 			player.setVariableValue('vis_intr_popup', true);
+		}
+		me._vehiclel4interior.onmouseover=function (e) {
+			me.elementMouseOver['vehiclel4interior']=true;
+		}
+		me._vehiclel4interior.onmouseout=function (e) {
+			me._interiortt.style[domTransition]='none';
+			me._interiortt.style.opacity='0';
+			me._interiortt.style.visibility='hidden';
+			me.elementMouseOver['vehiclel4interior']=false;
+		}
+		me._vehiclel4interior.ontouchend=function (e) {
+			me.elementMouseOver['vehiclel4interior']=false;
 		}
 		me._vehiclel4interior.ggUpdatePosition=function (useTransition) {
 		}
@@ -3802,37 +3472,19 @@ function pano2vrSkin(player,base) {
 		me._vehiclel1interior.onclick=function (e) {
 			player.setVariableValue('VehicleIntURL', "index.html#node6");
 			player.setVariableValue('VehiclePopTitle', "Grandia Interior View");
-			var flag=me._vehicleintinfo.ggOpacitiyActive;
-			if (player.transitionsDisabled) {
-				me._vehicleintinfo.style[domTransition]='none';
-			} else {
-				me._vehicleintinfo.style[domTransition]='all 500ms ease-out 0ms';
-			}
-			if (flag) {
-				me._vehicleintinfo.style.opacity='0';
-				me._vehicleintinfo.style.visibility='hidden';
-			} else {
-				me._vehicleintinfo.style.opacity='1';
-				me._vehicleintinfo.style.visibility=me._vehicleintinfo.ggVisible?'inherit':'hidden';
-			}
-			me._vehicleintinfo.ggOpacitiyActive=!flag;
-			var list=me.findElements("ht_info",true);
-			while(list.length>0) {
-				var e=list.pop();
-				e.style[domTransition]='none';
-				e.style.visibility='hidden';
-				e.ggVisible=false;
-			}
-			if (
-				(
-					(player.getIsMobile() == true)
-				)
-			) {
-				me._contact_info.style[domTransition]='none';
-				me._contact_info.style.visibility='hidden';
-				me._contact_info.ggVisible=false;
-			}
 			player.setVariableValue('vis_intr_popup', true);
+		}
+		me._vehiclel1interior.onmouseover=function (e) {
+			me.elementMouseOver['vehiclel1interior']=true;
+		}
+		me._vehiclel1interior.onmouseout=function (e) {
+			me._interiortt.style[domTransition]='none';
+			me._interiortt.style.opacity='0';
+			me._interiortt.style.visibility='hidden';
+			me.elementMouseOver['vehiclel1interior']=false;
+		}
+		me._vehiclel1interior.ontouchend=function (e) {
+			me.elementMouseOver['vehiclel1interior']=false;
 		}
 		me._vehiclel1interior.ggUpdatePosition=function (useTransition) {
 		}
@@ -3868,37 +3520,19 @@ function pano2vrSkin(player,base) {
 		me._vehicler5interior.onclick=function (e) {
 			player.setVariableValue('VehicleIntURL', "index.html#node28");
 			player.setVariableValue('VehiclePopTitle', "Vios Interior View");
-			var flag=me._vehicleintinfo.ggOpacitiyActive;
-			if (player.transitionsDisabled) {
-				me._vehicleintinfo.style[domTransition]='none';
-			} else {
-				me._vehicleintinfo.style[domTransition]='all 500ms ease-out 0ms';
-			}
-			if (flag) {
-				me._vehicleintinfo.style.opacity='0';
-				me._vehicleintinfo.style.visibility='hidden';
-			} else {
-				me._vehicleintinfo.style.opacity='1';
-				me._vehicleintinfo.style.visibility=me._vehicleintinfo.ggVisible?'inherit':'hidden';
-			}
-			me._vehicleintinfo.ggOpacitiyActive=!flag;
-			var list=me.findElements("ht_info",true);
-			while(list.length>0) {
-				var e=list.pop();
-				e.style[domTransition]='none';
-				e.style.visibility='hidden';
-				e.ggVisible=false;
-			}
-			if (
-				(
-					(player.getIsMobile() == true)
-				)
-			) {
-				me._contact_info.style[domTransition]='none';
-				me._contact_info.style.visibility='hidden';
-				me._contact_info.ggVisible=false;
-			}
 			player.setVariableValue('vis_intr_popup', true);
+		}
+		me._vehicler5interior.onmouseover=function (e) {
+			me.elementMouseOver['vehicler5interior']=true;
+		}
+		me._vehicler5interior.onmouseout=function (e) {
+			me._interiortt.style[domTransition]='none';
+			me._interiortt.style.opacity='0';
+			me._interiortt.style.visibility='hidden';
+			me.elementMouseOver['vehicler5interior']=false;
+		}
+		me._vehicler5interior.ontouchend=function (e) {
+			me.elementMouseOver['vehicler5interior']=false;
 		}
 		me._vehicler5interior.ggUpdatePosition=function (useTransition) {
 		}
@@ -3934,37 +3568,19 @@ function pano2vrSkin(player,base) {
 		me._vehicler3interior.onclick=function (e) {
 			player.setVariableValue('VehicleIntURL', "index.html#node26");
 			player.setVariableValue('VehiclePopTitle', "Innova Interior View");
-			var flag=me._vehicleintinfo.ggOpacitiyActive;
-			if (player.transitionsDisabled) {
-				me._vehicleintinfo.style[domTransition]='none';
-			} else {
-				me._vehicleintinfo.style[domTransition]='all 500ms ease-out 0ms';
-			}
-			if (flag) {
-				me._vehicleintinfo.style.opacity='0';
-				me._vehicleintinfo.style.visibility='hidden';
-			} else {
-				me._vehicleintinfo.style.opacity='1';
-				me._vehicleintinfo.style.visibility=me._vehicleintinfo.ggVisible?'inherit':'hidden';
-			}
-			me._vehicleintinfo.ggOpacitiyActive=!flag;
-			var list=me.findElements("ht_info",true);
-			while(list.length>0) {
-				var e=list.pop();
-				e.style[domTransition]='none';
-				e.style.visibility='hidden';
-				e.ggVisible=false;
-			}
-			if (
-				(
-					(player.getIsMobile() == true)
-				)
-			) {
-				me._contact_info.style[domTransition]='none';
-				me._contact_info.style.visibility='hidden';
-				me._contact_info.ggVisible=false;
-			}
 			player.setVariableValue('vis_intr_popup', true);
+		}
+		me._vehicler3interior.onmouseover=function (e) {
+			me.elementMouseOver['vehicler3interior']=true;
+		}
+		me._vehicler3interior.onmouseout=function (e) {
+			me._interiortt.style[domTransition]='none';
+			me._interiortt.style.opacity='0';
+			me._interiortt.style.visibility='hidden';
+			me.elementMouseOver['vehicler3interior']=false;
+		}
+		me._vehicler3interior.ontouchend=function (e) {
+			me.elementMouseOver['vehicler3interior']=false;
 		}
 		me._vehicler3interior.ggUpdatePosition=function (useTransition) {
 		}
@@ -4000,37 +3616,19 @@ function pano2vrSkin(player,base) {
 		me._vehicler2interior.onclick=function (e) {
 			player.setVariableValue('VehicleIntURL', "index.html#node23");
 			player.setVariableValue('VehiclePopTitle', "Yaris Interior View");
-			var flag=me._vehicleintinfo.ggOpacitiyActive;
-			if (player.transitionsDisabled) {
-				me._vehicleintinfo.style[domTransition]='none';
-			} else {
-				me._vehicleintinfo.style[domTransition]='all 500ms ease-out 0ms';
-			}
-			if (flag) {
-				me._vehicleintinfo.style.opacity='0';
-				me._vehicleintinfo.style.visibility='hidden';
-			} else {
-				me._vehicleintinfo.style.opacity='1';
-				me._vehicleintinfo.style.visibility=me._vehicleintinfo.ggVisible?'inherit':'hidden';
-			}
-			me._vehicleintinfo.ggOpacitiyActive=!flag;
-			var list=me.findElements("ht_info",true);
-			while(list.length>0) {
-				var e=list.pop();
-				e.style[domTransition]='none';
-				e.style.visibility='hidden';
-				e.ggVisible=false;
-			}
-			if (
-				(
-					(player.getIsMobile() == true)
-				)
-			) {
-				me._contact_info.style[domTransition]='none';
-				me._contact_info.style.visibility='hidden';
-				me._contact_info.ggVisible=false;
-			}
 			player.setVariableValue('vis_intr_popup', true);
+		}
+		me._vehicler2interior.onmouseover=function (e) {
+			me.elementMouseOver['vehicler2interior']=true;
+		}
+		me._vehicler2interior.onmouseout=function (e) {
+			me._interiortt.style[domTransition]='none';
+			me._interiortt.style.opacity='0';
+			me._interiortt.style.visibility='hidden';
+			me.elementMouseOver['vehicler2interior']=false;
+		}
+		me._vehicler2interior.ontouchend=function (e) {
+			me.elementMouseOver['vehicler2interior']=false;
 		}
 		me._vehicler2interior.ggUpdatePosition=function (useTransition) {
 		}
@@ -4066,37 +3664,19 @@ function pano2vrSkin(player,base) {
 		me._vehicler1interior.onclick=function (e) {
 			player.setVariableValue('VehicleIntURL', "index.html#node20");
 			player.setVariableValue('VehiclePopTitle', "Vios Interior View");
-			var flag=me._vehicleintinfo.ggOpacitiyActive;
-			if (player.transitionsDisabled) {
-				me._vehicleintinfo.style[domTransition]='none';
-			} else {
-				me._vehicleintinfo.style[domTransition]='all 500ms ease-out 0ms';
-			}
-			if (flag) {
-				me._vehicleintinfo.style.opacity='0';
-				me._vehicleintinfo.style.visibility='hidden';
-			} else {
-				me._vehicleintinfo.style.opacity='1';
-				me._vehicleintinfo.style.visibility=me._vehicleintinfo.ggVisible?'inherit':'hidden';
-			}
-			me._vehicleintinfo.ggOpacitiyActive=!flag;
-			var list=me.findElements("ht_info",true);
-			while(list.length>0) {
-				var e=list.pop();
-				e.style[domTransition]='none';
-				e.style.visibility='hidden';
-				e.ggVisible=false;
-			}
-			if (
-				(
-					(player.getIsMobile() == true)
-				)
-			) {
-				me._contact_info.style[domTransition]='none';
-				me._contact_info.style.visibility='hidden';
-				me._contact_info.ggVisible=false;
-			}
 			player.setVariableValue('vis_intr_popup', true);
+		}
+		me._vehicler1interior.onmouseover=function (e) {
+			me.elementMouseOver['vehicler1interior']=true;
+		}
+		me._vehicler1interior.onmouseout=function (e) {
+			me._interiortt.style[domTransition]='none';
+			me._interiortt.style.opacity='0';
+			me._interiortt.style.visibility='hidden';
+			me.elementMouseOver['vehicler1interior']=false;
+		}
+		me._vehicler1interior.ontouchend=function (e) {
+			me.elementMouseOver['vehicler1interior']=false;
 		}
 		me._vehicler1interior.ggUpdatePosition=function (useTransition) {
 		}
@@ -4132,37 +3712,19 @@ function pano2vrSkin(player,base) {
 		me._vehicle2interiorside.onclick=function (e) {
 			player.setVariableValue('VehicleIntURL', "index.html#node17,-97.64,-12.63,102.45,-97.64,-12.63,102.45");
 			player.setVariableValue('VehiclePopTitle', "Rush Interior View");
-			var flag=me._vehicleintinfo.ggOpacitiyActive;
-			if (player.transitionsDisabled) {
-				me._vehicleintinfo.style[domTransition]='none';
-			} else {
-				me._vehicleintinfo.style[domTransition]='all 500ms ease-out 0ms';
-			}
-			if (flag) {
-				me._vehicleintinfo.style.opacity='0';
-				me._vehicleintinfo.style.visibility='hidden';
-			} else {
-				me._vehicleintinfo.style.opacity='1';
-				me._vehicleintinfo.style.visibility=me._vehicleintinfo.ggVisible?'inherit':'hidden';
-			}
-			me._vehicleintinfo.ggOpacitiyActive=!flag;
-			var list=me.findElements("ht_info",true);
-			while(list.length>0) {
-				var e=list.pop();
-				e.style[domTransition]='none';
-				e.style.visibility='hidden';
-				e.ggVisible=false;
-			}
-			if (
-				(
-					(player.getIsMobile() == true)
-				)
-			) {
-				me._contact_info.style[domTransition]='none';
-				me._contact_info.style.visibility='hidden';
-				me._contact_info.ggVisible=false;
-			}
 			player.setVariableValue('vis_intr_popup', true);
+		}
+		me._vehicle2interiorside.onmouseover=function (e) {
+			me.elementMouseOver['vehicle2interiorside']=true;
+		}
+		me._vehicle2interiorside.onmouseout=function (e) {
+			me._interiortt.style[domTransition]='none';
+			me._interiortt.style.opacity='0';
+			me._interiortt.style.visibility='hidden';
+			me.elementMouseOver['vehicle2interiorside']=false;
+		}
+		me._vehicle2interiorside.ontouchend=function (e) {
+			me.elementMouseOver['vehicle2interiorside']=false;
 		}
 		me._vehicle2interiorside.ggUpdatePosition=function (useTransition) {
 		}
@@ -4198,37 +3760,19 @@ function pano2vrSkin(player,base) {
 		me._vehicle2interior.onclick=function (e) {
 			player.setVariableValue('VehicleIntURL', "index.html#node17");
 			player.setVariableValue('VehiclePopTitle', "Rush Interior View");
-			var flag=me._vehicleintinfo.ggOpacitiyActive;
-			if (player.transitionsDisabled) {
-				me._vehicleintinfo.style[domTransition]='none';
-			} else {
-				me._vehicleintinfo.style[domTransition]='all 500ms ease-out 0ms';
-			}
-			if (flag) {
-				me._vehicleintinfo.style.opacity='0';
-				me._vehicleintinfo.style.visibility='hidden';
-			} else {
-				me._vehicleintinfo.style.opacity='1';
-				me._vehicleintinfo.style.visibility=me._vehicleintinfo.ggVisible?'inherit':'hidden';
-			}
-			me._vehicleintinfo.ggOpacitiyActive=!flag;
-			var list=me.findElements("ht_info",true);
-			while(list.length>0) {
-				var e=list.pop();
-				e.style[domTransition]='none';
-				e.style.visibility='hidden';
-				e.ggVisible=false;
-			}
-			if (
-				(
-					(player.getIsMobile() == true)
-				)
-			) {
-				me._contact_info.style[domTransition]='none';
-				me._contact_info.style.visibility='hidden';
-				me._contact_info.ggVisible=false;
-			}
 			player.setVariableValue('vis_intr_popup', true);
+		}
+		me._vehicle2interior.onmouseover=function (e) {
+			me.elementMouseOver['vehicle2interior']=true;
+		}
+		me._vehicle2interior.onmouseout=function (e) {
+			me._interiortt.style[domTransition]='none';
+			me._interiortt.style.opacity='0';
+			me._interiortt.style.visibility='hidden';
+			me.elementMouseOver['vehicle2interior']=false;
+		}
+		me._vehicle2interior.ontouchend=function (e) {
+			me.elementMouseOver['vehicle2interior']=false;
 		}
 		me._vehicle2interior.ggUpdatePosition=function (useTransition) {
 		}
@@ -4264,42 +3808,218 @@ function pano2vrSkin(player,base) {
 		me._vehicle1interior.onclick=function (e) {
 			player.setVariableValue('VehicleIntURL', "index.html#node2");
 			player.setVariableValue('VehiclePopTitle', "Grandia Interior View");
-			var flag=me._vehicleintinfo.ggOpacitiyActive;
-			if (player.transitionsDisabled) {
-				me._vehicleintinfo.style[domTransition]='none';
-			} else {
-				me._vehicleintinfo.style[domTransition]='all 500ms ease-out 0ms';
-			}
-			if (flag) {
-				me._vehicleintinfo.style.opacity='0';
-				me._vehicleintinfo.style.visibility='hidden';
-			} else {
-				me._vehicleintinfo.style.opacity='1';
-				me._vehicleintinfo.style.visibility=me._vehicleintinfo.ggVisible?'inherit':'hidden';
-			}
-			me._vehicleintinfo.ggOpacitiyActive=!flag;
-			var list=me.findElements("ht_info",true);
-			while(list.length>0) {
-				var e=list.pop();
-				e.style[domTransition]='none';
-				e.style.visibility='hidden';
-				e.ggVisible=false;
-			}
-			if (
-				(
-					(player.getIsMobile() == true)
-				)
-			) {
-				me._contact_info.style[domTransition]='none';
-				me._contact_info.style.visibility='hidden';
-				me._contact_info.ggVisible=false;
-			}
 			player.setVariableValue('vis_intr_popup', true);
+		}
+		me._vehicle1interior.onmouseover=function (e) {
+			me.elementMouseOver['vehicle1interior']=true;
+		}
+		me._vehicle1interior.onmouseout=function (e) {
+			me._interiortt.style[domTransition]='none';
+			me._interiortt.style.opacity='0';
+			me._interiortt.style.visibility='hidden';
+			me.elementMouseOver['vehicle1interior']=false;
+		}
+		me._vehicle1interior.ontouchend=function (e) {
+			me.elementMouseOver['vehicle1interior']=false;
 		}
 		me._vehicle1interior.ggUpdatePosition=function (useTransition) {
 		}
 		me._vehicleinterior.appendChild(me._vehicle1interior);
 		me.divSkin.appendChild(me._vehicleinterior);
+		el=me._hoodtt=document.createElement('div');
+		els=me._hoodtt__text=document.createElement('div');
+		el.className='ggskin ggskin_textdiv';
+		el.ggTextDiv=els;
+		el.ggId="HoodTT";
+		el.ggParameter={ rx:0,ry:0,a:0,sx:1,sy:1 };
+		el.ggVisible=true;
+		el.className="ggskin ggskin_text ";
+		el.ggType='text';
+		hs ='';
+		hs+='height : 20px;';
+		hs+='left : -40px;';
+		hs+='opacity : 0;';
+		hs+='position : absolute;';
+		hs+='top : -40px;';
+		hs+='visibility : hidden;';
+		hs+='width : 120px;';
+		hs+='pointer-events:auto;';
+		el.setAttribute('style',hs);
+		el.style[domTransform + 'Origin']='50% 50%';
+		hs ='position:absolute;';
+		hs += 'box-sizing: border-box;';
+		hs+='cursor: default;';
+		hs+='left: 0px;';
+		hs+='top:  0px;';
+		hs+='width: auto;';
+		hs+='height: auto;';
+		hs+='border: 0px solid #000000;';
+		hs+='color: rgba(255,255,255,1);';
+		hs+='text-align: center;';
+		hs+='white-space: nowrap;';
+		hs+='padding: 0px 1px 0px 1px;';
+		hs+='overflow: hidden;';
+		hs+='overflow-y: auto;';
+		els.setAttribute('style',hs);
+		els.innerHTML="Hood - Engine View";
+		el.appendChild(els);
+		me._hoodtt.ggIsActive=function() {
+			return false;
+		}
+		el.ggElementNodeId=function() {
+			return player.getCurrentNode();
+		}
+		me._hoodtt.logicBlock_visible = function() {
+			var newLogicStateVisible;
+			if (
+				(player.getVariableValue('vis_intr_popup') == true) || 
+				(player.getVariableValue('vis_hud_popup') == true)
+			)
+			{
+				newLogicStateVisible = 0;
+			}
+			else {
+				newLogicStateVisible = -1;
+			}
+			if (me._hoodtt.ggCurrentLogicStateVisible != newLogicStateVisible) {
+				me._hoodtt.ggCurrentLogicStateVisible = newLogicStateVisible;
+				me._hoodtt.style[domTransition]='';
+				if (me._hoodtt.ggCurrentLogicStateVisible == 0) {
+					me._hoodtt.style.visibility="hidden";
+					me._hoodtt.ggVisible=false;
+				}
+				else {
+					me._hoodtt.style.visibility=(Number(me._hoodtt.style.opacity)>0||!me._hoodtt.style.opacity)?'inherit':'hidden';
+					me._hoodtt.ggVisible=true;
+				}
+			}
+		}
+		me._hoodtt.logicBlock_text = function() {
+			var newLogicStateText;
+			if (
+				(player.getVariableValue('vis_TT_hood') == false)
+			)
+			{
+				newLogicStateText = 0;
+			}
+			else {
+				newLogicStateText = -1;
+			}
+			if (me._hoodtt.ggCurrentLogicStateText != newLogicStateText) {
+				me._hoodtt.ggCurrentLogicStateText = newLogicStateText;
+				me._hoodtt.style[domTransition]='';
+				if (me._hoodtt.ggCurrentLogicStateText == 0) {
+					me._hoodtt.ggText="Hood - Engine View";
+					me._hoodtt__text.innerHTML=me._hoodtt.ggText;
+					if (me._hoodtt.ggUpdateText) {
+					me._hoodtt.ggUpdateText=function() {
+						var hs="Hood - Engine View";
+						if (hs!=this.ggText) {
+							this.ggText=hs;
+							this.ggTextDiv.innerHTML=hs;
+							if (this.ggUpdatePosition) this.ggUpdatePosition();
+						}
+					}
+					} else {
+						if (me._hoodtt.ggUpdatePosition) me._hoodtt.ggUpdatePosition();
+					}
+				}
+				else {
+					me._hoodtt.ggText="Hood - Engine View";
+					me._hoodtt__text.innerHTML=me._hoodtt.ggText;
+					if (me._hoodtt.ggUpdateText) {
+					me._hoodtt.ggUpdateText=function() {
+						var hs="Hood - Engine View";
+						if (hs!=this.ggText) {
+							this.ggText=hs;
+							this.ggTextDiv.innerHTML=hs;
+							if (this.ggUpdatePosition) this.ggUpdatePosition();
+						}
+					}
+					} else {
+						if (me._hoodtt.ggUpdatePosition) me._hoodtt.ggUpdatePosition();
+					}
+				}
+			}
+		}
+		me._hoodtt.ggUpdatePosition=function (useTransition) {
+			this.style[domTransition]='left 0';
+			this.ggTextDiv.style.left=((118-this.ggTextDiv.offsetWidth)/2) + 'px';
+		}
+		me.divSkin.appendChild(me._hoodtt);
+		el=me._interiortt=document.createElement('div');
+		els=me._interiortt__text=document.createElement('div');
+		el.className='ggskin ggskin_textdiv';
+		el.ggTextDiv=els;
+		el.ggId="InteriorTT";
+		el.ggParameter={ rx:0,ry:0,a:0,sx:1,sy:1 };
+		el.ggVisible=true;
+		el.className="ggskin ggskin_text ";
+		el.ggType='text';
+		hs ='';
+		hs+='height : 20px;';
+		hs+='left : -40px;';
+		hs+='opacity : 0;';
+		hs+='position : absolute;';
+		hs+='top : -40px;';
+		hs+='visibility : hidden;';
+		hs+='width : 120px;';
+		hs+='pointer-events:auto;';
+		el.setAttribute('style',hs);
+		el.style[domTransform + 'Origin']='50% 50%';
+		hs ='position:absolute;';
+		hs += 'box-sizing: border-box;';
+		hs+='cursor: default;';
+		hs+='left: 0px;';
+		hs+='top:  0px;';
+		hs+='width: auto;';
+		hs+='height: auto;';
+		hs+='border: 0px solid #000000;';
+		hs+='color: rgba(255,255,255,1);';
+		hs+='text-align: center;';
+		hs+='white-space: nowrap;';
+		hs+='padding: 0px 1px 0px 1px;';
+		hs+='overflow: hidden;';
+		hs+='overflow-y: auto;';
+		els.setAttribute('style',hs);
+		els.innerHTML="InteriorView";
+		el.appendChild(els);
+		me._interiortt.ggIsActive=function() {
+			return false;
+		}
+		el.ggElementNodeId=function() {
+			return player.getCurrentNode();
+		}
+		me._interiortt.logicBlock_visible = function() {
+			var newLogicStateVisible;
+			if (
+				(player.getVariableValue('vis_intr_popup') == true) || 
+				(player.getVariableValue('vis_hud_popup') == true)
+			)
+			{
+				newLogicStateVisible = 0;
+			}
+			else {
+				newLogicStateVisible = -1;
+			}
+			if (me._interiortt.ggCurrentLogicStateVisible != newLogicStateVisible) {
+				me._interiortt.ggCurrentLogicStateVisible = newLogicStateVisible;
+				me._interiortt.style[domTransition]='';
+				if (me._interiortt.ggCurrentLogicStateVisible == 0) {
+					me._interiortt.style.visibility="hidden";
+					me._interiortt.ggVisible=false;
+				}
+				else {
+					me._interiortt.style.visibility=(Number(me._interiortt.style.opacity)>0||!me._interiortt.style.opacity)?'inherit':'hidden';
+					me._interiortt.ggVisible=true;
+				}
+			}
+		}
+		me._interiortt.ggUpdatePosition=function (useTransition) {
+			this.style[domTransition]='left 0';
+			this.ggTextDiv.style.left=((118-this.ggTextDiv.offsetWidth)/2) + 'px';
+		}
+		me.divSkin.appendChild(me._interiortt);
 		el=me._email_box=document.createElement('div');
 		el.ggId="email Box";
 		el.ggDx=0;
@@ -4855,6 +4575,31 @@ function pano2vrSkin(player,base) {
 		}
 		el.ggElementNodeId=function() {
 			return player.getCurrentNode();
+		}
+		me._contact_info.logicBlock_visible = function() {
+			var newLogicStateVisible;
+			if (
+				(player.getVariableValue('vis_intr_popup') == true) && 
+				(player.getIsMobile() == true)
+			)
+			{
+				newLogicStateVisible = 0;
+			}
+			else {
+				newLogicStateVisible = -1;
+			}
+			if (me._contact_info.ggCurrentLogicStateVisible != newLogicStateVisible) {
+				me._contact_info.ggCurrentLogicStateVisible = newLogicStateVisible;
+				me._contact_info.style[domTransition]='';
+				if (me._contact_info.ggCurrentLogicStateVisible == 0) {
+					me._contact_info.style.visibility="hidden";
+					me._contact_info.ggVisible=false;
+				}
+				else {
+					me._contact_info.style.visibility=(Number(me._contact_info.style.opacity)>0||!me._contact_info.style.opacity)?'inherit':'hidden';
+					me._contact_info.ggVisible=true;
+				}
+			}
 		}
 		me._contact_info.ggUpdatePosition=function (useTransition) {
 		}
@@ -6612,8 +6357,128 @@ function pano2vrSkin(player,base) {
 	this.hotspotProxyDoubleClick=function(id, url) {
 	}
 	me.hotspotProxyOver=function(id, url) {
+		if (id=='PolyHoodL5') {
+			me._vehiclel5hood.onmouseover();
+		}
+		if (id=='PolyHoodL4') {
+			me._vehiclel4hood.onmouseover();
+		}
+		if (id=='PolyHoodL2') {
+			me._vehiclel2hood.onmouseover();
+		}
+		if (id=='PolyHoodL1') {
+			me._vehiclel1hood.onmouseover();
+		}
+		if (id=='PolyHoodR5') {
+			me._vehicler5hood.onmouseover();
+		}
+		if (id=='PolyHoodR3') {
+			me._vehicler3hood.onmouseover();
+		}
+		if (id=='PolyHoodR2') {
+			me._vehicler2hood.onmouseover();
+		}
+		if (id=='PolyHoodR1') {
+			me._vehicler1hood.onmouseover();
+		}
+		if (id=='PolyHood2') {
+			me._vehicle2hood.onmouseover();
+		}
+		if (id=='PolyHood1') {
+			me._vehicle1hood.onmouseover();
+		}
+		if (id=='PolyVehicleL5') {
+			me._vehiclel5interior.onmouseover();
+		}
+		if (id=='PolyVehicleL4') {
+			me._vehiclel4interior.onmouseover();
+		}
+		if (id=='PolyVehicleL1') {
+			me._vehiclel1interior.onmouseover();
+		}
+		if (id=='PolyVehicleR5') {
+			me._vehicler5interior.onmouseover();
+		}
+		if (id=='PolyVehicleR3') {
+			me._vehicler3interior.onmouseover();
+		}
+		if (id=='PolyVehicleR2') {
+			me._vehicler2interior.onmouseover();
+		}
+		if (id=='PolyVehicleR1') {
+			me._vehicler1interior.onmouseover();
+		}
+		if (id=='PolyVehicle2a') {
+			me._vehicle2interiorside.onmouseover();
+		}
+		if (id=='PolyVehicle2') {
+			me._vehicle2interior.onmouseover();
+		}
+		if (id=='PolyVehicle1') {
+			me._vehicle1interior.onmouseover();
+		}
 	}
 	me.hotspotProxyOut=function(id, url) {
+		if (id=='PolyHoodL5') {
+			me._vehiclel5hood.onmouseout();
+		}
+		if (id=='PolyHoodL4') {
+			me._vehiclel4hood.onmouseout();
+		}
+		if (id=='PolyHoodL2') {
+			me._vehiclel2hood.onmouseout();
+		}
+		if (id=='PolyHoodL1') {
+			me._vehiclel1hood.onmouseout();
+		}
+		if (id=='PolyHoodR5') {
+			me._vehicler5hood.onmouseout();
+		}
+		if (id=='PolyHoodR3') {
+			me._vehicler3hood.onmouseout();
+		}
+		if (id=='PolyHoodR2') {
+			me._vehicler2hood.onmouseout();
+		}
+		if (id=='PolyHoodR1') {
+			me._vehicler1hood.onmouseout();
+		}
+		if (id=='PolyHood2') {
+			me._vehicle2hood.onmouseout();
+		}
+		if (id=='PolyHood1') {
+			me._vehicle1hood.onmouseout();
+		}
+		if (id=='PolyVehicleL5') {
+			me._vehiclel5interior.onmouseout();
+		}
+		if (id=='PolyVehicleL4') {
+			me._vehiclel4interior.onmouseout();
+		}
+		if (id=='PolyVehicleL1') {
+			me._vehiclel1interior.onmouseout();
+		}
+		if (id=='PolyVehicleR5') {
+			me._vehicler5interior.onmouseout();
+		}
+		if (id=='PolyVehicleR3') {
+			me._vehicler3interior.onmouseout();
+		}
+		if (id=='PolyVehicleR2') {
+			me._vehicler2interior.onmouseout();
+		}
+		if (id=='PolyVehicleR1') {
+			me._vehicler1interior.onmouseout();
+		}
+		if (id=='PolyVehicle2a') {
+			me._vehicle2interiorside.onmouseout();
+		}
+		if (id=='PolyVehicle2') {
+			me._vehicle2interior.onmouseout();
+		}
+		if (id=='PolyVehicle1') {
+			me._vehicle1interior.onmouseout();
+		}
 	}
 	me.callChildLogicBlocksHotspot_ht_node_sizechanged = function(){
 		if(hotspotTemplates['ht_node']) {
@@ -6709,6 +6574,19 @@ function pano2vrSkin(player,base) {
 			}
 		}
 	}
+	me.callChildLogicBlocksHotspot_ht_info_changenode = function(){
+		if(hotspotTemplates['ht_info']) {
+			var i;
+			for(i = 0; i < hotspotTemplates['ht_info'].length; i++) {
+				if (hotspotTemplates['ht_info'][i]._ht_info.logicBlock_visible) {
+					hotspotTemplates['ht_info'][i]._ht_info.logicBlock_visible();
+				}
+				if (hotspotTemplates['ht_info'][i]._ht_info_image.logicBlock_visible) {
+					hotspotTemplates['ht_info'][i]._ht_info_image.logicBlock_visible();
+				}
+			}
+		}
+	}
 	me.callChildLogicBlocksHotspot_ht_info_configloaded = function(){
 		if(hotspotTemplates['ht_info']) {
 			var i;
@@ -6729,21 +6607,155 @@ function pano2vrSkin(player,base) {
 			}
 		}
 	}
+	me.callChildLogicBlocksHotspot_ht_info_varchanged_vis_intr_popup = function(){
+		if(hotspotTemplates['ht_info']) {
+			var i;
+			for(i = 0; i < hotspotTemplates['ht_info'].length; i++) {
+				if (hotspotTemplates['ht_info'][i]._ht_info.logicBlock_visible) {
+					hotspotTemplates['ht_info'][i]._ht_info.logicBlock_visible();
+				}
+			}
+		}
+	}
+	me.callChildLogicBlocksHotspot_ht_info_varchanged_vis_hud_popup = function(){
+		if(hotspotTemplates['ht_info']) {
+			var i;
+			for(i = 0; i < hotspotTemplates['ht_info'].length; i++) {
+				if (hotspotTemplates['ht_info'][i]._ht_info.logicBlock_visible) {
+					hotspotTemplates['ht_info'][i]._ht_info.logicBlock_visible();
+				}
+			}
+		}
+	}
+	me.callChildLogicBlocksHotspot_ht_info_varchanged_vis_info_popup = function(){
+		if(hotspotTemplates['ht_info']) {
+			var i;
+			for(i = 0; i < hotspotTemplates['ht_info'].length; i++) {
+				if (hotspotTemplates['ht_info'][i]._ht_info_image.logicBlock_visible) {
+					hotspotTemplates['ht_info'][i]._ht_info_image.logicBlock_visible();
+				}
+			}
+		}
+	}
 	player.addListener('changenode', function() {
 		me.ggUserdata=player.userdata;
 	});
 	me.skinTimerEvent=function() {
 		me.ggCurrentTime=new Date().getTime();
-		if (me.elementMouseOver['filter2']) {
-			me._vehiclehudinfo.style[domTransition]='none';
-			me._vehiclehudinfo.style.visibility=(Number(me._vehiclehudinfo.style.opacity)>0||!me._vehiclehudinfo.style.opacity)?'inherit':'hidden';
-			me._vehiclehudinfo.ggVisible=true;
+		if (me.elementMouseOver['vehiclel5hood']) {
+			me._hoodtt.style[domTransition]='none';
+			me._hoodtt.style.opacity='1';
+			me._hoodtt.style.visibility=me._hoodtt.ggVisible?'inherit':'hidden';
 		}
-		if (me.elementMouseOver['filter1']) {
-			me._vehicleintinfo.style[domTransition]='none';
-			me._vehicleintinfo.style.visibility=(Number(me._vehicleintinfo.style.opacity)>0||!me._vehicleintinfo.style.opacity)?'inherit':'hidden';
-			me._vehicleintinfo.ggVisible=true;
+		if (me.elementMouseOver['vehiclel4hood']) {
+			me._hoodtt.style[domTransition]='none';
+			me._hoodtt.style.opacity='1';
+			me._hoodtt.style.visibility=me._hoodtt.ggVisible?'inherit':'hidden';
 		}
+		if (me.elementMouseOver['vehiclel2hood']) {
+			me._hoodtt.style[domTransition]='none';
+			me._hoodtt.style.opacity='1';
+			me._hoodtt.style.visibility=me._hoodtt.ggVisible?'inherit':'hidden';
+		}
+		if (me.elementMouseOver['vehiclel1hood']) {
+			me._hoodtt.style[domTransition]='none';
+			me._hoodtt.style.opacity='1';
+			me._hoodtt.style.visibility=me._hoodtt.ggVisible?'inherit':'hidden';
+		}
+		if (me.elementMouseOver['vehicler5hood']) {
+			me._hoodtt.style[domTransition]='none';
+			me._hoodtt.style.opacity='1';
+			me._hoodtt.style.visibility=me._hoodtt.ggVisible?'inherit':'hidden';
+		}
+		if (me.elementMouseOver['vehicler3hood']) {
+			me._hoodtt.style[domTransition]='none';
+			me._hoodtt.style.opacity='1';
+			me._hoodtt.style.visibility=me._hoodtt.ggVisible?'inherit':'hidden';
+		}
+		if (me.elementMouseOver['vehicler2hood']) {
+			me._hoodtt.style[domTransition]='none';
+			me._hoodtt.style.opacity='1';
+			me._hoodtt.style.visibility=me._hoodtt.ggVisible?'inherit':'hidden';
+		}
+		if (me.elementMouseOver['vehicler1hood']) {
+			me._hoodtt.style[domTransition]='none';
+			me._hoodtt.style.opacity='1';
+			me._hoodtt.style.visibility=me._hoodtt.ggVisible?'inherit':'hidden';
+		}
+		if (me.elementMouseOver['vehicle2hood']) {
+			me._hoodtt.style[domTransition]='none';
+			me._hoodtt.style.opacity='1';
+			me._hoodtt.style.visibility=me._hoodtt.ggVisible?'inherit':'hidden';
+		}
+		if (me.elementMouseOver['vehicle1hood']) {
+			me._hoodtt.style[domTransition]='none';
+			me._hoodtt.style.opacity='1';
+			me._hoodtt.style.visibility=me._hoodtt.ggVisible?'inherit':'hidden';
+		}
+		if (me.elementMouseOver['vehiclel5interior']) {
+			me._interiortt.style[domTransition]='none';
+			me._interiortt.style.opacity='1';
+			me._interiortt.style.visibility=me._interiortt.ggVisible?'inherit':'hidden';
+		}
+		if (me.elementMouseOver['vehiclel4interior']) {
+			me._interiortt.style[domTransition]='none';
+			me._interiortt.style.opacity='1';
+			me._interiortt.style.visibility=me._interiortt.ggVisible?'inherit':'hidden';
+		}
+		if (me.elementMouseOver['vehiclel1interior']) {
+			me._interiortt.style[domTransition]='none';
+			me._interiortt.style.opacity='1';
+			me._interiortt.style.visibility=me._interiortt.ggVisible?'inherit':'hidden';
+		}
+		if (me.elementMouseOver['vehicler5interior']) {
+			me._interiortt.style[domTransition]='none';
+			me._interiortt.style.opacity='1';
+			me._interiortt.style.visibility=me._interiortt.ggVisible?'inherit':'hidden';
+		}
+		if (me.elementMouseOver['vehicler3interior']) {
+			me._interiortt.style[domTransition]='none';
+			me._interiortt.style.opacity='1';
+			me._interiortt.style.visibility=me._interiortt.ggVisible?'inherit':'hidden';
+		}
+		if (me.elementMouseOver['vehicler2interior']) {
+			me._interiortt.style[domTransition]='none';
+			me._interiortt.style.opacity='1';
+			me._interiortt.style.visibility=me._interiortt.ggVisible?'inherit':'hidden';
+		}
+		if (me.elementMouseOver['vehicler1interior']) {
+			me._interiortt.style[domTransition]='none';
+			me._interiortt.style.opacity='1';
+			me._interiortt.style.visibility=me._interiortt.ggVisible?'inherit':'hidden';
+		}
+		if (me.elementMouseOver['vehicle2interiorside']) {
+			me._interiortt.style[domTransition]='none';
+			me._interiortt.style.opacity='1';
+			me._interiortt.style.visibility=me._interiortt.ggVisible?'inherit':'hidden';
+		}
+		if (me.elementMouseOver['vehicle2interior']) {
+			me._interiortt.style[domTransition]='none';
+			me._interiortt.style.opacity='1';
+			me._interiortt.style.visibility=me._interiortt.ggVisible?'inherit':'hidden';
+		}
+		if (me.elementMouseOver['vehicle1interior']) {
+			me._interiortt.style[domTransition]='none';
+			me._interiortt.style.opacity='1';
+			me._interiortt.style.visibility=me._interiortt.ggVisible?'inherit':'hidden';
+		}
+		var hs='';
+		if (me._hoodtt.ggParameter) {
+			hs+=parameterToTransform(me._hoodtt.ggParameter) + ' ';
+		}
+		hs+='translate(' + (1 * player.mouse.x + 0) + 'px,0px) ';
+		hs+='translate(0px,' + (1 * player.mouse.y + 0) + 'px) ';
+		me._hoodtt.style[domTransform]=hs;
+		var hs='';
+		if (me._interiortt.ggParameter) {
+			hs+=parameterToTransform(me._interiortt.ggParameter) + ' ';
+		}
+		hs+='translate(' + (1 * player.mouse.x + 0) + 'px,0px) ';
+		hs+='translate(0px,' + (1 * player.mouse.y + 0) + 'px) ';
+		me._interiortt.style[domTransform]=hs;
 	};
 	player.addListener('timer', me.skinTimerEvent);
 	function SkinHotspotClass_ht_node(parentScope,hotspot) {
@@ -7492,6 +7504,31 @@ this.__div.style.top = vs.height / 2 + "px";
 		el.ggElementNodeId=function() {
 			return me.hotspot.url.substr(1, me.hotspot.url.length - 2);
 		}
+		me._ht_info.logicBlock_visible = function() {
+			var newLogicStateVisible;
+			if (
+				(player.getVariableValue('vis_intr_popup') == true) || 
+				(player.getVariableValue('vis_hud_popup') == true)
+			)
+			{
+				newLogicStateVisible = 0;
+			}
+			else {
+				newLogicStateVisible = -1;
+			}
+			if (me._ht_info.ggCurrentLogicStateVisible != newLogicStateVisible) {
+				me._ht_info.ggCurrentLogicStateVisible = newLogicStateVisible;
+				me._ht_info.style[domTransition]='';
+				if (me._ht_info.ggCurrentLogicStateVisible == 0) {
+					me._ht_info.style.visibility="hidden";
+					me._ht_info.ggVisible=false;
+				}
+				else {
+					me._ht_info.style.visibility=(Number(me._ht_info.style.opacity)>0||!me._ht_info.style.opacity)?'inherit':'hidden';
+					me._ht_info.ggVisible=true;
+				}
+			}
+		}
 		me._ht_info.onclick=function (e) {
 			skin._info_title.ggText=me.hotspot.title;
 			skin._info_title.ggTextDiv.innerHTML=skin._info_title.ggText;
@@ -7525,36 +7562,7 @@ this.__div.style.top = vs.height / 2 + "px";
 				skin._info_text_body.ggUpdatePosition();
 			}
 			skin._info_text_body.ggTextDiv.scrollTop = 0;
-			var flag=skin._information.ggOpacitiyActive;
-			if (player.transitionsDisabled) {
-				skin._information.style[domTransition]='none';
-			} else {
-				skin._information.style[domTransition]='all 500ms ease-out 0ms';
-			}
-			if (flag) {
-				skin._information.style.opacity='0';
-				skin._information.style.visibility='hidden';
-			} else {
-				skin._information.style.opacity='1';
-				skin._information.style.visibility=skin._information.ggVisible?'inherit':'hidden';
-			}
-			skin._information.ggOpacitiyActive=!flag;
-			var list=me.findElements("ht_info",true);
-			while(list.length>0) {
-				var e=list.pop();
-				e.style[domTransition]='none';
-				e.style.visibility='hidden';
-				e.ggVisible=false;
-			}
-			if (
-				(
-					(player.getIsMobile() == true)
-				)
-			) {
-				skin._contact_info.style[domTransition]='none';
-				skin._contact_info.style.visibility='hidden';
-				skin._contact_info.ggVisible=false;
-			}
+			player.setVariableValue('vis_info_popup', true);
 			skin.hotspotProxyClick(me.hotspot.id, me.hotspot.url);
 		}
 		me._ht_info.ondblclick=function (e) {
@@ -7636,6 +7644,30 @@ this.__div.style.top = vs.height / 2 + "px";
 				return this.parentNode.ggElementNodeId();
 			}
 			return me.ggNodeId;
+		}
+		me._ht_info_image.logicBlock_visible = function() {
+			var newLogicStateVisible;
+			if (
+				(player.getVariableValue('vis_info_popup') == true)
+			)
+			{
+				newLogicStateVisible = 0;
+			}
+			else {
+				newLogicStateVisible = -1;
+			}
+			if (me._ht_info_image.ggCurrentLogicStateVisible != newLogicStateVisible) {
+				me._ht_info_image.ggCurrentLogicStateVisible = newLogicStateVisible;
+				me._ht_info_image.style[domTransition]='';
+				if (me._ht_info_image.ggCurrentLogicStateVisible == 0) {
+					me._ht_info_image.style.visibility="hidden";
+					me._ht_info_image.ggVisible=false;
+				}
+				else {
+					me._ht_info_image.style.visibility=(Number(me._ht_info_image.style.opacity)>0||!me._ht_info_image.style.opacity)?'inherit':'hidden';
+					me._ht_info_image.ggVisible=true;
+				}
+			}
 		}
 		me._ht_info_image.onmouseover=function (e) {
 			me._ht_info_image__img.style.visibility='hidden';
@@ -7776,8 +7808,12 @@ this.__div.style.top = vs.height / 2 + "px";
 				hotspotTemplates[hotspot.skinid] = [];
 			}
 			hotspotTemplates[hotspot.skinid].push(hsinst);
+			me.callChildLogicBlocksHotspot_ht_info_changenode();;
 			me.callChildLogicBlocksHotspot_ht_info_configloaded();;
 			me.callChildLogicBlocksHotspot_ht_info_mouseover();;
+			me.callChildLogicBlocksHotspot_ht_info_varchanged_vis_intr_popup();;
+			me.callChildLogicBlocksHotspot_ht_info_varchanged_vis_hud_popup();;
+			me.callChildLogicBlocksHotspot_ht_info_varchanged_vis_info_popup();;
 		}
 		if (hotspot.customimage) {
 			var img = document.createElement('img');
@@ -8131,11 +8167,18 @@ this.__div.style.top = vs.height / 2 + "px";
 	me._button_image_normalscreen.logicBlock_visible();
 	me._button_image_fullscreen.logicBlock_visible();
 	me._tt_fullscreen.logicBlock_text();
+	me._screentint_info.logicBlock_visible();
 	me._tt_togglemap.logicBlock_text();
 	me._button_close_map.logicBlock_visible();
-	me._screentint_info.logicBlock_visible();
+	me._information.logicBlock_alpha();
+	me._vehiclehudinfo.logicBlock_alpha();
 	me._hood_popup.logicBlock_text();
+	me._vehicleintinfo.logicBlock_alpha();
 	me._interior_popup.logicBlock_text();
+	me._hoodtt.logicBlock_visible();
+	me._hoodtt.logicBlock_text();
+	me._interiortt.logicBlock_visible();
+	me._contact_info.logicBlock_visible();
 	me._tt_thumbnail_open.logicBlock_text();
 	me._thumbnail_menu.logicBlock_alpha();
 	me._tt_togglemap.logicBlock_position();
@@ -8148,13 +8191,14 @@ this.__div.style.top = vs.height / 2 + "px";
 	player.addListener('sizechanged', function(args) { me._vehiclehudinfo.logicBlock_scaling();me._vehicleintinfo.logicBlock_scaling(); });
 	player.addListener('fullscreenenter', function(args) { me._button_image_normalscreen.logicBlock_visible();me._button_image_fullscreen.logicBlock_visible();me._tt_fullscreen.logicBlock_text(); });
 	player.addListener('fullscreenexit', function(args) { me._button_image_normalscreen.logicBlock_visible();me._button_image_fullscreen.logicBlock_visible();me._tt_fullscreen.logicBlock_text(); });
-	player.addListener('changenode', function(args) { me._tt_togglemap.logicBlock_text();me._button_close_map.logicBlock_visible();me._screentint_info.logicBlock_visible();me._hood_popup.logicBlock_text();me._interior_popup.logicBlock_text();me._tt_thumbnail_open.logicBlock_text();me._thumbnail_menu.logicBlock_alpha(); });
-	player.addListener('configloaded', function(args) { me._tt_togglemap.logicBlock_position();me._tt_fullscreen.logicBlock_position();me._tt_twittre.logicBlock_position();me._tt_facebook.logicBlock_position();me._tt_google.logicBlock_position();me._vehiclehudinfo.logicBlock_scaling();me._vehicleintinfo.logicBlock_scaling();me._tt_thumbnail_open.logicBlock_position();me._thumbnail_menu.logicBlock_position(); });
-	player.addListener('varchanged_ScrnTnt', function(args) { me._screentint_info.logicBlock_visible(); });
+	player.addListener('changenode', function(args) { me._screentint_info.logicBlock_visible();me._tt_togglemap.logicBlock_text();me._button_close_map.logicBlock_visible();me._information.logicBlock_alpha();me._vehiclehudinfo.logicBlock_alpha();me._hood_popup.logicBlock_text();me._vehicleintinfo.logicBlock_alpha();me._interior_popup.logicBlock_text();me._hoodtt.logicBlock_visible();me._hoodtt.logicBlock_text();me._interiortt.logicBlock_visible();me._contact_info.logicBlock_visible();me._tt_thumbnail_open.logicBlock_text();me._thumbnail_menu.logicBlock_alpha(); });
+	player.addListener('configloaded', function(args) { me._tt_togglemap.logicBlock_position();me._tt_fullscreen.logicBlock_position();me._tt_twittre.logicBlock_position();me._tt_facebook.logicBlock_position();me._tt_google.logicBlock_position();me._vehiclehudinfo.logicBlock_scaling();me._vehicleintinfo.logicBlock_scaling();me._contact_info.logicBlock_visible();me._tt_thumbnail_open.logicBlock_position();me._thumbnail_menu.logicBlock_position(); });
+	player.addListener('varchanged_vis_intr_popup', function(args) { me._screentint_info.logicBlock_visible();me._vehicleintinfo.logicBlock_alpha();me._interior_popup.logicBlock_text();me._hoodtt.logicBlock_visible();me._interiortt.logicBlock_visible();me._contact_info.logicBlock_visible(); });
+	player.addListener('varchanged_vis_hud_popup', function(args) { me._screentint_info.logicBlock_visible();me._vehiclehudinfo.logicBlock_alpha();me._hood_popup.logicBlock_text();me._hoodtt.logicBlock_visible();me._interiortt.logicBlock_visible(); });
+	player.addListener('varchanged_vis_info_popup', function(args) { me._information.logicBlock_alpha(); });
+	player.addListener('varchanged_vis_TT_hood', function(args) { me._hoodtt.logicBlock_text(); });
 	player.addListener('varchanged_vis_thumbnail_menu', function(args) { me._tt_thumbnail_open.logicBlock_text();me._thumbnail_menu.logicBlock_alpha(); });
 	player.addListener('varchanged_vis_map', function(args) { me._tt_togglemap.logicBlock_text();me._button_close_map.logicBlock_visible(); });
-	player.addListener('varchanged_vis_hud_popup', function(args) { me._hood_popup.logicBlock_text(); });
-	player.addListener('varchanged_vis_intr_popup', function(args) { me._interior_popup.logicBlock_text(); });
 	player.addListener('changenode', function(args) { me._thumbnail_cloner.callChildLogicBlocks_changenode(); });
 	player.addListener('mouseover', function(args) { me._thumbnail_cloner.callChildLogicBlocks_mouseover(); });
 	player.addListener('mouseover', function(args) { me._thumbnail_cloner.callChildLogicBlocks_mouseover(); });
@@ -8162,11 +8206,14 @@ this.__div.style.top = vs.height / 2 + "px";
 	player.addListener('changevisitednodes', function(args) { me._thumbnail_cloner.callChildLogicBlocks_changevisitednodes(); });
 	player.addListener('varchanged_opt_thumbnail_menu_tooltip', function(args) { me._thumbnail_cloner.callChildLogicBlocks_varchanged_opt_thumbnail_menu_tooltip(); });
 	player.addListener('sizechanged', function(args) { me.callChildLogicBlocksHotspot_ht_node_sizechanged(); });
-	player.addListener('changenode', function(args) { me.callChildLogicBlocksHotspot_ht_node_changenode(); });
+	player.addListener('changenode', function(args) { me.callChildLogicBlocksHotspot_ht_node_changenode();me.callChildLogicBlocksHotspot_ht_info_changenode(); });
 	player.addListener('configloaded', function(args) { me.callChildLogicBlocksHotspot_ht_node_configloaded();me.callChildLogicBlocksHotspot_ht_info_configloaded(); });
 	player.addListener('mouseover', function(args) { me.callChildLogicBlocksHotspot_ht_node_mouseover();me.callChildLogicBlocksHotspot_ht_info_mouseover(); });
 	player.addListener('changenode', function(args) { me.callChildLogicBlocksHotspot_ht_node_active(); });
 	player.addListener('changevisitednodes', function(args) { me.callChildLogicBlocksHotspot_ht_node_changevisitednodes(); });
+	player.addListener('varchanged_vis_intr_popup', function(args) { me.callChildLogicBlocksHotspot_ht_info_varchanged_vis_intr_popup(); });
+	player.addListener('varchanged_vis_hud_popup', function(args) { me.callChildLogicBlocksHotspot_ht_info_varchanged_vis_hud_popup(); });
+	player.addListener('varchanged_vis_info_popup', function(args) { me.callChildLogicBlocksHotspot_ht_info_varchanged_vis_info_popup(); });
 	player.addListener('varchanged_opt_3d_preview', function(args) { me.callChildLogicBlocksHotspot_ht_node_varchanged_opt_3d_preview(); });
 	player.addListener('hotspotsremoved', function(args) { me.removeSkinHotspots(); });
 	me.skinTimerEvent();

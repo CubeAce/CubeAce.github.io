@@ -1,352 +1,352 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<tour start="node2" appversion="6.1 beta2" apprev="17561">
+<tour apprev="17561" appversion="6.1 beta2" start="node2">
   <panorama id="node2" hideabout="1">
-    <input leveltilesize="510" levelingroll="0.8" height="1344" overlap="1" levelingpitch="1.2" width="1344" levelbias="0.400" leveltileurl="tiles/node2/cf_%c/l_%l/c_%x/tile_%y.jpg" levelbiashidpi="1.000">
-      <level height="1344" predecode="0" width="1344" preload="0"/>
-      <level height="672" predecode="0" width="672" preload="0"/>
-      <level height="336" predecode="1" width="336" preload="1"/>
-      <preview color="0x808080" strip="1"/>
+    <input levelingpitch="1.2" leveltilesize="510" overlap="1" leveltileurl="tiles/node2/cf_%c/l_%l/c_%x/tile_%y.jpg" height="1344" levelingroll="0.8" width="1344" levelbias="0.400" levelbiashidpi="1.000">
+      <level preload="0" height="1344" width="1344" predecode="0"/>
+      <level preload="0" height="672" width="672" predecode="0"/>
+      <level preload="1" height="336" width="336" predecode="1"/>
+      <preview strip="1" color="0x808080"/>
     </input>
     <view pannorth="-115.98" fovmode="0">
-      <start projection="4" pan="177.111" fov="73.5129" tilt="-7.69542"/>
-      <flyin projection="9" pan="0" fov="170" tilt="-90"/>
-      <min fovpixel="2" pan="0" tilt="-90"/>
-      <max fovstereographic="270" fovfisheye="360" pan="360" scaletofit="1" fov="120" tilt="90"/>
+      <start projection="4" tilt="-7.69542" fov="73.5129" pan="177.111"/>
+      <flyin projection="9" tilt="-90" fov="170" pan="0"/>
+      <min fovpixel="2" tilt="-90" pan="0"/>
+      <max scaletofit="1" tilt="90" fovstereographic="270" fov="120" pan="360" fovfisheye="360"/>
     </view>
-    <userdata info="" datetime="4/14/2019 11:08 AM" customnodeid="" title="" author="" description="" source="" latitude="14.62884422" copyright="" longitude="121.01431310" tags="Pano2VR6|Showroom" comment=""/>
+    <userdata datetime="4/14/2019 11:08 AM" copyright="" tags="Pano2VR6|Showroom" title="" author="" latitude="14.62884422" source="" comment="" longitude="121.01431310" description="" info="" customnodeid=""/>
     <hotspots height="20" wordwrap="0" width="180">
-      <label enabled="1" border="0" height="20" borderradius="0" bordercolor="0x000000" textalpha="1" backgroundalpha="1" wordwrap="0" width="180" textcolor="0xffffff" backgroundcolor="0xa2a2a2" borderalpha="1" background="0"/>
-      <polystyle bordercolor="0xb1a8ab" backgroundalpha="0.25098" backgroundcolor="0xb1a8ab" borderalpha="0.25098" handcursor="1" mode="3"/>
-      <polyhotspot url="" target="_blank" title=" Interior View" description="Grandia Interior View" id="PolyVehicle1">
+      <label textcolor="0xffffff" border="0" borderalpha="1" enabled="0" height="20" backgroundcolor="0xa2a2a2" bordercolor="0x000000" textalpha="1" backgroundalpha="1" background="0" borderradius="0" wordwrap="0" width="180"/>
+      <polystyle mode="3" borderalpha="0.25098" handcursor="1" backgroundcolor="0xb1a8ab" bordercolor="0xb1a8ab" backgroundalpha="0.25098"/>
+      <polyhotspot url="" id="PolyVehicle1" title="Interior View" target="_blank" description="">
         <polystring>-174.8/0.75|-175.48/0.88|-177.19/0.97|-180.59/0.93|-186.71/0.88|-188.44/0.91|-189.55/0.86|-190.28/0.78|-190.94/0.45|-191.3/-0.47|-191.74/-1.28|-192.02/-2.17|-191.99/-2.94|-191.79/-3.37|-191.16/-3.5|-189.62/-3.65|-184.98/-3.85|-180.18/-3.85|-177.21/-3.79|-175.53/-3.7|-173.98/-3.6|-173.56/-3.16|-173.45/-2.69|-173.59/-2.14|-173.88/-0.65|-174.33/0.5</polystring>
       </polyhotspot>
-      <polyhotspot url="" target="_blank" title="Hood - EngineView" description="" id="PolyHood1">
+      <polyhotspot url="" id="PolyHood1" title="Hood - EngineView" target="_blank" description="">
         <polystring>-173.56/-4.51|-174.05/-4.37|-191.41/-4.23|-191.94/-4.26|-192.47/-4.45|-192.75/-4.88|-192.59/-5.29|-192.13/-6.05|-191.53/-6.47|-190.51/-7.09|-189.52/-7.46|-188.34/-7.68|-186.29/-7.72|-182.32/-7.74|-178.49/-7.69|-176.54/-7.59|-175.49/-7.44|-174.42/-6.93|-173.69/-6.21|-173.29/-5.57|-173.27/-4.92</polystring>
       </polyhotspot>
-      <polyhotspot url="" target="_blank" title="" description="" id="V1InfoPoly">
+      <polyhotspot url="" id="V1InfoPoly" title="" target="_blank" description="">
         <polystring>-180.26/-17.11|-180.35/-19.35|-182.34/-19.33|-182.27/-17.13</polystring>
       </polyhotspot>
-      <polyhotspot url="" target="_blank" title="" description="" id="V1InfoPoly">
+      <polyhotspot url="" id="V1InfoPoly" title="" target="_blank" description="">
         <polystring>-178.5/-15.27|-184.36/-15.31|-184.38/-20.84|-178.53/-20.98</polystring>
       </polyhotspot>
-      <polyhotspot url="" target="_blank" title="Interior View" description="" id="PolyVehicleR1">
+      <polyhotspot url="" id="PolyVehicleR1" title="Interior View" target="_blank" description="">
         <polystring>-215.63/-2.7|-216.35/-2.63|-217.17/-2.63|-218.6/-2.56|-219.59/-2.6|-220.85/-2.59|-222.03/-2.62|-222.78/-2.62|-223.28/-2.65|-223.36/-3.83|-223.37/-4.71|-223.31/-5.29|-223.11/-5.6|-222.64/-5.81|-221.08/-5.86|-218.72/-5.84|-216.32/-5.81|-214.26/-5.84|-213.19/-5.8|-212.47/-5.73|-212.51/-5.53|-213.1/-4.64|-214.37/-3.45|-215.02/-2.84</polystring>
       </polyhotspot>
-      <polyhotspot url="" target="_blank" title="Interior View" description="" id="PolyVehicleL1">
+      <polyhotspot url="" id="PolyVehicleL1" title="Interior View" target="_blank" description="">
         <polystring>-126.82/1.78|-127.94/1.84|-129.96/1.85|-136.76/1.68|-138.66/1.53|-140.01/1.37|-140.89/1.06|-141.57/0.39|-142.14/-0.8|-142.66/-1.99|-142.81/-2.82|-142.66/-3.34|-141.88/-3.6|-141.98/-3.55|-140.79/-3.55|-138.09/-3.49|-134.9/-3.42|-127.57/-3.19|-126.26/-3.07|-125.43/-2.51|-125.15/-1.75|-125.17/-0.62|-125.28/0.58|-125.71/1.42</polystring>
       </polyhotspot>
-      <polyhotspot url="" target="_blank" title="Hood - EngineView" description="" id="PolyHoodR1">
+      <polyhotspot url="" id="PolyHoodR1" title="Hood - EngineView" target="_blank" description="">
         <polystring>-212.05/-5.9|-210.51/-7.36|-210.86/-8.18|-211.42/-8.5|-212.45/-8.82|-213.69/-8.99|-215.09/-9.06|-215.87/-8.91|-216.86/-8.76|-217.9/-8.71|-218.27/-8.51|-219.15/-8.31|-219.88/-8.05|-220.87/-7.48|-221.49/-7.01|-222.17/-6.44|-222.37/-6.08|-220.19/-6.04|-213.13/-5.97</polystring>
       </polyhotspot>
-      <polyhotspot url="" target="_blank" title="Hood - EngineView" description="" id="PolyHoodL1">
+      <polyhotspot url="" id="PolyHoodL1" title="Hood - EngineView" target="_blank" description="">
         <polystring>-125.27/-3.72|-127.19/-3.95|-130.4/-4.14|-136.73/-4.14|-140.63/-4.2|-142.86/-4.04|-143.64/-3.83|-144.05/-4.34|-144.47/-4.96|-144.37/-5.42|-143.85/-5.99|-143.23/-6.36|-141.93/-6.78|-139.74/-6.89|-135.53/-6.97|-131.36/-6.77|-128.87/-6.57|-127.62/-6.34|-126.63/-5.81|-125.8/-5.34|-125.12/-4.82|-124.88/-4.16</polystring>
       </polyhotspot>
-      <polyhotspot url="" target="_blank" title="Interior View" description="" id="PolyVehicleL4">
+      <polyhotspot url="" id="PolyVehicleL4" title="Interior View" target="_blank" description="">
         <polystring>-90.84/1.72|-92.33/2.04|-93.76/1.85|-95.38/1.85|-96.93/1.72|-98.54/1.59|-100.14/1.65|-101.1/1.52|-101.86/1.45|-101.94/0.88|-101.39/-0.72|-100.96/-1.88|-100.65/-2.59|-100.27/-2.92|-99.56/-2.92|-97.55/-2.86|-94.81/-2.81|-91.29/-2.52|-88.88/-2.32|-87.38/-2.25|-86.03/-1.98|-86.43/-1.3|-87.27/-0.53|-88.31/0.37|-89.74/1.4</polystring>
       </polyhotspot>
-      <polyhotspot url="" target="_blank" title="Hood - EngineView" description="" id="PolyHoodL2">
+      <polyhotspot url="" id="PolyHoodL2" title="Hood - EngineView" target="_blank" description="">
         <polystring>-84.55/-2.76|-86.64/-2.84|-88.81/-3.05|-90.62/-3.32|-93.22/-3.46|-95.9/-3.66|-98.12/-3.73|-99.17/-3.72|-99.82/-3.98|-99.43/-4.57|-97.07/-5.48|-95.9/-5.81|-94/-6.32|-91.92/-6.56|-89.39/-6.72|-86.77/-6.68|-83.31/-6.41|-81.28/-6.23|-79.05/-5.91|-77.69/-5.81|-77.4/-5.25|-77.81/-4.52|-80.31/-3.77|-82.56/-3.18</polystring>
       </polyhotspot>
-      <polyhotspot url="" target="_blank" title="Interior View" description="" id="PolyVehicleR2">
+      <polyhotspot url="" id="PolyVehicleR2" title="Interior View" target="_blank" description="">
         <polystring>-245.04/-2.39|-246/-2.03|-247.15/-1.94|-249.4/-1.89|-251.55/-1.78|-253.36/-1.78|-254.73/-1.7|-255.99/-1.73|-256.98/-2.07|-257.5/-2.43|-258.16/-3.12|-259.26/-4.11|-259.96/-4.8|-260.31/-5.54|-260.15/-5.88|-259.62/-6.2|-258.56/-6.36|-256.58/-6.54|-254.36/-6.77|-252.08/-6.94|-249.81/-7.03|-247.74/-7.17|-245.8/-7.19|-245.12/-6.92|-244.9/-6.29|-244.71/-5.41|-244.65/-4.16|-244.76/-3.13</polystring>
       </polyhotspot>
-      <polyhotspot url="" target="_blank" title="Hood - EngineView" description="" id="PolyHoodR2">
+      <polyhotspot url="" id="PolyHoodR2" title="Hood - EngineView" target="_blank" description="">
         <polystring>-245.29/-7.98|-245.08/-8.39|-245.3/-9.01|-246.14/-9.65|-247.36/-10.54|-248.32/-10.97|-249.49/-11.65|-250.56/-11.91|-252.38/-12.12|-254.57/-12.16|-257.12/-12.08|-259.66/-11.72|-261.7/-11.31|-263.05/-10.55|-263.47/-9.47|-263.42/-8.35|-263.11/-7.85|-262.44/-7.14|-261.77/-6.79|-260.62/-6.86|-256.23/-7.29|-251.79/-7.72|-248.37/-7.76|-246.4/-7.84</polystring>
       </polyhotspot>
-      <hotspot pan="-181.27" url="" target="" title="2019 TOYOTA GL GRANDIA – TOURER A/T / M/T" tilt="-18.25" description="&lt;b>MODEL :  2019 TOYOTA GL GRANDIA – TOURER A/T / M/T &lt;/b>&#xa;ENGINE TYPE :   &#xa;o  2.8 Liter Diesel, 4 Cylinder In-Line &#xa;o  16-Valve DOHC (Turbo Charged w/ VNT) &#xa;  &#xa;DISPLACEMENT : &#xa;o  2,755 cc (Euro 4) &#xa;  &#xa;MAXIMUM OUTPUT : &#xa;o  163 Ps / 3,600 Rpm &#xa;  &#xa;MAXIMUM TORQUE : &#xa;o  420 Nm / 1,400 – 2,200 Rpm &#xa;  &#xa;TRANSMISSION : &#xa;o  A/T: 6-Speed &#xa;o  M/T: 6-Speed &#xa;  &#xa;BRAKES : &#xa;o  Front: Ventilated Discs &#xa;o  Rear: Ventilated Discs &#xa;  &#xa;TIRES/WHEELS : &#xa;o  235/65 R16 / Alloy Wheels &#xa;  &#xa;INTERIOR FEATURES : &#xa;o  Instrument Panel (Speedometer &#xa;o  Tachometer, Multi-Information Display - 4.2” TFT, Clock) &#xa;o  12V Accessory Power Outlet (Front: 2, Rear No. 1: 2, Rear No. 2: 2, Rear No. 3: 2) &#xa;o  Glove Box, Steering Wheel (4-Spoke Urethane) &#xa;o  Steering Wheel Switch (Audio, Phone, Cruise Control, MID) &#xa;o  Steering Column (Manual Tilt and Telescopic Adjust) &#xa;o  Shift Lever Knob (Urethane, Dash-Mounted) &#xa;o  Front Center Console Box, Front and Rear Personal Lamp &#xa;o  Sunvisor (Driver and Passenger) &#xa;o  Rearview Mirror (Electrochromatic with Back Monitor) &#xa;o  Assist Grips (Front, Rear and Seats) &#xa;o  Front Overhead Tray &#xa;o  Cup / Bottle Holders (Front: 5 / Rear: 19) &#xa;    &#xa;EXTERIOR FEATURES:            &#xa;o  Headlamps (Bi-Beam Multi-Reflector with Integrated Turn Lamp) &#xa;o  Front Fog Lamps &#xa;o  Daytime Running Lights (LED with Off Switch) &#xa;o  Front and Rear Bumpers (Body Color) &#xa;o  Front Grille (Chrome with Hood Moulding) &#xa;o  Outside Rearview Mirror (Body Color) &#xa;o  Outside Door Handle (Body Color) &#xa;o  Rear License Ornament (Chrome) &#xa;o  Wiper (Front: Intermittent Time Adjust with Mist / Rear: Intermittent with Mist) &#xa;o  Rear Window Defogger (With Timer) &#xa;o  Antenna (Short Pole) &#xa;  &#xa;POWER FEATURES :    &#xa;o  Windows (Driver/Passenger Auto) &#xa;o  Door Locks (Speed-Sensing) &#xa;o  Outside Rearview Mirrors (With Power Retract) &#xa;o  Wireless Door Lock. &#xa;  &#xa;SAFETY FEATURES :              &#xa;o  SRS Airbags (Driver and Front Passenger) &#xa;o  3-Point ELR Seatbelts (Front and Rear Seats) Anti-Lock Braking System (ABS) &#xa;o  Brake Assist (BA) &#xa;o  Vehicle Stability Control (VSC) &#xa;o  Hill-Start Assist Control (HAC) &#xa;o  Side Impact Door Beams, High Mount Stop Lamp (HMSL) &#xa;o  Toyota Vehicle Security System (Alarm with Immobilizer) &#xa;o  Back Monitor (Inside Rearview Mirror Integrated &#xa;o  Clearance and back Sonar &#xa;  &#xa;SEATING CAPACITY : &#xa;o  14 Pax &#xa;                                                      &#xa;SEATS :       &#xa;o  Driver :  Slide, Recline and Vertical Adjust &#xa;o  Front Passenger : Slide and Recline &#xa;o  Rear No.1 : 2 (Bench-Type with Individual Recline) &#xa;o  Rear No.2 and 3 : 2+1 (Bench-Type with Individual Recline) &#xa;o  Rear No.4 : Bench-Type 50:50 Space Up    &#xa;  &#xa;AUDIO SYSTEM :                     &#xa;o  Display Audio CD/DVD/MP3/FLAC/AUX/USB/Bluetooth/T-Link and K2 Technology with 6 Speakers &#xa;  &#xa;AIR CONDITIONING SYSTEM : &#xa;o  Dual, Manual Controls w/ Rear 2-Tier Vent    &#xa;  &#xa;UNIT PRICE  :&#xa;o  A/T - MONOTONE  : &lt;b> P2,220,000.00&lt;/b> &#xa;             2 TONE         :  &lt;b>P2,235,000.00&lt;/b> &#xa;             &#xa;o  M/T - MONOTONE  : &lt;b>P2,145,000.00&lt;/b> &#xa;             2 TONE          : &lt;b>P2,160,000.00 &lt;/b>    " id="Point01" skinid="ht_info"/>
-      <hotspot pan="-135.64" url="" target="" title="2019 TOYOTA GL GRANDIA A/T / M/T" tilt="-16.28" description="ENGINE TYPE :   &#xa;o  2.8 Liter Diesel, 4 Cylinder In-Line &#xa;o  16-Valve DOHC (Turbo Charged w/ VNT) &#xa;  &#xa;DISPLACEMENT : &#xa;o  2,755 cc (Euro 4) &#xa;  &#xa;MAXIMUM OUTPUT : &#xa;o  163 Ps / 3,600 Rpm &#xa;  &#xa;MAXIMUM TORQUE : &#xa;o  420 Nm / 1,400 – 2,200 Rpm &#xa;  &#xa;TRANSMISSION : &#xa;o  A/T: 6-Speed &#xa;o  M/T: 6-Speed &#xa;  &#xa;BRAKES : &#xa;o  Front: Ventilated Discs &#xa;o  Rear: Ventilated Discs &#xa;  &#xa;TIRES/WHEELS : &#xa;o  235/65 R16 / Alloy Wheels &#xa;  &#xa;INTERIOR FEATURES : &#xa;o  Instrument Panel (Speedometer &#xa;o  Tachometer, Multi-Information Display - 4.2” TFT, Clock) &#xa;o  12V Accessory Power Outlet (Front: 2, Rear No. 1: 2, Rear No. 2: 2, Rear No. 3: 2) &#xa;o  Glove Box, Steering Wheel (4-Spoke Urethane) &#xa;o  Steering Wheel Switch (Audio, Phone, Cruise Control, MID) &#xa;o  Steering Column (Manual Tilt and Telescopic Adjust) &#xa;o  Shift Lever Knob (Urethane, Dash-Mounted) &#xa;o  Front Center Console Box, Front and Rear Personal Lamp &#xa;o  Sunvisor (Driver and Passenger) &#xa;o  Rearview Mirror (Electrochromatic with Back Monitor) &#xa;o  Assist Grips (Front, Rear and Seats) &#xa;o  Front Overhead Tray &#xa;o  Cup / Bottle Holders (Front: 5 / Rear: 19) &#xa;    &#xa;EXTERIOR FEATURES:            &#xa;o  Headlamps (Bi-Beam Multi-Reflector with Integrated Turn Lamp) &#xa;o  Front Fog Lamps &#xa;o  Daytime Running Lights (LED with Off Switch) &#xa;o  Front and Rear Bumpers (Body Color) &#xa;o  Front Grille (Chrome with Hood Moulding) &#xa;o  Outside Rearview Mirror (Body Color) &#xa;o  Outside Door Handle (Body Color) &#xa;o  Rear License Ornament (Chrome) &#xa;o  Wiper (Front: Intermittent Time Adjust with Mist / Rear: Intermittent with Mist) &#xa;o  Rear Window Defogger (With Timer) &#xa;o  Antenna (Short Pole) &#xa;  &#xa;POWER FEATURES :    &#xa;o  Windows (Driver/Passenger Auto) &#xa;o  Door Locks (Speed-Sensing) &#xa;o  Outside Rearview Mirrors (With Power Retract) &#xa;o  Wireless Door Lock. &#xa;  &#xa;SAFETY FEATURES :              &#xa;o  SRS Airbags (Driver and Front Passenger) &#xa;o  3-Point ELR Seatbelts (Front and Rear Seats) Anti-Lock Braking System (ABS) &#xa;o  Brake Assist (BA) &#xa;o  Vehicle Stability Control (VSC) &#xa;o  Hill-Start Assist Control (HAC) &#xa;o  Side Impact Door Beams, High Mount Stop Lamp (HMSL) &#xa;o  Toyota Vehicle Security System (Alarm with Immobilizer) &#xa;o  Back Monitor (Inside Rearview Mirror Integrated &#xa;o  Clearance and back Sonar &#xa;  &#xa;SEATING CAPACITY : &#xa;o  14 Pax &#xa;                                                      &#xa;SEATS :       &#xa;o  Driver :  Slide, Recline and Vertical Adjust &#xa;o  Front Passenger : Slide and Recline &#xa;o  Rear No.1 : 2 (Bench-Type with Individual Recline) &#xa;o  Rear No.2 and 3 : 2+1 (Bench-Type with Individual Recline) &#xa;o  Rear No.4 : Bench-Type 50:50 Space Up    &#xa;  &#xa;AUDIO SYSTEM :                     &#xa;o  Display Audio CD/DVD/MP3/FLAC/AUX/USB/Bluetooth/T-Link and K2 Technology with 6 Speakers &#xa;  &#xa;AIR CONDITIONING SYSTEM : &#xa;o  Dual, Manual Controls w/ Rear 2-Tier Vent    " id="Vehicle1L" skinid="ht_info"/>
-      <hotspot pan="-76.22" url="" target="" title="2018 TOYOTA HILUX CONQUEST 4X4 2.8 G DSL AT / MT" tilt="-16.63" description="ENGINE TYPE                          :     &#xa;o  2.8 Liter Diesel, 4-Cylinder, 16-Valve &#xa;o  DOHC Variable Nozzle Turbo with Front-Mounted Intercooler (D-4D) &#xa;  &#xa;DISPLACEMENT                       :     &#xa;o  2,755cc &#xa;  &#xa;MAXIMUM OUTPUT                  :     &#xa;o  174 Hp / 3,400rpm &#xa;  &#xa;MAXIMUM TORQUE                  :     &#xa;o  A/T: 450 Nm / 1,600 – 2,400 rpm &#xa;o  M/T: 420 Nm / 1,600 – 2,400 rpm &#xa;  &#xa;TRANSMISSION                        :     &#xa;o  A/T: 6-Speed ECT Gate Type with Sequential Shift &#xa;o  M/T: 6-Speed Manual &#xa;  &#xa;DIFFERENTIAL                          :    &#xa;o  Front: Automatic Disconnecting Differential (ADD) &#xa;o  Rear: Built-In Differential Lock      &#xa;  &#xa;DRIVETRAIN                              :      &#xa;o  Four-Wheel Drive with Electronic Transfer Switch - (4X4) &#xa;  &#xa;FUEL TANK CAPACITY             :     &#xa;o   80 Liters &#xa;  &#xa;BRAKES                                   :     &#xa;o  Front: Ventilated Discs &#xa;o  Rear: Leading-Trailing Drums &#xa;  &#xa;TIRES/WHEELS                        :     &#xa;o  265/60 R18 – Alloy Wheels &#xa;  &#xa;INTERIOR FEATURES              :    &#xa;o  Newly Designed Interior Trims &#xa;o  Push Start System &#xa;o  Seat Material: Fabric &#xa;o  Inside Rear View Mirror (Day &amp; Night) &#xa;o  Cup Holders, Bottle Holders &#xa;o  Door Pockets, Illuminated Entry System &#xa;o  Power Steering &#xa;o  Power Door Locks &#xa;o  Power Windows &#xa;o  Power Outside Rear View Mirrors &#xa;o  Optitron Meter Gauges &#xa;o  Multi-Information Display with Steering Wheel Control &#xa;o  Accessory Power Outlet x 2 &#xa;  &#xa;EXTERIOR FEATURES          :     &#xa;o  Newly Designed Front Bumpers &#xa;o  LED Headlamp &#xa;o  LED Front Foglamps &#xa;o  Side Step &#xa;o  Overfenders &#xa;o  Bedliner &#xa;o  Daytime Running Lights (DRL) &#xa;o  Roll Bars &#xa;o  Roof Ornament, Rear Sticker. &#xa;  &#xa;SAFETY FEATURES                 :     &#xa;SRS Airbags &#xa;o  AT: Dual Front, Side, Curtain Shield and Driver Knee &#xa;o  MT: Dual Front and Driver Knee, Driver Assist &#xa;o  AT: Vehicle Stability Control (VSC), Active Traction   &#xa;    o  Control (A-TRC), Hill-start Assist Control (HAC) &#xa;    o  MT: Intelligent Manual Transmission (iMT) &#xa;    o  Seatbelts (Front with Pretensioner and Force Limiter) &#xa;    o  Reinforced Cabin with Side Impact Door Beams &#xa;    o  Anti-Lock Braking System (ABS) &#xa;    o  Electronic Brake-Force Distribution (EBD) &#xa;    o  Brake Assist (BA) &#xa;    o  ISOFIX Child Restraint System &#xa;    o  High Mount Stop Lamp (Tailgate-LED) &#xa;    o Child Protection Lock &#xa;    o Collapsible Steering Column &#xa;    o Back Sonar &#xa;  &#xa;AUDIO SYSTEM                       :     &#xa;o  6.5” LCD Display, Navigation System, DVD, Tuner, MP3, Bluetooth, USB and Auxiliary Input &#xa;o  6 Speakers (with Steering Wheel Audio Control) &#xa;  &#xa;AIR CONDITIONING SYSTEM   :     &#xa;o  Automatic Climate Control &#xa;  &#xa;SECURITY SYSTEM                 :     &#xa;o  Smart Entry with Immobilizer &#xa;  &#xa;UNIT PRICE:                               &#xa;   Automatic:   P1,777,000.00    &#xa;   Manual         P1,647,000.00                                                           " id="Vehicle2L" skinid="ht_info"/>
-      <hotspot pan="-212.32" url="" target="" title="2018 TOYOTA VIOS G PRIME 1.5 A/T" tilt="-12.69" description="ENGINE TYPE             :  &#xa;o  Dual VVT-i (Dual Variable Valve Timing – Intelligent) &#xa;o  4-Cylinder In-Line,    DOHC, 16-Valve &#xa;  &#xa;DISPLACEMENT         :  &#xa;o  1,496cc &#xa;  &#xa;MAXIMUM OUTPUT    :  &#xa;o  106 Hp / 6,000 RPM &#xa;  &#xa;MAXIMUM TORQUE   :  &#xa;o  140 Nm / 4,200 RPM &#xa;  &#xa;FUEL SYSTEM            :  &#xa;o  EFI (Electronic Fuel Injection) &#xa;  &#xa;TRANSMISSION         :   &#xa;o  7-Speed CVT with Sequential Control      &#xa;  &#xa;TIRES/WHEELS          :   &#xa;o  195/50 R16 Alloy &#xa;  &#xa;     EXTERIOR FEATURES:          &#xa;o   Front and Rear Bumper Skirt &#xa;o   Side Skirt, Rear Spoiler &#xa;o   Projector-Type Halogen Headlamps &#xa;o   Daytime Running Lights &#xa;o   Front Fog Lamps &#xa;o   Piano Black Outside Rear View Mirrors with Integrated Turn Signal Lamps &#xa;o   Rear Window Defogger, &#xa;o   Rear Reflector &#xa;o   Fin-Type Antenna. &#xa;  &#xa;INTERIOR FEATURES:             &#xa;o  Optitron Meter Gauge &#xa;o  Steering Wheel (3-Spoke Leather with Audio Switch) &#xa;o  Paddle Shifter &#xa;o  Tachometer and Speedometer &#xa;o  Drive Mode Switch (Eco/Sport) &#xa;o  Smart-Entry and Push Start System &#xa;  &#xa;SAFETY FEATURES:                &#xa;o  SRS Airbags (Front Driver and Passenger/Side/Curtain Shield/Driver-Knee) &#xa;o  Anti-Lock Braking System (ABS) with Electronic Brake Force Distribution (EBD) and Brake Assist (BA) &#xa;o  Vehicle Stability Control &#xa;o  Traction Control &#xa;o  Hill Start Assist Control &#xa;o  Seatbelts (Front: 3 Point ELR x 2 / Rear: 3 Point ELR x 3) &#xa;o  Child Lock Protection (Rear Door) &#xa;o  High Mount Stop Lamp &#xa;  &#xa;POWER FEATURES:   &#xa;o  Power Windows (with Jam Protection) &#xa;o  Electronic Power Steering with Tilt Adjust &#xa;o  Power Door Locks &#xa;o  Power Outside Rear View Mirrors with Power Retract &#xa;  &#xa;AUDIO SYSTEM :       &#xa;o  7” Touch Screen Display Audio &#xa;o  CD, MP3, USB, AUX and Weblink (for iOS and Android) with 6 Speakers &#xa;  &#xa;AIR CONDITIONING SYSTEM   : Auto Climate Control &#xa;SECURITY SYSTEM                 : Toyota Vehicle Security System (TVSS) with Alarm and Immobilizer &#xa;                                                                                                                                        UNIT PRICE                             :      P1,095,000.00" id="Vehicle1R" skinid="ht_info"/>
-      <hotspot pan="-259.27" url="" target="" title="2018 TOYOTA VIOS G 1.5 A/T and M/T" tilt="-17.51" description="ENGINE TYPE             :  &#xa;o  Dual VVT-i (Dual Variable Valve Timing – Intelligent) &#xa;o  4-Cylinder In-Line,    DOHC, 16-Valve &#xa;  &#xa;DISPLACEMENT         :  &#xa;o  1,496cc &#xa;  &#xa;MAXIMUM OUTPUT    :  &#xa;o  106 Hp / 6,000 RPM &#xa;  &#xa;MAXIMUM TORQUE   :  &#xa;o  140 Nm / 4,200 RPM &#xa;  &#xa;FUEL SYSTEM            :  &#xa;o  EFI (Electronic Fuel Injection) &#xa;  &#xa;TRANSMISSION         :   &#xa;o  7-Speed CVT with Sequential Control      &#xa;  &#xa;TIRES/WHEELS          :   &#xa;o  195/50 R16 Alloy &#xa;  &#xa;     EXTERIOR FEATURES:          &#xa;o   Front and Rear Bumper Skirt &#xa;o   Side Skirt, Rear Spoiler &#xa;o   Projector-Type Halogen Headlamps &#xa;o   Daytime Running Lights &#xa;o   Front Fog Lamps &#xa;o   Piano Black Outside Rear View Mirrors with Integrated Turn Signal Lamps &#xa;o   Rear Window Defogger, &#xa;o   Rear Reflector &#xa;o   Fin-Type Antenna. &#xa;  &#xa;INTERIOR FEATURES:             &#xa;o  Optitron Meter Gauge &#xa;o  Steering Wheel (3-Spoke Leather with Audio Switch) &#xa;o  Paddle Shifter &#xa;o  Tachometer and Speedometer &#xa;o  Drive Mode Switch (Eco/Sport) &#xa;o  Smart-Entry and Push Start System &#xa;  &#xa;SAFETY FEATURES:                &#xa;o  SRS Airbags (Front Driver and Passenger/Side/Curtain Shield/Driver-Knee) &#xa;o  Anti-Lock Braking System (ABS) with Electronic Brake Force Distribution (EBD) and Brake Assist (BA) &#xa;o  Vehicle Stability Control &#xa;o  Traction Control &#xa;o  Hill Start Assist Control &#xa;o  Seatbelts (Front: 3 Point ELR x 2 / Rear: 3 Point ELR x 3) &#xa;o  Child Lock Protection (Rear Door) &#xa;o  High Mount Stop Lamp &#xa;  &#xa;POWER FEATURES:   &#xa;o  Power Windows (with Jam Protection) &#xa;o  Electronic Power Steering with Tilt Adjust &#xa;o  Power Door Locks &#xa;o  Power Outside Rear View Mirrors with Power Retract &#xa;  &#xa;AUDIO SYSTEM :       &#xa;o  7” Touch Screen Display Audio &#xa;o  CD, MP3, USB, AUX and Weblink (for iOS and Android) with 6 Speakers &#xa;  &#xa;AIR CONDITIONING SYSTEM   : Auto Climate Control &#xa;SECURITY SYSTEM                 : Toyota Vehicle Security System (TVSS) with Alarm and Immobilizer &#xa;                                                                                                                                        UNIT PRICE                             :      P1,095,000.00" id="Vehicle2R" skinid="ht_info"/>
-      <hotspot pan="359.63" url="{node3}" target="9.7/-6.0/73.5" title="" tilt="-6.89" description="" id="Point02" skinid="ht_node"/>
+      <hotspot url="" id="Point01" tilt="-18.25" title="2019 TOYOTA GL GRANDIA – TOURER A/T / M/T" target="" description="&lt;b>MODEL :  2019 TOYOTA GL GRANDIA – TOURER A/T / M/T &lt;/b>&#xa;ENGINE TYPE :   &#xa;o  2.8 Liter Diesel, 4 Cylinder In-Line &#xa;o  16-Valve DOHC (Turbo Charged w/ VNT) &#xa;  &#xa;DISPLACEMENT : &#xa;o  2,755 cc (Euro 4) &#xa;  &#xa;MAXIMUM OUTPUT : &#xa;o  163 Ps / 3,600 Rpm &#xa;  &#xa;MAXIMUM TORQUE : &#xa;o  420 Nm / 1,400 – 2,200 Rpm &#xa;  &#xa;TRANSMISSION : &#xa;o  A/T: 6-Speed &#xa;o  M/T: 6-Speed &#xa;  &#xa;BRAKES : &#xa;o  Front: Ventilated Discs &#xa;o  Rear: Ventilated Discs &#xa;  &#xa;TIRES/WHEELS : &#xa;o  235/65 R16 / Alloy Wheels &#xa;  &#xa;INTERIOR FEATURES : &#xa;o  Instrument Panel (Speedometer &#xa;o  Tachometer, Multi-Information Display - 4.2” TFT, Clock) &#xa;o  12V Accessory Power Outlet (Front: 2, Rear No. 1: 2, Rear No. 2: 2, Rear No. 3: 2) &#xa;o  Glove Box, Steering Wheel (4-Spoke Urethane) &#xa;o  Steering Wheel Switch (Audio, Phone, Cruise Control, MID) &#xa;o  Steering Column (Manual Tilt and Telescopic Adjust) &#xa;o  Shift Lever Knob (Urethane, Dash-Mounted) &#xa;o  Front Center Console Box, Front and Rear Personal Lamp &#xa;o  Sunvisor (Driver and Passenger) &#xa;o  Rearview Mirror (Electrochromatic with Back Monitor) &#xa;o  Assist Grips (Front, Rear and Seats) &#xa;o  Front Overhead Tray &#xa;o  Cup / Bottle Holders (Front: 5 / Rear: 19) &#xa;    &#xa;EXTERIOR FEATURES:            &#xa;o  Headlamps (Bi-Beam Multi-Reflector with Integrated Turn Lamp) &#xa;o  Front Fog Lamps &#xa;o  Daytime Running Lights (LED with Off Switch) &#xa;o  Front and Rear Bumpers (Body Color) &#xa;o  Front Grille (Chrome with Hood Moulding) &#xa;o  Outside Rearview Mirror (Body Color) &#xa;o  Outside Door Handle (Body Color) &#xa;o  Rear License Ornament (Chrome) &#xa;o  Wiper (Front: Intermittent Time Adjust with Mist / Rear: Intermittent with Mist) &#xa;o  Rear Window Defogger (With Timer) &#xa;o  Antenna (Short Pole) &#xa;  &#xa;POWER FEATURES :    &#xa;o  Windows (Driver/Passenger Auto) &#xa;o  Door Locks (Speed-Sensing) &#xa;o  Outside Rearview Mirrors (With Power Retract) &#xa;o  Wireless Door Lock. &#xa;  &#xa;SAFETY FEATURES :              &#xa;o  SRS Airbags (Driver and Front Passenger) &#xa;o  3-Point ELR Seatbelts (Front and Rear Seats) Anti-Lock Braking System (ABS) &#xa;o  Brake Assist (BA) &#xa;o  Vehicle Stability Control (VSC) &#xa;o  Hill-Start Assist Control (HAC) &#xa;o  Side Impact Door Beams, High Mount Stop Lamp (HMSL) &#xa;o  Toyota Vehicle Security System (Alarm with Immobilizer) &#xa;o  Back Monitor (Inside Rearview Mirror Integrated &#xa;o  Clearance and back Sonar &#xa;  &#xa;SEATING CAPACITY : &#xa;o  14 Pax &#xa;                                                      &#xa;SEATS :       &#xa;o  Driver :  Slide, Recline and Vertical Adjust &#xa;o  Front Passenger : Slide and Recline &#xa;o  Rear No.1 : 2 (Bench-Type with Individual Recline) &#xa;o  Rear No.2 and 3 : 2+1 (Bench-Type with Individual Recline) &#xa;o  Rear No.4 : Bench-Type 50:50 Space Up    &#xa;  &#xa;AUDIO SYSTEM :                     &#xa;o  Display Audio CD/DVD/MP3/FLAC/AUX/USB/Bluetooth/T-Link and K2 Technology with 6 Speakers &#xa;  &#xa;AIR CONDITIONING SYSTEM : &#xa;o  Dual, Manual Controls w/ Rear 2-Tier Vent    &#xa;  &#xa;UNIT PRICE  :&#xa;o  A/T - MONOTONE  : &lt;b> P2,220,000.00&lt;/b> &#xa;             2 TONE         :  &lt;b>P2,235,000.00&lt;/b> &#xa;             &#xa;o  M/T - MONOTONE  : &lt;b>P2,145,000.00&lt;/b> &#xa;             2 TONE          : &lt;b>P2,160,000.00 &lt;/b>    " pan="-181.27" skinid="ht_info"/>
+      <hotspot url="" id="Vehicle1L" tilt="-16.28" title="2019 TOYOTA GL GRANDIA A/T / M/T" target="" description="ENGINE TYPE :   &#xa;o  2.8 Liter Diesel, 4 Cylinder In-Line &#xa;o  16-Valve DOHC (Turbo Charged w/ VNT) &#xa;  &#xa;DISPLACEMENT : &#xa;o  2,755 cc (Euro 4) &#xa;  &#xa;MAXIMUM OUTPUT : &#xa;o  163 Ps / 3,600 Rpm &#xa;  &#xa;MAXIMUM TORQUE : &#xa;o  420 Nm / 1,400 – 2,200 Rpm &#xa;  &#xa;TRANSMISSION : &#xa;o  A/T: 6-Speed &#xa;o  M/T: 6-Speed &#xa;  &#xa;BRAKES : &#xa;o  Front: Ventilated Discs &#xa;o  Rear: Ventilated Discs &#xa;  &#xa;TIRES/WHEELS : &#xa;o  235/65 R16 / Alloy Wheels &#xa;  &#xa;INTERIOR FEATURES : &#xa;o  Instrument Panel (Speedometer &#xa;o  Tachometer, Multi-Information Display - 4.2” TFT, Clock) &#xa;o  12V Accessory Power Outlet (Front: 2, Rear No. 1: 2, Rear No. 2: 2, Rear No. 3: 2) &#xa;o  Glove Box, Steering Wheel (4-Spoke Urethane) &#xa;o  Steering Wheel Switch (Audio, Phone, Cruise Control, MID) &#xa;o  Steering Column (Manual Tilt and Telescopic Adjust) &#xa;o  Shift Lever Knob (Urethane, Dash-Mounted) &#xa;o  Front Center Console Box, Front and Rear Personal Lamp &#xa;o  Sunvisor (Driver and Passenger) &#xa;o  Rearview Mirror (Electrochromatic with Back Monitor) &#xa;o  Assist Grips (Front, Rear and Seats) &#xa;o  Front Overhead Tray &#xa;o  Cup / Bottle Holders (Front: 5 / Rear: 19) &#xa;    &#xa;EXTERIOR FEATURES:            &#xa;o  Headlamps (Bi-Beam Multi-Reflector with Integrated Turn Lamp) &#xa;o  Front Fog Lamps &#xa;o  Daytime Running Lights (LED with Off Switch) &#xa;o  Front and Rear Bumpers (Body Color) &#xa;o  Front Grille (Chrome with Hood Moulding) &#xa;o  Outside Rearview Mirror (Body Color) &#xa;o  Outside Door Handle (Body Color) &#xa;o  Rear License Ornament (Chrome) &#xa;o  Wiper (Front: Intermittent Time Adjust with Mist / Rear: Intermittent with Mist) &#xa;o  Rear Window Defogger (With Timer) &#xa;o  Antenna (Short Pole) &#xa;  &#xa;POWER FEATURES :    &#xa;o  Windows (Driver/Passenger Auto) &#xa;o  Door Locks (Speed-Sensing) &#xa;o  Outside Rearview Mirrors (With Power Retract) &#xa;o  Wireless Door Lock. &#xa;  &#xa;SAFETY FEATURES :              &#xa;o  SRS Airbags (Driver and Front Passenger) &#xa;o  3-Point ELR Seatbelts (Front and Rear Seats) Anti-Lock Braking System (ABS) &#xa;o  Brake Assist (BA) &#xa;o  Vehicle Stability Control (VSC) &#xa;o  Hill-Start Assist Control (HAC) &#xa;o  Side Impact Door Beams, High Mount Stop Lamp (HMSL) &#xa;o  Toyota Vehicle Security System (Alarm with Immobilizer) &#xa;o  Back Monitor (Inside Rearview Mirror Integrated &#xa;o  Clearance and back Sonar &#xa;  &#xa;SEATING CAPACITY : &#xa;o  14 Pax &#xa;                                                      &#xa;SEATS :       &#xa;o  Driver :  Slide, Recline and Vertical Adjust &#xa;o  Front Passenger : Slide and Recline &#xa;o  Rear No.1 : 2 (Bench-Type with Individual Recline) &#xa;o  Rear No.2 and 3 : 2+1 (Bench-Type with Individual Recline) &#xa;o  Rear No.4 : Bench-Type 50:50 Space Up    &#xa;  &#xa;AUDIO SYSTEM :                     &#xa;o  Display Audio CD/DVD/MP3/FLAC/AUX/USB/Bluetooth/T-Link and K2 Technology with 6 Speakers &#xa;  &#xa;AIR CONDITIONING SYSTEM : &#xa;o  Dual, Manual Controls w/ Rear 2-Tier Vent    " pan="-135.64" skinid="ht_info"/>
+      <hotspot url="" id="Vehicle2L" tilt="-16.63" title="2018 TOYOTA HILUX CONQUEST 4X4 2.8 G DSL AT / MT" target="" description="ENGINE TYPE                          :     &#xa;o  2.8 Liter Diesel, 4-Cylinder, 16-Valve &#xa;o  DOHC Variable Nozzle Turbo with Front-Mounted Intercooler (D-4D) &#xa;  &#xa;DISPLACEMENT                       :     &#xa;o  2,755cc &#xa;  &#xa;MAXIMUM OUTPUT                  :     &#xa;o  174 Hp / 3,400rpm &#xa;  &#xa;MAXIMUM TORQUE                  :     &#xa;o  A/T: 450 Nm / 1,600 – 2,400 rpm &#xa;o  M/T: 420 Nm / 1,600 – 2,400 rpm &#xa;  &#xa;TRANSMISSION                        :     &#xa;o  A/T: 6-Speed ECT Gate Type with Sequential Shift &#xa;o  M/T: 6-Speed Manual &#xa;  &#xa;DIFFERENTIAL                          :    &#xa;o  Front: Automatic Disconnecting Differential (ADD) &#xa;o  Rear: Built-In Differential Lock      &#xa;  &#xa;DRIVETRAIN                              :      &#xa;o  Four-Wheel Drive with Electronic Transfer Switch - (4X4) &#xa;  &#xa;FUEL TANK CAPACITY             :     &#xa;o   80 Liters &#xa;  &#xa;BRAKES                                   :     &#xa;o  Front: Ventilated Discs &#xa;o  Rear: Leading-Trailing Drums &#xa;  &#xa;TIRES/WHEELS                        :     &#xa;o  265/60 R18 – Alloy Wheels &#xa;  &#xa;INTERIOR FEATURES              :    &#xa;o  Newly Designed Interior Trims &#xa;o  Push Start System &#xa;o  Seat Material: Fabric &#xa;o  Inside Rear View Mirror (Day &amp; Night) &#xa;o  Cup Holders, Bottle Holders &#xa;o  Door Pockets, Illuminated Entry System &#xa;o  Power Steering &#xa;o  Power Door Locks &#xa;o  Power Windows &#xa;o  Power Outside Rear View Mirrors &#xa;o  Optitron Meter Gauges &#xa;o  Multi-Information Display with Steering Wheel Control &#xa;o  Accessory Power Outlet x 2 &#xa;  &#xa;EXTERIOR FEATURES          :     &#xa;o  Newly Designed Front Bumpers &#xa;o  LED Headlamp &#xa;o  LED Front Foglamps &#xa;o  Side Step &#xa;o  Overfenders &#xa;o  Bedliner &#xa;o  Daytime Running Lights (DRL) &#xa;o  Roll Bars &#xa;o  Roof Ornament, Rear Sticker. &#xa;  &#xa;SAFETY FEATURES                 :     &#xa;SRS Airbags &#xa;o  AT: Dual Front, Side, Curtain Shield and Driver Knee &#xa;o  MT: Dual Front and Driver Knee, Driver Assist &#xa;o  AT: Vehicle Stability Control (VSC), Active Traction   &#xa;    o  Control (A-TRC), Hill-start Assist Control (HAC) &#xa;    o  MT: Intelligent Manual Transmission (iMT) &#xa;    o  Seatbelts (Front with Pretensioner and Force Limiter) &#xa;    o  Reinforced Cabin with Side Impact Door Beams &#xa;    o  Anti-Lock Braking System (ABS) &#xa;    o  Electronic Brake-Force Distribution (EBD) &#xa;    o  Brake Assist (BA) &#xa;    o  ISOFIX Child Restraint System &#xa;    o  High Mount Stop Lamp (Tailgate-LED) &#xa;    o Child Protection Lock &#xa;    o Collapsible Steering Column &#xa;    o Back Sonar &#xa;  &#xa;AUDIO SYSTEM                       :     &#xa;o  6.5” LCD Display, Navigation System, DVD, Tuner, MP3, Bluetooth, USB and Auxiliary Input &#xa;o  6 Speakers (with Steering Wheel Audio Control) &#xa;  &#xa;AIR CONDITIONING SYSTEM   :     &#xa;o  Automatic Climate Control &#xa;  &#xa;SECURITY SYSTEM                 :     &#xa;o  Smart Entry with Immobilizer &#xa;  &#xa;UNIT PRICE:                               &#xa;   Automatic:   P1,777,000.00    &#xa;   Manual         P1,647,000.00                                                           " pan="-76.22" skinid="ht_info"/>
+      <hotspot url="" id="Vehicle1R" tilt="-12.69" title="2018 TOYOTA VIOS G PRIME 1.5 A/T" target="" description="ENGINE TYPE             :  &#xa;o  Dual VVT-i (Dual Variable Valve Timing – Intelligent) &#xa;o  4-Cylinder In-Line,    DOHC, 16-Valve &#xa;  &#xa;DISPLACEMENT         :  &#xa;o  1,496cc &#xa;  &#xa;MAXIMUM OUTPUT    :  &#xa;o  106 Hp / 6,000 RPM &#xa;  &#xa;MAXIMUM TORQUE   :  &#xa;o  140 Nm / 4,200 RPM &#xa;  &#xa;FUEL SYSTEM            :  &#xa;o  EFI (Electronic Fuel Injection) &#xa;  &#xa;TRANSMISSION         :   &#xa;o  7-Speed CVT with Sequential Control      &#xa;  &#xa;TIRES/WHEELS          :   &#xa;o  195/50 R16 Alloy &#xa;  &#xa;     EXTERIOR FEATURES:          &#xa;o   Front and Rear Bumper Skirt &#xa;o   Side Skirt, Rear Spoiler &#xa;o   Projector-Type Halogen Headlamps &#xa;o   Daytime Running Lights &#xa;o   Front Fog Lamps &#xa;o   Piano Black Outside Rear View Mirrors with Integrated Turn Signal Lamps &#xa;o   Rear Window Defogger, &#xa;o   Rear Reflector &#xa;o   Fin-Type Antenna. &#xa;  &#xa;INTERIOR FEATURES:             &#xa;o  Optitron Meter Gauge &#xa;o  Steering Wheel (3-Spoke Leather with Audio Switch) &#xa;o  Paddle Shifter &#xa;o  Tachometer and Speedometer &#xa;o  Drive Mode Switch (Eco/Sport) &#xa;o  Smart-Entry and Push Start System &#xa;  &#xa;SAFETY FEATURES:                &#xa;o  SRS Airbags (Front Driver and Passenger/Side/Curtain Shield/Driver-Knee) &#xa;o  Anti-Lock Braking System (ABS) with Electronic Brake Force Distribution (EBD) and Brake Assist (BA) &#xa;o  Vehicle Stability Control &#xa;o  Traction Control &#xa;o  Hill Start Assist Control &#xa;o  Seatbelts (Front: 3 Point ELR x 2 / Rear: 3 Point ELR x 3) &#xa;o  Child Lock Protection (Rear Door) &#xa;o  High Mount Stop Lamp &#xa;  &#xa;POWER FEATURES:   &#xa;o  Power Windows (with Jam Protection) &#xa;o  Electronic Power Steering with Tilt Adjust &#xa;o  Power Door Locks &#xa;o  Power Outside Rear View Mirrors with Power Retract &#xa;  &#xa;AUDIO SYSTEM :       &#xa;o  7” Touch Screen Display Audio &#xa;o  CD, MP3, USB, AUX and Weblink (for iOS and Android) with 6 Speakers &#xa;  &#xa;AIR CONDITIONING SYSTEM   : Auto Climate Control &#xa;SECURITY SYSTEM                 : Toyota Vehicle Security System (TVSS) with Alarm and Immobilizer &#xa;                                                                                                                                        UNIT PRICE                             :      P1,095,000.00" pan="-212.32" skinid="ht_info"/>
+      <hotspot url="" id="Vehicle2R" tilt="-17.51" title="2018 TOYOTA VIOS G 1.5 A/T and M/T" target="" description="ENGINE TYPE             :  &#xa;o  Dual VVT-i (Dual Variable Valve Timing – Intelligent) &#xa;o  4-Cylinder In-Line,    DOHC, 16-Valve &#xa;  &#xa;DISPLACEMENT         :  &#xa;o  1,496cc &#xa;  &#xa;MAXIMUM OUTPUT    :  &#xa;o  106 Hp / 6,000 RPM &#xa;  &#xa;MAXIMUM TORQUE   :  &#xa;o  140 Nm / 4,200 RPM &#xa;  &#xa;FUEL SYSTEM            :  &#xa;o  EFI (Electronic Fuel Injection) &#xa;  &#xa;TRANSMISSION         :   &#xa;o  7-Speed CVT with Sequential Control      &#xa;  &#xa;TIRES/WHEELS          :   &#xa;o  195/50 R16 Alloy &#xa;  &#xa;     EXTERIOR FEATURES:          &#xa;o   Front and Rear Bumper Skirt &#xa;o   Side Skirt, Rear Spoiler &#xa;o   Projector-Type Halogen Headlamps &#xa;o   Daytime Running Lights &#xa;o   Front Fog Lamps &#xa;o   Piano Black Outside Rear View Mirrors with Integrated Turn Signal Lamps &#xa;o   Rear Window Defogger, &#xa;o   Rear Reflector &#xa;o   Fin-Type Antenna. &#xa;  &#xa;INTERIOR FEATURES:             &#xa;o  Optitron Meter Gauge &#xa;o  Steering Wheel (3-Spoke Leather with Audio Switch) &#xa;o  Paddle Shifter &#xa;o  Tachometer and Speedometer &#xa;o  Drive Mode Switch (Eco/Sport) &#xa;o  Smart-Entry and Push Start System &#xa;  &#xa;SAFETY FEATURES:                &#xa;o  SRS Airbags (Front Driver and Passenger/Side/Curtain Shield/Driver-Knee) &#xa;o  Anti-Lock Braking System (ABS) with Electronic Brake Force Distribution (EBD) and Brake Assist (BA) &#xa;o  Vehicle Stability Control &#xa;o  Traction Control &#xa;o  Hill Start Assist Control &#xa;o  Seatbelts (Front: 3 Point ELR x 2 / Rear: 3 Point ELR x 3) &#xa;o  Child Lock Protection (Rear Door) &#xa;o  High Mount Stop Lamp &#xa;  &#xa;POWER FEATURES:   &#xa;o  Power Windows (with Jam Protection) &#xa;o  Electronic Power Steering with Tilt Adjust &#xa;o  Power Door Locks &#xa;o  Power Outside Rear View Mirrors with Power Retract &#xa;  &#xa;AUDIO SYSTEM :       &#xa;o  7” Touch Screen Display Audio &#xa;o  CD, MP3, USB, AUX and Weblink (for iOS and Android) with 6 Speakers &#xa;  &#xa;AIR CONDITIONING SYSTEM   : Auto Climate Control &#xa;SECURITY SYSTEM                 : Toyota Vehicle Security System (TVSS) with Alarm and Immobilizer &#xa;                                                                                                                                        UNIT PRICE                             :      P1,095,000.00" pan="-259.27" skinid="ht_info"/>
+      <hotspot url="{node3}" id="Point02" tilt="-6.89" title="" target="9.7/-6.0/73.5" description="" pan="359.63" skinid="ht_node"/>
     </hotspots>
     <media/>
-    <transition enabled="1" softedge="0" zoomoutpause="1" zoomspeed="2" blendcolor="0x000000" type="crossdissolve" blendtime="1" zoomfov="20" zoomin="0" zoomout="0"/>
-    <animation animsequence="Animation01" syncanimationwithvideo="0" useinautorotation="0"/>
-    <control sensitivity="9" simulatemass="1" invertcontrol="1" rubberband="0" contextprojections="0" lockedkeyboard="0" speedwheel="1" lockedwheel="0" lockedmouse="0" lockedkeyboardzoom="0" invertwheel="0" dblclickfullscreen="0" contextfullscreen="0" hideabout="1"/>
+    <transition zoomspeed="2" zoomfov="20" enabled="1" type="crossdissolve" zoomin="0" softedge="0" blendtime="1" blendcolor="0x000000" zoomout="0" zoomoutpause="1"/>
+    <animation useinautorotation="0" syncanimationwithvideo="0" animsequence="Animation01"/>
+    <control simulatemass="1" rubberband="0" invertcontrol="1" hideabout="1" lockedkeyboardzoom="0" contextprojections="0" dblclickfullscreen="0" invertwheel="0" speedwheel="1" lockedwheel="0" sensitivity="9" lockedkeyboard="0" contextfullscreen="0" lockedmouse="0"/>
   </panorama>
   <panorama id="node3" hideabout="1">
-    <input leveltilesize="510" levelingroll="1" height="1344" overlap="1" levelingpitch="0.9" width="1344" levelbias="0.400" leveltileurl="tiles/node3/cf_%c/l_%l/c_%x/tile_%y.jpg" levelbiashidpi="1.000">
-      <level height="1344" predecode="0" width="1344" preload="0"/>
-      <level height="672" predecode="0" width="672" preload="0"/>
-      <level height="336" predecode="1" width="336" preload="1"/>
-      <preview color="0x808080" strip="1"/>
+    <input levelingpitch="0.9" leveltilesize="510" overlap="1" leveltileurl="tiles/node3/cf_%c/l_%l/c_%x/tile_%y.jpg" height="1344" levelingroll="1" width="1344" levelbias="0.400" levelbiashidpi="1.000">
+      <level preload="0" height="1344" width="1344" predecode="0"/>
+      <level preload="0" height="672" width="672" predecode="0"/>
+      <level preload="1" height="336" width="336" predecode="1"/>
+      <preview strip="1" color="0x808080"/>
     </input>
     <view pannorth="0" fovmode="0">
-      <start projection="4" pan="9.54408" fov="73.5129" tilt="-5.05682"/>
-      <flyin projection="9" pan="0" fov="170" tilt="-90"/>
-      <min fovpixel="2" pan="0" tilt="-90"/>
-      <max fovstereographic="270" fovfisheye="360" pan="360" scaletofit="1" fov="120" tilt="90"/>
+      <start projection="4" tilt="-5.05682" fov="73.5129" pan="9.54408"/>
+      <flyin projection="9" tilt="-90" fov="170" pan="0"/>
+      <min fovpixel="2" tilt="-90" pan="0"/>
+      <max scaletofit="1" tilt="90" fovstereographic="270" fov="120" pan="360" fovfisheye="360"/>
     </view>
-    <userdata info="" datetime="4/14/2019 11:09 AM" customnodeid="" title="" author="" description="" source="" latitude="" copyright="" longitude="" tags="RA_ToyotaQC|Showroom" comment=""/>
+    <userdata datetime="4/14/2019 11:09 AM" copyright="" tags="RA_ToyotaQC|Showroom" title="" author="" latitude="" source="" comment="" longitude="" description="" info="" customnodeid=""/>
     <hotspots height="20" wordwrap="0" width="180">
-      <label enabled="1" border="0" height="20" borderradius="0" bordercolor="0x000000" textalpha="1" backgroundalpha="1" wordwrap="0" width="180" textcolor="0xffffff" backgroundcolor="0xa2a2a2" borderalpha="1" background="0"/>
-      <polystyle bordercolor="0xb1a8ab" backgroundalpha="0.25098" backgroundcolor="0xb1a8ab" borderalpha="0.25098" handcursor="1" mode="3"/>
-      <hotspot pan="-351.07" url="{node5}" target="" title="" tilt="-7.19" description="" id="Point01" skinid="ht_node"/>
-      <hotspot pan="-174.15" url="" target="" title="" tilt="-11.03" description="" id="Point02" skinid="ht_info"/>
-      <hotspot pan="-194.82" url="" target="" title="" tilt="-10.32" description="" id="Point03" skinid="ht_info"/>
-      <hotspot pan="-217.14" url="" target="" title="" tilt="-14.17" description="" id="Point04" skinid="ht_info"/>
-      <hotspot pan="-147.1" url="" target="" title="" tilt="-11.42" description="" id="Point05" skinid="ht_info"/>
-      <hotspot pan="-113.65" url="" target="" title="" tilt="-16.67" description="" id="Point06" skinid="ht_info"/>
-      <hotspot pan="-56.13" url="" target="" title="" tilt="-13.73" description="" id="Point07" skinid="ht_info"/>
-      <hotspot pan="-288.25" url="" target="" title="" tilt="-17.37" description="" id="Point08" skinid="ht_info"/>
-      <hotspot pan="-173.69" url="{node2}" target="178.0/-12.8/73.5" title="" tilt="-21.21" description="" id="Point09" skinid="ht_node"/>
-      <polyhotspot url="" target="_blank" title="Interior View" description="" id="PolyVehicle1">
+      <label textcolor="0xffffff" border="0" borderalpha="1" enabled="0" height="20" backgroundcolor="0xa2a2a2" bordercolor="0x000000" textalpha="1" backgroundalpha="1" background="0" borderradius="0" wordwrap="0" width="180"/>
+      <polystyle mode="3" borderalpha="0.25098" handcursor="1" backgroundcolor="0xb1a8ab" bordercolor="0xb1a8ab" backgroundalpha="0.25098"/>
+      <hotspot url="{node5}" id="Point01" tilt="-7.19" title="" target="" description="" pan="-351.07" skinid="ht_node"/>
+      <hotspot url="" id="Point02" tilt="-11.03" title="" target="" description="" pan="-174.15" skinid="ht_info"/>
+      <hotspot url="" id="Point03" tilt="-10.32" title="" target="" description="" pan="-194.82" skinid="ht_info"/>
+      <hotspot url="" id="Point04" tilt="-14.17" title="" target="" description="" pan="-217.14" skinid="ht_info"/>
+      <hotspot url="" id="Point05" tilt="-11.42" title="" target="" description="" pan="-147.1" skinid="ht_info"/>
+      <hotspot url="" id="Point06" tilt="-16.67" title="" target="" description="" pan="-113.65" skinid="ht_info"/>
+      <hotspot url="" id="Point07" tilt="-13.73" title="" target="" description="" pan="-56.13" skinid="ht_info"/>
+      <hotspot url="" id="Point08" tilt="-17.37" title="" target="" description="" pan="-288.25" skinid="ht_info"/>
+      <hotspot url="{node2}" id="Point09" tilt="-21.21" title="" target="178.0/-12.8/73.5" description="" pan="-173.69" skinid="ht_node"/>
+      <polyhotspot url="" id="PolyVehicle1" title="Interior View" target="_blank" description="">
         <polystring>-169.17/0.32|-169.65/0.58|-171/0.51|-172.07/0.55|-173.28/0.55|-175.21/0.51|-177.17/0.51|-178.14/0.51|-179.1/0.44|-179.77/0.25|-180.1/-0.23|-180.36/-1.12|-180.4/-1.97|-180.11/-2.64|-179.37/-2.82|-178.36/-2.83|-177.14/-2.83|-175.31/-2.83|-172.24/-2.82|-169.55/-2.8|-168.82/-2.54|-168.39/-1.99|-168.65/-0.81|-168.88/-0.19</polystring>
       </polyhotspot>
-      <polyhotspot url="" target="_blank" title="Hood - EngineView" description="" id="PolyHood1">
+      <polyhotspot url="" id="PolyHood1" title="Hood - EngineView" target="_blank" description="">
         <polystring>-168.58/-3.21|-169.57/-3.26|-170.95/-3.31|-172.7/-3.35|-174.72/-3.33|-177.02/-3.36|-179.03/-3.34|-179.87/-3.33|-180.34/-3.21|-180.6/-3.9|-179.98/-4.66|-179.09/-5.11|-177.4/-5.36|-175.26/-5.4|-172.76/-5.43|-169.85/-5.08|-168.74/-4.48|-168.36/-3.76</polystring>
       </polyhotspot>
-      <polyhotspot url="" target="_blank" title="Interior View" description="" id="PolyVehicleL5">
+      <polyhotspot url="" id="PolyVehicleL5" title="Interior View" target="_blank" description="">
         <polystring>-72.06/2.93|-68.57/0.46|-67.11/-0.85|-68.5/-0.97|-71.77/-1.31|-74.32/-1.49|-77.01/-1.61|-78.88/-1.67|-79.78/-1.39|-80.51/-0.15|-81.53/1.78|-81.76/2.69|-78.04/2.97</polystring>
       </polyhotspot>
-      <polyhotspot url="" target="_blank" title="Hood - EngineView" description="" id="PolyHoodL5">
+      <polyhotspot url="" id="PolyHoodL5" title="Hood - EngineView" target="_blank" description="">
         <polystring>-77.53/-2.5|-73.75/-3.85|-69.19/-4.39|-64.8/-4.56|-60.65/-4.6|-59.23/-4.15|-58.55/-3.97|-58.66/-3.27|-59.68/-2.78|-62.26/-2.2|-64.94/-1.65|-65.97/-1.49|-70.53/-1.8|-73.39/-2.04|-75.9/-2.16</polystring>
       </polyhotspot>
-      <polyhotspot url="" target="_blank" title="Interior View" description="" id="PolyVehicleL3">
+      <polyhotspot url="" id="PolyVehicleL3" title="Interior View" target="_blank" description="">
         <polystring>-108.94/1.13|-109.91/1.29|-111.18/1.36|-112.87/1.42|-116.77/1.24|-119.6/1|-120.57/0.6|-121.79/-1.8|-121.47/-2.35|-119.22/-2.27|-112.85/-2.16|-108.82/-2.13|-106.85/-2.04|-108.04/0.58</polystring>
       </polyhotspot>
-      <polyhotspot url="" target="_blank" title="Hood - EngineView" description="" id="PolyHoodL2">
+      <polyhotspot url="" id="PolyHoodL2" title="Hood - EngineView" target="_blank" description="">
         <polystring>-106.29/-3.1|-104.95/-4.42|-105.09/-5.41|-107.63/-6.07|-112.26/-6.52|-116.87/-6.52|-119.72/-6.46|-121.87/-6.31|-123.06/-5.77|-123.47/-4.69|-123.07/-3.84|-122.27/-3.37|-113.5/-3.26</polystring>
       </polyhotspot>
-      <polyhotspot url="" target="_blank" title="Interior View" description="" id="PolyVehicleR3">
+      <polyhotspot url="" id="PolyVehicleR3" title="Interior View" target="_blank" description="">
         <polystring>-259.51/-0.09|-260.38/0.15|-261.9/0.33|-266.09/0.46|-270.97/0.52|-272.62/-0.28|-275.22/-1.89|-277.45/-3.38|-277.82/-4.12|-276.17/-4.47|-272.77/-4.77|-271.09/-5|-269.34/-5.21|-267.61/-5.42|-263.9/-5.57|-262.39/-4.84|-260.94/-2.72|-259.74/-1.01</polystring>
       </polyhotspot>
-      <polyhotspot url="" target="_blank" title="Hood - EngineView" description="" id="PolyHoodR3">
+      <polyhotspot url="" id="PolyHoodR3" title="Hood - EngineView" target="_blank" description="">
         <polystring>-279.75/-4.48|-273.34/-5.5|-268.48/-6.06|-265.9/-6.09|-264.83/-6.37|-266.15/-7.41|-269.05/-8.58|-273.68/-9.37|-277.56/-9.64|-281.61/-8.93|-284.92/-8.18|-285.49/-7.39|-283.48/-6.22|-280.81/-4.88</polystring>
       </polyhotspot>
-      <polyhotspot url="" target="_blank" title="Interior View" description="" id="PolyVehicleR2">
+      <polyhotspot url="" id="PolyVehicleR2" title="Interior View" target="_blank" description="">
         <polystring>-215.37/-2.82|-213.92/-4.72|-213.46/-5.82|-214.16/-6.28|-216.26/-6.38|-220.13/-6.41|-222.87/-6.24|-225.21/-6.16|-225.35/-5.57|-225.09/-3.98|-224.46/-2.84|-224.13/-2.7|-220.71/-2.67|-217.34/-2.72</polystring>
       </polyhotspot>
-      <polyhotspot url="" target="_blank" title="Hood - EngineView" description="" id="PolyHoodR2">
+      <polyhotspot url="" id="PolyHoodR2" title="Hood - EngineView" target="_blank" description="">
         <polystring>-212.9/-6.73|-215.19/-6.83|-218.46/-6.88|-220.18/-6.86|-222.77/-6.79|-224.52/-6.72|-225.39/-6.66|-225.29/-6.98|-224.78/-8.11|-222.62/-9.41|-220.26/-10.02|-217.01/-9.95|-214.86/-9.77|-213.61/-9.5|-212.58/-8.68|-212.26/-7.91|-212.25/-7.23</polystring>
       </polyhotspot>
-      <polyhotspot url="" target="_blank" title="Interior View" description="" id="PolyVehicleR1">
+      <polyhotspot url="" id="PolyVehicleR1" title="Interior View" target="_blank" description="">
         <polystring>-199.24/-2.55|-201.14/-2.63|-202.38/-2.63|-204.21/-2.75|-203.42/-4.45|-202.92/-4.87|-201.68/-4.89|-200.16/-4.9|-198.3/-4.78|-196.76/-4.79|-195.82/-4.74|-196.57/-4|-198.21/-2.88</polystring>
       </polyhotspot>
-      <polyhotspot url="" target="_blank" title="Hood - EngineView" description="" id="PolyHoodR1">
+      <polyhotspot url="" id="PolyHoodR1" title="Hood - EngineView" target="_blank" description="">
         <polystring>-195.45/-5.11|-196.9/-5.25|-198.95/-5.28|-200.76/-5.31|-202.09/-5.34|-202.64/-5.29|-201.67/-5.85|-200.66/-6.27|-199.27/-6.61|-197.59/-6.8|-195.96/-6.81|-194.47/-6.45|-194.23/-6.13|-194.42/-5.53</polystring>
       </polyhotspot>
-      <polyhotspot url="" target="_blank" title="Interior View" description="" id="PolyVehicleL1">
+      <polyhotspot url="" id="PolyVehicleL1" title="Interior View" target="_blank" description="">
         <polystring>-134.77/1.39|-136.86/1.44|-139.29/1.4|-141.4/1.31|-143.14/1.26|-144.88/1.02|-146.19/-0.43|-146.93/-1.5|-147.49/-2.38|-146.32/-2.67|-144.4/-2.63|-141.73/-2.67|-138.83/-2.53|-136.74/-2.38|-135.62/-1.91|-134.92/-0.24</polystring>
       </polyhotspot>
-      <polyhotspot url="" target="_blank" title="Hood - EngineView" description="" id="PolyHoodL1">
+      <polyhotspot url="" id="PolyHoodL1" title="Hood - EngineView" target="_blank" description="">
         <polystring>-136.04/-2.8|-138.55/-2.81|-140.14/-3.05|-142.86/-3.05|-146.18/-3.09|-148.1/-2.76|-149.11/-3.36|-149.48/-4.09|-149.34/-4.69|-148.59/-5.16|-146.22/-5.22|-143.61/-5.32|-141.45/-5.32|-139.58/-4.9|-137.58/-4.2|-136.32/-3.36</polystring>
       </polyhotspot>
     </hotspots>
     <media/>
-    <transition enabled="1" softedge="0" zoomoutpause="1" zoomspeed="2" blendcolor="0x000000" type="crossdissolve" blendtime="1" zoomfov="20" zoomin="0" zoomout="0"/>
-    <animation animsequence="Animation01" syncanimationwithvideo="0" useinautorotation="0"/>
-    <control sensitivity="9" simulatemass="1" invertcontrol="1" rubberband="0" contextprojections="0" lockedkeyboard="0" speedwheel="1" lockedwheel="0" lockedmouse="0" lockedkeyboardzoom="0" invertwheel="0" dblclickfullscreen="0" contextfullscreen="0" hideabout="1"/>
+    <transition zoomspeed="2" zoomfov="20" enabled="1" type="crossdissolve" zoomin="0" softedge="0" blendtime="1" blendcolor="0x000000" zoomout="0" zoomoutpause="1"/>
+    <animation useinautorotation="0" syncanimationwithvideo="0" animsequence="Animation01"/>
+    <control simulatemass="1" rubberband="0" invertcontrol="1" hideabout="1" lockedkeyboardzoom="0" contextprojections="0" dblclickfullscreen="0" invertwheel="0" speedwheel="1" lockedwheel="0" sensitivity="9" lockedkeyboard="0" contextfullscreen="0" lockedmouse="0"/>
   </panorama>
   <panorama id="node5" hideabout="1">
-    <input leveltilesize="510" levelingroll="1.3" height="1344" overlap="1" levelingpitch="0.6" width="1344" levelbias="0.400" leveltileurl="tiles/node5/cf_%c/l_%l/c_%x/tile_%y.jpg" levelbiashidpi="1.000">
-      <level height="1344" predecode="0" width="1344" preload="0"/>
-      <level height="672" predecode="0" width="672" preload="0"/>
-      <level height="336" predecode="1" width="336" preload="1"/>
-      <preview color="0x808080" strip="1"/>
+    <input levelingpitch="0.6" leveltilesize="510" overlap="1" leveltileurl="tiles/node5/cf_%c/l_%l/c_%x/tile_%y.jpg" height="1344" levelingroll="1.3" width="1344" levelbias="0.400" levelbiashidpi="1.000">
+      <level preload="0" height="1344" width="1344" predecode="0"/>
+      <level preload="0" height="672" width="672" predecode="0"/>
+      <level preload="1" height="336" width="336" predecode="1"/>
+      <preview strip="1" color="0x808080"/>
     </input>
     <view pannorth="0" fovmode="0">
-      <start projection="4" pan="-171.763" fov="70" tilt="-10.4082"/>
-      <flyin projection="9" pan="0" fov="170" tilt="-90"/>
-      <min fovpixel="2" pan="0" tilt="-90"/>
-      <max fovstereographic="270" fovfisheye="360" pan="360" scaletofit="1" fov="120" tilt="90"/>
+      <start projection="4" tilt="-10.4082" fov="70" pan="-171.763"/>
+      <flyin projection="9" tilt="-90" fov="170" pan="0"/>
+      <min fovpixel="2" tilt="-90" pan="0"/>
+      <max scaletofit="1" tilt="90" fovstereographic="270" fov="120" pan="360" fovfisheye="360"/>
     </view>
-    <userdata info="" datetime="4/14/2019 11:09 AM" customnodeid="" title="" author="" description="" source="" latitude="" copyright="" longitude="" tags="RA_ToyotaQC|Showroom" comment=""/>
+    <userdata datetime="4/14/2019 11:09 AM" copyright="" tags="RA_ToyotaQC|Showroom" title="" author="" latitude="" source="" comment="" longitude="" description="" info="" customnodeid=""/>
     <hotspots height="20" wordwrap="0" width="180">
-      <label enabled="1" border="0" height="20" borderradius="0" bordercolor="0x000000" textalpha="1" backgroundalpha="1" wordwrap="0" width="180" textcolor="0xffffff" backgroundcolor="0xa2a2a2" borderalpha="1" background="0"/>
-      <polystyle bordercolor="0xb1a8ab" backgroundalpha="0.25098" backgroundcolor="0xb1a8ab" borderalpha="0.25098" handcursor="1" mode="3"/>
-      <hotspot pan="-171.46" url="{node7}" target="" title="" tilt="-13.45" description="" id="Point01" skinid="ht_node"/>
-      <hotspot pan="-53.63" url="" target="" title="" tilt="-14.95" description="" id="Point02" skinid="ht_info"/>
-      <hotspot pan="-287.03" url="" target="" title="" tilt="-14.3" description="" id="Point03" skinid="ht_info"/>
-      <hotspot pan="-323.57" url="" target="" title="" tilt="-8.45" description="" id="Point04" skinid="ht_info"/>
-      <hotspot pan="-21.87" url="" target="" title="" tilt="-5.89" description="" id="Point05" skinid="ht_info"/>
-      <hotspot pan="-355.98" url="{node3}" target="-173.8/-9.1/73.5" title="" tilt="-13.35" description="" id="Point06" skinid="ht_node"/>
-      <polyhotspot url="" target="_blank" title="Interior View" description="" id="PolyVehicleL5">
+      <label textcolor="0xffffff" border="0" borderalpha="1" enabled="0" height="20" backgroundcolor="0xa2a2a2" bordercolor="0x000000" textalpha="1" backgroundalpha="1" background="0" borderradius="0" wordwrap="0" width="180"/>
+      <polystyle mode="3" borderalpha="0.25098" handcursor="1" backgroundcolor="0xb1a8ab" bordercolor="0xb1a8ab" backgroundalpha="0.25098"/>
+      <hotspot url="{node7}" id="Point01" tilt="-13.45" title="" target="" description="" pan="-171.46" skinid="ht_node"/>
+      <hotspot url="" id="Point02" tilt="-14.95" title="" target="" description="" pan="-53.63" skinid="ht_info"/>
+      <hotspot url="" id="Point03" tilt="-14.3" title="" target="" description="" pan="-287.03" skinid="ht_info"/>
+      <hotspot url="" id="Point04" tilt="-8.45" title="" target="" description="" pan="-323.57" skinid="ht_info"/>
+      <hotspot url="" id="Point05" tilt="-5.89" title="" target="" description="" pan="-21.87" skinid="ht_info"/>
+      <hotspot url="{node3}" id="Point06" tilt="-13.35" title="" target="-173.8/-9.1/73.5" description="" pan="-355.98" skinid="ht_node"/>
+      <polyhotspot url="" id="PolyVehicleL5" title="Interior View" target="_blank" description="">
         <polystring>-283.88/1.63|-286.33/1.91|-287.93/1.91|-289.57/2.03|-290.66/1.99|-291.56/2.02|-293.26/2.02|-294.58/2.02|-295.43/1.93|-295.7/1.47|-296.51/-0.27|-296.77/-1.12|-296.38/-1.47|-295.5/-1.55|-293.19/-1.6|-287.61/-1.68|-285.43/-1.76|-283.52/-1.83|-282.36/-1.79|-282.01/-1.44|-282.82/-0.2</polystring>
       </polyhotspot>
-      <polyhotspot url="" target="_blank" title="Hood - EngineView" description="" id="PolyHoodL5">
+      <polyhotspot url="" id="PolyHoodL5" title="Hood - EngineView" target="_blank" description="">
         <polystring>-281.41/-2.6|-284.43/-2.52|-288.05/-2.43|-291.24/-2.37|-293.97/-2.36|-296.05/-2.21|-297.15/-2.25|-297.68/-2.97|-298.1/-3.83|-297.77/-4.13|-296.86/-4.47|-295.76/-4.78|-293.43/-5.14|-290.16/-5.3|-285.9/-5.49|-283.4/-5.19|-281.41/-4.93|-280.55/-4.78|-279.87/-4.53|-279.54/-4.19|-280.4/-3.37</polystring>
       </polyhotspot>
-      <polyhotspot url="" target="_blank" title="Interior View" description="" id="PolyVehicleL4">
+      <polyhotspot url="" id="PolyVehicleL4" title="Interior View" target="_blank" description="">
         <polystring>-312.38/1.95|-314.02/2.09|-315.87/2.1|-318.29/2.18|-320.13/2.38|-321.23/1.53|-322.28/0.27|-322.59/-0.16|-319.72/-0.45|-314.69/-0.68|-312.98/-0.68|-312.46/-0.32|-312.45/0.02|-312.41/1.13</polystring>
       </polyhotspot>
-      <polyhotspot url="" target="_blank" title="Hood - EngineView" description="" id="PolyHoodL2">
+      <polyhotspot url="" id="PolyHoodL2" title="Hood - EngineView" target="_blank" description="">
         <polystring>-312.84/-1.37|-315.86/-1.27|-323.27/-0.88|-324.79/-1.42|-325.77/-2.15|-325.22/-2.45|-323.31/-2.66|-320.84/-2.84|-318/-2.82|-315.73/-2.73|-314/-2.25|-313.59/-1.96</polystring>
       </polyhotspot>
-      <polyhotspot url="" target="_blank" title="Interior View" description="" id="PolyVehicleR3">
+      <polyhotspot url="" id="PolyVehicleR3" title="Interior View" target="_blank" description="">
         <polystring>-48.76/2.25|-51/2.12|-53.44/2.18|-56.5/2.17|-59.02/2.16|-60.57/1.96|-61.48/1.33|-62.7/-1.28|-63.04/-2.2|-62.24/-2.57|-60.84/-2.46|-56.31/-2.37|-50.04/-2.19|-46.8/-2.19|-46.73/-1.5|-47.55/0.08|-48.06/1.22</polystring>
       </polyhotspot>
-      <polyhotspot url="" target="_blank" title="Hood - EngineView" description="" id="PolyHoodR3">
+      <polyhotspot url="" id="PolyHoodR3" title="Hood - EngineView" target="_blank" description="">
         <polystring>-46.18/-3.16|-54.06/-3.16|-59.08/-3.23|-62.52/-3.24|-63.53/-3.33|-63.84/-4|-63.98/-4.24|-64.25/-4.96|-64.04/-5.34|-63.55/-6.07|-62.91/-6.47|-61.84/-6.78|-59.7/-6.88|-56.88/-6.88|-51.66/-6.97|-47.62/-6.68|-46.1/-6.42|-45.19/-5.73|-44.84/-5.29|-44.53/-4.69|-45.17/-3.81</polystring>
       </polyhotspot>
-      <polyhotspot url="" target="_blank" title="Interior View" description="" id="PolyVehicleR2">
+      <polyhotspot url="" id="PolyVehicleR2" title="Interior View" target="_blank" description="">
         <polystring>-24.88/0.96|-25.97/0.96|-27.33/1.03|-28.59/1|-30.87/0.89|-30.9/0.38|-30.69/-0.53|-30.25/-1.44|-29.97/-1.71|-26.85/-1.61|-23.86/-1.55|-22.71/-1.44|-22.47/-1.34|-23.55/-0.06</polystring>
       </polyhotspot>
-      <polyhotspot url="" target="_blank" title="Hood - EngineView" description="" id="PolyHoodR2">
+      <polyhotspot url="" id="PolyHoodR2" title="Hood - EngineView" target="_blank" description="">
         <polystring>-21.94/-1.71|-23.66/-1.88|-26.41/-1.95|-28.01/-2.02|-29.46/-1.98|-29.8/-2.18|-29.02/-2.66|-27.77/-3.16|-26.78/-3.57|-25.36/-3.87|-23.23/-3.79|-21.41/-3.58|-21.1/-3.28|-20.77/-2.95|-20.96/-2.31</polystring>
       </polyhotspot>
     </hotspots>
     <media/>
-    <transition enabled="1" softedge="0" zoomoutpause="1" zoomspeed="2" blendcolor="0x000000" type="crossdissolve" blendtime="1" zoomfov="20" zoomin="0" zoomout="0"/>
-    <animation animsequence="Animation01" syncanimationwithvideo="0" useinautorotation="0"/>
-    <control sensitivity="9" simulatemass="1" invertcontrol="1" rubberband="0" contextprojections="0" lockedkeyboard="0" speedwheel="1" lockedwheel="0" lockedmouse="0" lockedkeyboardzoom="0" invertwheel="0" dblclickfullscreen="0" contextfullscreen="0" hideabout="1"/>
+    <transition zoomspeed="2" zoomfov="20" enabled="1" type="crossdissolve" zoomin="0" softedge="0" blendtime="1" blendcolor="0x000000" zoomout="0" zoomoutpause="1"/>
+    <animation useinautorotation="0" syncanimationwithvideo="0" animsequence="Animation01"/>
+    <control simulatemass="1" rubberband="0" invertcontrol="1" hideabout="1" lockedkeyboardzoom="0" contextprojections="0" dblclickfullscreen="0" invertwheel="0" speedwheel="1" lockedwheel="0" sensitivity="9" lockedkeyboard="0" contextfullscreen="0" lockedmouse="0"/>
   </panorama>
   <panorama id="node7" hideabout="1">
-    <input leveltilesize="510" levelingroll="2.1" height="1344" overlap="1" levelingpitch="0.7" width="1344" levelbias="0.400" leveltileurl="tiles/node7/cf_%c/l_%l/c_%x/tile_%y.jpg" levelbiashidpi="1.000">
-      <level height="1344" predecode="0" width="1344" preload="0"/>
-      <level height="672" predecode="0" width="672" preload="0"/>
-      <level height="336" predecode="1" width="336" preload="1"/>
-      <preview color="0x808080" strip="1"/>
+    <input levelingpitch="0.7" leveltilesize="510" overlap="1" leveltileurl="tiles/node7/cf_%c/l_%l/c_%x/tile_%y.jpg" height="1344" levelingroll="2.1" width="1344" levelbias="0.400" levelbiashidpi="1.000">
+      <level preload="0" height="1344" width="1344" predecode="0"/>
+      <level preload="0" height="672" width="672" predecode="0"/>
+      <level preload="1" height="336" width="336" predecode="1"/>
+      <preview strip="1" color="0x808080"/>
     </input>
     <view pannorth="0" fovmode="0">
-      <start projection="4" pan="-168.604" fov="70" tilt="-11.2804"/>
-      <flyin projection="9" pan="0" fov="170" tilt="-90"/>
-      <min fovpixel="2" pan="0" tilt="-90"/>
-      <max fovstereographic="270" fovfisheye="360" pan="360" scaletofit="1" fov="120" tilt="90"/>
+      <start projection="4" tilt="-11.2804" fov="70" pan="-168.604"/>
+      <flyin projection="9" tilt="-90" fov="170" pan="0"/>
+      <min fovpixel="2" tilt="-90" pan="0"/>
+      <max scaletofit="1" tilt="90" fovstereographic="270" fov="120" pan="360" fovfisheye="360"/>
     </view>
-    <userdata info="" datetime="4/14/2019 11:09 AM" customnodeid="" title="" author="" description="" source="" latitude="" copyright="" longitude="" tags="RA_ToyotaQC|Showroom" comment=""/>
+    <userdata datetime="4/14/2019 11:09 AM" copyright="" tags="RA_ToyotaQC|Showroom" title="" author="" latitude="" source="" comment="" longitude="" description="" info="" customnodeid=""/>
     <hotspots height="20" wordwrap="0" width="180">
-      <label enabled="1" border="0" height="20" borderradius="0" bordercolor="0x000000" textalpha="1" backgroundalpha="1" wordwrap="0" width="180" textcolor="0xffffff" backgroundcolor="0xa2a2a2" borderalpha="1" background="0"/>
-      <polystyle bordercolor="0xb1a8ab" backgroundalpha="0.25098" backgroundcolor="0xb1a8ab" borderalpha="0.25098" handcursor="1" mode="3"/>
-      <hotspot pan="-170.75" url="{node9}" target="" title="" tilt="-10.91" description="" id="Point01" skinid="ht_node"/>
-      <hotspot pan="-281.63" url="" target="" title="" tilt="-17.03" description="" id="Point02" skinid="ht_info"/>
-      <hotspot pan="-320.8" url="" target="" title="" tilt="-7.1" description="" id="Point03" skinid="ht_info"/>
-      <hotspot pan="-59.76" url="" target="" title="" tilt="-19.65" description="" id="Point04" skinid="ht_info"/>
-      <hotspot pan="-20.49" url="" target="" title="" tilt="-7.15" description="" id="Point05" skinid="ht_info"/>
-      <hotspot pan="-353.78" url="{node5}" target="6.2/0.0/70.0" title="" tilt="-8.48" description="" id="Point06" skinid="ht_node"/>
-      <polyhotspot url="" target="_blank" title="Interior View" description="" id="PolyVehicleL4">
+      <label textcolor="0xffffff" border="0" borderalpha="1" enabled="0" height="20" backgroundcolor="0xa2a2a2" bordercolor="0x000000" textalpha="1" backgroundalpha="1" background="0" borderradius="0" wordwrap="0" width="180"/>
+      <polystyle mode="3" borderalpha="0.25098" handcursor="1" backgroundcolor="0xb1a8ab" bordercolor="0xb1a8ab" backgroundalpha="0.25098"/>
+      <hotspot url="{node9}" id="Point01" tilt="-10.91" title="" target="" description="" pan="-170.75" skinid="ht_node"/>
+      <hotspot url="" id="Point02" tilt="-17.03" title="" target="" description="" pan="-281.63" skinid="ht_info"/>
+      <hotspot url="" id="Point03" tilt="-7.1" title="" target="" description="" pan="-320.8" skinid="ht_info"/>
+      <hotspot url="" id="Point04" tilt="-19.65" title="" target="" description="" pan="-59.76" skinid="ht_info"/>
+      <hotspot url="" id="Point05" tilt="-7.15" title="" target="" description="" pan="-20.49" skinid="ht_info"/>
+      <hotspot url="{node5}" id="Point06" tilt="-8.48" title="" target="6.2/0.0/70.0" description="" pan="-353.78" skinid="ht_node"/>
+      <polyhotspot url="" id="PolyVehicleL4" title="Interior View" target="_blank" description="">
         <polystring>-278.63/2.69|-279.54/2.78|-281.74/2.84|-285.3/2.9|-288.53/2.99|-291.12/2.95|-291.61/2.87|-291.89/2.7|-292.1/2.42|-292.92/1.11|-293.24/0.25|-293.69/-0.69|-293.77/-1.06|-293.77/-1.43|-293.52/-1.55|-293.2/-1.71|-289.89/-1.76|-282.24/-1.7|-277.99/-1.84|-276.55/-1.91|-275.97/-1.82|-275.85/-1.55|-275.92/-1.15|-276.46/-0.04|-277.5/1.64|-277.92/2.33|-278.28/2.65</polystring>
       </polyhotspot>
-      <polyhotspot url="" target="_blank" title="Hood - EngineView" description="" id="PolyHoodL4">
+      <polyhotspot url="" id="PolyHoodL4" title="Hood - EngineView" target="_blank" description="">
         <polystring>-275.82/-2.22|-276.82/-2.19|-279.8/-2.09|-282.68/-2.15|-286.29/-2.08|-289.48/-2.17|-292.54/-2.08|-293.4/-2|-294.05/-2.08|-294.34/-2.53|-294.66/-3.05|-295.15/-3.94|-295.02/-4.51|-294.58/-4.67|-293.8/-4.96|-292.66/-5.21|-291.32/-5.54|-289.6/-5.7|-286.87/-5.89|-283.42/-6.02|-280.1/-6.09|-277.89/-6.12|-275.8/-5.96|-274.58/-5.88|-273.26/-5.58|-272.77/-5.02|-272.65/-4.63|-273.43/-3.56|-274.48/-3.03|-275.05/-2.57</polystring>
       </polyhotspot>
-      <polyhotspot url="" target="_blank" title="Interior View" description="" id="PolyVehicleL5">
+      <polyhotspot url="" id="PolyVehicleL5" title="Interior View" target="_blank" description="">
         <polystring>-310.19/1.85|-310.36/2.19|-310.86/2.33|-311.81/2.37|-313.87/2.44|-315.89/2.48|-317.08/2.41|-317.53/2.31|-318.38/1.62|-319.06/0.84|-319.51/0.36|-319.82/0.06|-319.54/-0.01|-319.23/-0.05|-311.35/-0.26|-311.04/-0.21|-310.7/-0.18|-310.53/0.19|-310.4/0.73|-310.26/1.31</polystring>
       </polyhotspot>
-      <polyhotspot url="" target="_blank" title="Hood - EngineView" description="" id="PolyHoodL5">
+      <polyhotspot url="" id="PolyHoodL5" title="Hood - EngineView" target="_blank" description="">
         <polystring>-311.21/-0.66|-311.35/-0.6|-319.97/-0.4|-320.45/-0.43|-320.72/-0.53|-322.46/-1.15|-322.63/-1.42|-322.56/-1.49|-322.32/-1.62|-320.82/-1.76|-318.3/-1.9|-315.98/-1.86|-314.55/-1.79|-313.44/-1.69|-312.73/-1.62|-312.26/-1.44|-311.82/-1.17|-311.22/-0.77</polystring>
       </polyhotspot>
-      <polyhotspot url="" target="_blank" title="Interior View" description="" id="PolyVehicleR3">
+      <polyhotspot url="" id="PolyVehicleR3" title="Interior View" target="_blank" description="">
         <polystring>-25.18/1.74|-25.69/1.94|-27.55/1.95|-28.3/1.98|-29.74/1.99|-33.05/1.85|-31.75/-1.04|-30.9/-1.28|-21.99/-1.03|-21.89/-0.93|-23.37/0.31|-24.81/1.53</polystring>
       </polyhotspot>
-      <polyhotspot url="" target="_blank" title="Hood - EngineView" description="" id="PolyHoodR3">
+      <polyhotspot url="" id="PolyHoodR3" title="Hood - EngineView" target="_blank" description="">
         <polystring>-21.48/-1.23|-31.03/-1.62|-30.9/-1.96|-29.98/-2.4|-27.57/-3.13|-26.39/-3.43|-24.1/-3.32|-23.1/-3.24|-20.18/-3.05|-19.39/-2.81|-19.23/-2.58|-19.52/-2.25|-20.36/-1.73</polystring>
       </polyhotspot>
-      <polyhotspot url="" target="_blank" title="Interior View" description="" id="PolyVehicleR1">
+      <polyhotspot url="" id="PolyVehicleR1" title="Interior View" target="_blank" description="">
         <polystring>-48.99/-0.82|-51.96/-0.66|-57.17/-0.73|-60.05/-0.8|-61.9/-0.93|-63/-2.2|-64.27/-3.88|-65.1/-5.22|-65.62/-5.99|-65.43/-6.23|-60.46/-6.32|-55.44/-6.29|-50.6/-6.18|-48.24/-6.05|-47.31/-5.93|-47.09/-5.32|-47.75/-2.98|-48.58/-1.19</polystring>
       </polyhotspot>
-      <polyhotspot url="" target="_blank" title="Hood - EngineView" description="" id="PolyHoodR1">
+      <polyhotspot url="" id="PolyHoodR1" title="Hood - EngineView" target="_blank" description="">
         <polystring>-46.83/-6.66|-65.27/-6.78|-66.14/-6.59|-68.53/-9.8|-68.45/-10.57|-66.97/-11.77|-62.25/-13.41|-57.05/-13.49|-54.89/-13.27|-51.05/-12.12|-48/-10.89|-46.54/-9.74|-46.31/-8.59|-46.65/-7.12</polystring>
       </polyhotspot>
     </hotspots>
     <media/>
-    <transition enabled="1" softedge="0" zoomoutpause="1" zoomspeed="2" blendcolor="0x000000" type="crossdissolve" blendtime="1" zoomfov="20" zoomin="0" zoomout="0"/>
-    <animation animsequence="Animation01" syncanimationwithvideo="0" useinautorotation="0"/>
-    <control sensitivity="9" simulatemass="1" invertcontrol="1" rubberband="0" contextprojections="0" lockedkeyboard="0" speedwheel="1" lockedwheel="0" lockedmouse="0" lockedkeyboardzoom="0" invertwheel="0" dblclickfullscreen="0" contextfullscreen="0" hideabout="1"/>
+    <transition zoomspeed="2" zoomfov="20" enabled="1" type="crossdissolve" zoomin="0" softedge="0" blendtime="1" blendcolor="0x000000" zoomout="0" zoomoutpause="1"/>
+    <animation useinautorotation="0" syncanimationwithvideo="0" animsequence="Animation01"/>
+    <control simulatemass="1" rubberband="0" invertcontrol="1" hideabout="1" lockedkeyboardzoom="0" contextprojections="0" dblclickfullscreen="0" invertwheel="0" speedwheel="1" lockedwheel="0" sensitivity="9" lockedkeyboard="0" contextfullscreen="0" lockedmouse="0"/>
   </panorama>
   <panorama id="node9" hideabout="1">
-    <input leveltilesize="510" levelingroll="1.9" height="1344" overlap="1" levelingpitch="0.3" width="1344" levelbias="0.400" leveltileurl="tiles/node9/cf_%c/l_%l/c_%x/tile_%y.jpg" levelbiashidpi="1.000">
-      <level height="1344" predecode="0" width="1344" preload="0"/>
-      <level height="672" predecode="0" width="672" preload="0"/>
-      <level height="336" predecode="1" width="336" preload="1"/>
-      <preview color="0x808080" strip="1"/>
+    <input levelingpitch="0.3" leveltilesize="510" overlap="1" leveltileurl="tiles/node9/cf_%c/l_%l/c_%x/tile_%y.jpg" height="1344" levelingroll="1.9" width="1344" levelbias="0.400" levelbiashidpi="1.000">
+      <level preload="0" height="1344" width="1344" predecode="0"/>
+      <level preload="0" height="672" width="672" predecode="0"/>
+      <level preload="1" height="336" width="336" predecode="1"/>
+      <preview strip="1" color="0x808080"/>
     </input>
     <view pannorth="0" fovmode="0">
-      <start projection="4" pan="-172.926" fov="70" tilt="-7.61738"/>
-      <flyin projection="9" pan="0" fov="170" tilt="-90"/>
-      <min fovpixel="2" pan="0" tilt="-90"/>
-      <max fovstereographic="270" fovfisheye="360" pan="360" scaletofit="1" fov="120" tilt="90"/>
+      <start projection="4" tilt="-7.61738" fov="70" pan="-172.926"/>
+      <flyin projection="9" tilt="-90" fov="170" pan="0"/>
+      <min fovpixel="2" tilt="-90" pan="0"/>
+      <max scaletofit="1" tilt="90" fovstereographic="270" fov="120" pan="360" fovfisheye="360"/>
     </view>
-    <userdata info="" datetime="4/14/2019 11:10 AM" customnodeid="" title="" author="" description="" source="" latitude="" copyright="" longitude="" tags="RA_ToyotaQC|Showroom" comment=""/>
+    <userdata datetime="4/14/2019 11:10 AM" copyright="" tags="RA_ToyotaQC|Showroom" title="" author="" latitude="" source="" comment="" longitude="" description="" info="" customnodeid=""/>
     <hotspots height="20" wordwrap="0" width="180">
-      <label enabled="1" border="0" height="20" borderradius="0" bordercolor="0x000000" textalpha="1" backgroundalpha="1" wordwrap="0" width="180" textcolor="0xffffff" backgroundcolor="0xa2a2a2" borderalpha="1" background="0"/>
-      <polystyle bordercolor="0xb1a8ab" backgroundalpha="0.25098" backgroundcolor="0xb1a8ab" borderalpha="0.25098" handcursor="1" mode="3"/>
-      <hotspot pan="-172.63" url="{node11}" target="" title="" tilt="-10.58" description="" id="Point01" skinid="ht_node"/>
-      <hotspot pan="-296.58" url="" target="_blank" title="" tilt="-14.9" description="" id="Point02" skinid="ht_url"/>
-      <hotspot pan="-57.6" url="" target="_blank" title="" tilt="-19.02" description="" id="Point03" skinid="ht_url"/>
-      <hotspot pan="-1.64" url="{node7}" target="6.1/-0.5/70.0" title="" tilt="-8.68" description="" id="Point04" skinid="ht_node"/>
-      <polyhotspot url="" target="_blank" title="Interior View" description="" id="PolyVehicleL5">
+      <label textcolor="0xffffff" border="0" borderalpha="1" enabled="0" height="20" backgroundcolor="0xa2a2a2" bordercolor="0x000000" textalpha="1" backgroundalpha="1" background="0" borderradius="0" wordwrap="0" width="180"/>
+      <polystyle mode="3" borderalpha="0.25098" handcursor="1" backgroundcolor="0xb1a8ab" bordercolor="0xb1a8ab" backgroundalpha="0.25098"/>
+      <hotspot url="{node11}" id="Point01" tilt="-10.58" title="" target="" description="" pan="-172.63" skinid="ht_node"/>
+      <hotspot url="" id="Point02" tilt="-14.9" title="" target="_blank" description="" pan="-296.58" skinid="ht_url"/>
+      <hotspot url="" id="Point03" tilt="-19.02" title="" target="_blank" description="" pan="-57.6" skinid="ht_url"/>
+      <hotspot url="{node7}" id="Point04" tilt="-8.68" title="" target="6.1/-0.5/70.0" description="" pan="-1.64" skinid="ht_node"/>
+      <polyhotspot url="" id="PolyVehicleL5" title="Interior View" target="_blank" description="">
         <polystring>-289.71/2.31|-291.1/2.45|-294.1/2.6|-296.77/2.65|-299.75/2.58|-301.82/2.48|-302.13/2.31|-302.37/1.98|-303.43/0.18|-303.98/-0.94|-303.81/-1.48|-303.16/-1.69|-294.41/-1.71|-288.47/-1.86|-288.18/-1.75|-288.05/-1.45|-288.47/0.08|-289.27/1.64</polystring>
       </polyhotspot>
-      <polyhotspot url="" target="_blank" title="Hood- Engine View" description="" id="PolyHoodL5">
+      <polyhotspot url="" id="PolyHoodL5" title="Hood- Engine View" target="_blank" description="">
         <polystring>-288/-2.29|-304.53/-2.06|-304.9/-2.26|-305.65/-3.01|-306.1/-3.75|-305.87/-4.47|-303.96/-5.02|-298.41/-5.51|-294.21/-5.52|-290.47/-5.3|-288.88/-5.18|-287.83/-4.86|-287.63/-3.42|-287.84/-2.52</polystring>
       </polyhotspot>
-      <polyhotspot url="" target="_blank" title="Interior View" description="" id="PolyVehicleR5">
+      <polyhotspot url="" id="PolyVehicleR5" title="Interior View" target="_blank" description="">
         <polystring>-52.31/-1.35|-53.31/-1.22|-55.13/-1.15|-59.5/-1.22|-62.05/-1.29|-63.92/-1.39|-64.8/-1.83|-65.46/-2.91|-66.05/-4.19|-66.57/-5.14|-66.54/-5.65|-66.45/-6.02|-65.7/-6.34|-64.13/-6.55|-56.85/-6.52|-52.53/-6.38|-53.75/-6.43|-51.22/-6.22|-50.15/-6|-49.89/-5.83|-49.63/-5.49|-50.19/-4.32|-51.01/-2.85|-51.73/-1.85</polystring>
       </polyhotspot>
-      <polyhotspot url="" target="_blank" title="Hood - Engine View" description="" id="PolyHoodR5">
+      <polyhotspot url="" id="PolyHoodR5" title="Hood - Engine View" target="_blank" description="">
         <polystring>-66.29/-6.77|-64.07/-6.86|-55.92/-6.89|-49.94/-6.6|-49.07/-6.82|-48.41/-7.81|-47.58/-9.38|-48.15/-10.27|-50.98/-11.61|-54.39/-12.74|-58.76/-13|-62.66/-12.65|-64.77/-11.95|-67.33/-10.89|-68.41/-9.88|-67.77/-8.27|-67.07/-7.17</polystring>
       </polyhotspot>
     </hotspots>
     <media/>
-    <transition enabled="1" softedge="0" zoomoutpause="1" zoomspeed="2" blendcolor="0x000000" type="crossdissolve" blendtime="1" zoomfov="20" zoomin="0" zoomout="0"/>
-    <animation animsequence="Animation01" syncanimationwithvideo="0" useinautorotation="0"/>
-    <control sensitivity="9" simulatemass="1" invertcontrol="1" rubberband="0" contextprojections="0" lockedkeyboard="0" speedwheel="1" lockedwheel="0" lockedmouse="0" lockedkeyboardzoom="0" invertwheel="0" dblclickfullscreen="0" contextfullscreen="0" hideabout="1"/>
+    <transition zoomspeed="2" zoomfov="20" enabled="1" type="crossdissolve" zoomin="0" softedge="0" blendtime="1" blendcolor="0x000000" zoomout="0" zoomoutpause="1"/>
+    <animation useinautorotation="0" syncanimationwithvideo="0" animsequence="Animation01"/>
+    <control simulatemass="1" rubberband="0" invertcontrol="1" hideabout="1" lockedkeyboardzoom="0" contextprojections="0" dblclickfullscreen="0" invertwheel="0" speedwheel="1" lockedwheel="0" sensitivity="9" lockedkeyboard="0" contextfullscreen="0" lockedmouse="0"/>
   </panorama>
   <panorama id="node11" hideabout="1">
-    <input leveltilesize="510" levelingroll="1.9" height="1344" overlap="1" levelingpitch="0.2" width="1344" levelbias="0.400" leveltileurl="tiles/node11/cf_%c/l_%l/c_%x/tile_%y.jpg" levelbiashidpi="1.000">
-      <level height="1344" predecode="0" width="1344" preload="0"/>
-      <level height="672" predecode="0" width="672" preload="0"/>
-      <level height="336" predecode="1" width="336" preload="1"/>
-      <preview color="0x808080" strip="1"/>
+    <input levelingpitch="0.2" leveltilesize="510" overlap="1" leveltileurl="tiles/node11/cf_%c/l_%l/c_%x/tile_%y.jpg" height="1344" levelingroll="1.9" width="1344" levelbias="0.400" levelbiashidpi="1.000">
+      <level preload="0" height="1344" width="1344" predecode="0"/>
+      <level preload="0" height="672" width="672" predecode="0"/>
+      <level preload="1" height="336" width="336" predecode="1"/>
+      <preview strip="1" color="0x808080"/>
     </input>
     <view pannorth="0" fovmode="0">
-      <start projection="4" pan="-170.908" fov="77.7741" tilt="-12.8457"/>
-      <flyin projection="9" pan="0" fov="170" tilt="-90"/>
-      <min fovpixel="2" pan="0" tilt="-90"/>
-      <max fovstereographic="270" fovfisheye="360" pan="360" scaletofit="1" fov="120" tilt="90"/>
+      <start projection="4" tilt="-12.8457" fov="77.7741" pan="-170.908"/>
+      <flyin projection="9" tilt="-90" fov="170" pan="0"/>
+      <min fovpixel="2" tilt="-90" pan="0"/>
+      <max scaletofit="1" tilt="90" fovstereographic="270" fov="120" pan="360" fovfisheye="360"/>
     </view>
-    <userdata info="" datetime="4/14/2019 11:11 AM" customnodeid="" title="" author="" description="" source="" latitude="" copyright="" longitude="" tags="RA_ToyotaQC|Showroom" comment=""/>
+    <userdata datetime="4/14/2019 11:11 AM" copyright="" tags="RA_ToyotaQC|Showroom" title="" author="" latitude="" source="" comment="" longitude="" description="" info="" customnodeid=""/>
     <hotspots height="20" wordwrap="0" width="180">
-      <label enabled="1" border="0" height="20" borderradius="0" bordercolor="0x000000" textalpha="1" backgroundalpha="1" wordwrap="0" width="180" textcolor="0xffffff" backgroundcolor="0xa2a2a2" borderalpha="1" background="0"/>
-      <polystyle bordercolor="0xb1a8ab" backgroundalpha="0.25098" backgroundcolor="0xb1a8ab" borderalpha="0.25098" handcursor="1" mode="3"/>
-      <hotspot pan="-249.84" url="{node13}" target="" title="" tilt="-13.41" description="" id="Point01" skinid="ht_node"/>
-      <hotspot pan="-1.89" url="{node9}" target="-1.0/-0.7/70.0" title="" tilt="-11.75" description="" id="Point02" skinid="ht_node"/>
-      <polyhotspot url="" target="_blank" title="Interior View" description="" id="PolyVehicle2a">
+      <label textcolor="0xffffff" border="0" borderalpha="1" enabled="0" height="20" backgroundcolor="0xa2a2a2" bordercolor="0x000000" textalpha="1" backgroundalpha="1" background="0" borderradius="0" wordwrap="0" width="180"/>
+      <polystyle mode="3" borderalpha="0.25098" handcursor="1" backgroundcolor="0xb1a8ab" bordercolor="0xb1a8ab" backgroundalpha="0.25098"/>
+      <hotspot url="{node13}" id="Point01" tilt="-13.41" title="" target="" description="" pan="-249.84" skinid="ht_node"/>
+      <hotspot url="{node9}" id="Point02" tilt="-11.75" title="" target="-1.0/-0.7/70.0" description="" pan="-1.89" skinid="ht_node"/>
+      <polyhotspot url="" id="PolyVehicle2a" title="Interior View" target="_blank" description="">
         <polystring>-146.12/-1.75|-144.27/-6.55|-145.51/-7.21|-152.55/-7.81|-153.54/-1.41</polystring>
       </polyhotspot>
-      <polyhotspot url="" target="_blank" title="Interior View" description="" id="PolyVehicle2a">
+      <polyhotspot url="" id="PolyVehicle2a" title="Interior View" target="_blank" description="">
         <polystring>-160.17/-1.64|-164.19/-2.33|-168.03/-3.11|-172.8/-5.51|-173.47/-6.37|-170.88/-7.12|-169.91/-8.82|-169.91/-9.48|-160.16/-8.5|-159.17/-7.73|-159.33/-3.67</polystring>
       </polyhotspot>
     </hotspots>
     <media/>
-    <transition enabled="1" softedge="0" zoomoutpause="1" zoomspeed="2" blendcolor="0x000000" type="crossdissolve" blendtime="1" zoomfov="20" zoomin="0" zoomout="0"/>
-    <animation animsequence="Animation01" syncanimationwithvideo="0" useinautorotation="0"/>
-    <control sensitivity="9" simulatemass="1" invertcontrol="1" rubberband="0" contextprojections="0" lockedkeyboard="0" speedwheel="1" lockedwheel="0" lockedmouse="0" lockedkeyboardzoom="0" invertwheel="0" dblclickfullscreen="0" contextfullscreen="0" hideabout="1"/>
+    <transition zoomspeed="2" zoomfov="20" enabled="1" type="crossdissolve" zoomin="0" softedge="0" blendtime="1" blendcolor="0x000000" zoomout="0" zoomoutpause="1"/>
+    <animation useinautorotation="0" syncanimationwithvideo="0" animsequence="Animation01"/>
+    <control simulatemass="1" rubberband="0" invertcontrol="1" hideabout="1" lockedkeyboardzoom="0" contextprojections="0" dblclickfullscreen="0" invertwheel="0" speedwheel="1" lockedwheel="0" sensitivity="9" lockedkeyboard="0" contextfullscreen="0" lockedmouse="0"/>
   </panorama>
   <panorama id="node13" hideabout="1">
-    <input leveltilesize="510" levelingroll="2.2" height="1344" overlap="1" levelingpitch="-0.1" width="1344" levelbias="0.400" leveltileurl="tiles/node13/cf_%c/l_%l/c_%x/tile_%y.jpg" levelbiashidpi="1.000">
-      <level height="1344" predecode="0" width="1344" preload="0"/>
-      <level height="672" predecode="0" width="672" preload="0"/>
-      <level height="336" predecode="1" width="336" preload="1"/>
-      <preview color="0x808080" strip="1"/>
+    <input levelingpitch="-0.1" leveltilesize="510" overlap="1" leveltileurl="tiles/node13/cf_%c/l_%l/c_%x/tile_%y.jpg" height="1344" levelingroll="2.2" width="1344" levelbias="0.400" levelbiashidpi="1.000">
+      <level preload="0" height="1344" width="1344" predecode="0"/>
+      <level preload="0" height="672" width="672" predecode="0"/>
+      <level preload="1" height="336" width="336" predecode="1"/>
+      <preview strip="1" color="0x808080"/>
     </input>
     <view pannorth="0" fovmode="0">
-      <start projection="4" pan="173.164" fov="53.1136" tilt="-5.99641"/>
-      <flyin projection="9" pan="0" fov="170" tilt="-90"/>
-      <min fovpixel="2" pan="0" tilt="-90"/>
-      <max fovstereographic="270" fovfisheye="360" pan="360" scaletofit="1" fov="120" tilt="90"/>
+      <start projection="4" tilt="-5.99641" fov="53.1136" pan="173.164"/>
+      <flyin projection="9" tilt="-90" fov="170" pan="0"/>
+      <min fovpixel="2" tilt="-90" pan="0"/>
+      <max scaletofit="1" tilt="90" fovstereographic="270" fov="120" pan="360" fovfisheye="360"/>
     </view>
-    <userdata info="" datetime="4/14/2019 11:11 AM" customnodeid="" title="" author="" description="" source="" latitude="" copyright="" longitude="" tags="RA_ToyotaQC|Showroom" comment=""/>
+    <userdata datetime="4/14/2019 11:11 AM" copyright="" tags="RA_ToyotaQC|Showroom" title="" author="" latitude="" source="" comment="" longitude="" description="" info="" customnodeid=""/>
     <hotspots height="20" wordwrap="0" width="180">
-      <label enabled="1" border="0" height="20" borderradius="0" bordercolor="0x000000" textalpha="1" backgroundalpha="1" wordwrap="0" width="180" textcolor="0xffffff" backgroundcolor="0xa2a2a2" borderalpha="1" background="0"/>
-      <polystyle bordercolor="0xb1a8ab" backgroundalpha="0.25098" backgroundcolor="0xb1a8ab" borderalpha="0.25098" handcursor="1" mode="3"/>
-      <hotspot pan="-158.87" url="{node11}" target="-1.1/-4.4/77.8" title="" tilt="-14.91" description="" id="Point01" skinid="ht_node"/>
-      <hotspot pan="-210.1" url="" target="" title="" tilt="-16.84" description="" id="Point02" skinid="ht_info"/>
-      <polyhotspot url="" target="_blank" title="Interior View" description="" id="PolyVehicle2">
+      <label textcolor="0xffffff" border="0" borderalpha="1" enabled="0" height="20" backgroundcolor="0xa2a2a2" bordercolor="0x000000" textalpha="1" backgroundalpha="1" background="0" borderradius="0" wordwrap="0" width="180"/>
+      <polystyle mode="3" borderalpha="0.25098" handcursor="1" backgroundcolor="0xb1a8ab" bordercolor="0xb1a8ab" backgroundalpha="0.25098"/>
+      <hotspot url="{node11}" id="Point01" tilt="-14.91" title="" target="-1.1/-4.4/77.8" description="" pan="-158.87" skinid="ht_node"/>
+      <hotspot url="" id="Point02" tilt="-16.84" title="" target="" description="" pan="-210.1" skinid="ht_info"/>
+      <polyhotspot url="" id="PolyVehicle2" title="Interior View" target="_blank" description="">
         <polystring>-192.77/-1.62|-194.59/-1.33|-197.74/-1.12|-200.87/-1.12|-202.25/-1.17|-203.93/-1.34|-204.78/-1.59|-206.21/-2.96|-207.29/-4.11|-207.68/-4.58|-207.64/-4.92|-206.78/-5.23|-204.2/-5.37|-199.79/-5.59|-197.67/-5.63|-196.21/-5.66|-194.46/-5.51|-193.27/-5.33|-192.64/-5.1|-192.4/-3.74|-192.51/-2.25</polystring>
       </polyhotspot>
-      <polyhotspot url="" target="_blank" title="Hood - Engine View" description="" id="PolyHood2">
+      <polyhotspot url="" id="PolyHood2" title="Hood - Engine View" target="_blank" description="">
         <polystring>-192.96/-6.05|-196.55/-6.05|-199.35/-6.02|-202.6/-5.81|-205.02/-5.84|-207.3/-5.61|-208.96/-5.38|-211.35/-6.24|-212.83/-7.01|-212.96/-7.51|-212.22/-7.95|-209.34/-8.4|-205.21/-8.68|-201.04/-8.99|-197.78/-8.89|-195.84/-8.52|-193.92/-7.47|-192.91/-6.6</polystring>
       </polyhotspot>
     </hotspots>
     <media/>
-    <transition enabled="1" softedge="0" zoomoutpause="1" zoomspeed="2" blendcolor="0x000000" type="crossdissolve" blendtime="1" zoomfov="20" zoomin="0" zoomout="0"/>
-    <animation animsequence="Animation01" syncanimationwithvideo="0" useinautorotation="0"/>
-    <control sensitivity="9" simulatemass="1" invertcontrol="1" rubberband="0" contextprojections="0" lockedkeyboard="0" speedwheel="1" lockedwheel="0" lockedmouse="0" lockedkeyboardzoom="0" invertwheel="0" dblclickfullscreen="0" contextfullscreen="0" hideabout="1"/>
+    <transition zoomspeed="2" zoomfov="20" enabled="1" type="crossdissolve" zoomin="0" softedge="0" blendtime="1" blendcolor="0x000000" zoomout="0" zoomoutpause="1"/>
+    <animation useinautorotation="0" syncanimationwithvideo="0" animsequence="Animation01"/>
+    <control simulatemass="1" rubberband="0" invertcontrol="1" hideabout="1" lockedkeyboardzoom="0" contextprojections="0" dblclickfullscreen="0" invertwheel="0" speedwheel="1" lockedwheel="0" sensitivity="9" lockedkeyboard="0" contextfullscreen="0" lockedmouse="0"/>
   </panorama>
   <masternode>
-    <userdata info="" datetime="" customnodeid="" title="" author="" description="" source="" latitude="" copyright="" longitude="" tags="" comment=""/>
+    <userdata datetime="" copyright="" tags="" title="" author="" latitude="" source="" comment="" longitude="" description="" info="" customnodeid=""/>
   </masternode>
 </tour>
