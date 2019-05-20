@@ -1,7 +1,7 @@
 // Garden Gnome Software - Skin
 // Pano2VR 6.1 beta2/17561
 // Filename: Toyota_HS_TemplateV3a.ggsk
-// Generated 2019-05-20T16:37:35
+// Generated 2019-05-20T20:39:28
 
 function pano2vrSkin(player,base) {
 	player.addVariable('VehicleIntURL', 0, "");
@@ -4585,6 +4585,13 @@ function pano2vrSkin(player,base) {
 			{
 				newLogicStateVisible = 0;
 			}
+			else if (
+				(player.getVariableValue('vis_hud_popup') == true) && 
+				(player.getIsMobile() == true)
+			)
+			{
+				newLogicStateVisible = 1;
+			}
 			else {
 				newLogicStateVisible = -1;
 			}
@@ -4592,6 +4599,10 @@ function pano2vrSkin(player,base) {
 				me._contact_info.ggCurrentLogicStateVisible = newLogicStateVisible;
 				me._contact_info.style[domTransition]='';
 				if (me._contact_info.ggCurrentLogicStateVisible == 0) {
+					me._contact_info.style.visibility="hidden";
+					me._contact_info.ggVisible=false;
+				}
+				else if (me._contact_info.ggCurrentLogicStateVisible == 1) {
 					me._contact_info.style.visibility="hidden";
 					me._contact_info.ggVisible=false;
 				}
@@ -8194,7 +8205,7 @@ this.__div.style.top = vs.height / 2 + "px";
 	player.addListener('changenode', function(args) { me._screentint_info.logicBlock_visible();me._tt_togglemap.logicBlock_text();me._button_close_map.logicBlock_visible();me._information.logicBlock_alpha();me._vehiclehudinfo.logicBlock_alpha();me._hood_popup.logicBlock_text();me._vehicleintinfo.logicBlock_alpha();me._interior_popup.logicBlock_text();me._hoodtt.logicBlock_visible();me._hoodtt.logicBlock_text();me._interiortt.logicBlock_visible();me._contact_info.logicBlock_visible();me._tt_thumbnail_open.logicBlock_text();me._thumbnail_menu.logicBlock_alpha(); });
 	player.addListener('configloaded', function(args) { me._tt_togglemap.logicBlock_position();me._tt_fullscreen.logicBlock_position();me._tt_twittre.logicBlock_position();me._tt_facebook.logicBlock_position();me._tt_google.logicBlock_position();me._vehiclehudinfo.logicBlock_scaling();me._vehicleintinfo.logicBlock_scaling();me._contact_info.logicBlock_visible();me._tt_thumbnail_open.logicBlock_position();me._thumbnail_menu.logicBlock_position(); });
 	player.addListener('varchanged_vis_intr_popup', function(args) { me._screentint_info.logicBlock_visible();me._vehicleintinfo.logicBlock_alpha();me._interior_popup.logicBlock_text();me._hoodtt.logicBlock_visible();me._interiortt.logicBlock_visible();me._contact_info.logicBlock_visible(); });
-	player.addListener('varchanged_vis_hud_popup', function(args) { me._screentint_info.logicBlock_visible();me._vehiclehudinfo.logicBlock_alpha();me._hood_popup.logicBlock_text();me._hoodtt.logicBlock_visible();me._interiortt.logicBlock_visible(); });
+	player.addListener('varchanged_vis_hud_popup', function(args) { me._screentint_info.logicBlock_visible();me._vehiclehudinfo.logicBlock_alpha();me._hood_popup.logicBlock_text();me._hoodtt.logicBlock_visible();me._interiortt.logicBlock_visible();me._contact_info.logicBlock_visible(); });
 	player.addListener('varchanged_vis_info_popup', function(args) { me._information.logicBlock_alpha(); });
 	player.addListener('varchanged_vis_TT_hood', function(args) { me._hoodtt.logicBlock_text(); });
 	player.addListener('varchanged_vis_thumbnail_menu', function(args) { me._tt_thumbnail_open.logicBlock_text();me._thumbnail_menu.logicBlock_alpha(); });
